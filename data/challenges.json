@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-10T02:18:07",
+ "built_at": "2026-09-10T11:58:37",
  "season": 2026,
  "current_week": 1,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-09-09T21:49:46",
+ "changes_through": "2026-09-10T11:58:32",
  "challenges": [
   {
    "week": 1,
@@ -166,7 +166,10 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [],
+   "roster_mismatch": [
+    "The Brockness Monster: Jaxson Dart was started but is not on this roster in the ledger",
+    "The Brockness Monster: DEN DEF is on this roster in the ledger but not on Yahoo's"
+   ],
    "lineup_error": null,
    "projected": [
     {
@@ -562,7 +565,7 @@
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 1.18,
+     "value": 1.17,
      "parts": [
       {
        "name": "Dak Prescott",
@@ -582,7 +585,7 @@
       {
        "name": "Ashton Jeanty",
        "pos": "RB",
-       "v": 0.14
+       "v": 0.13
       },
       {
        "name": "Emeka Egbuka",
@@ -746,42 +749,42 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 142.46,
+     "proj": 142.39,
      "act": 0.0,
      "opp": 12
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 121.7,
+     "proj": 121.35,
      "act": 0.0,
      "opp": 11
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 140.33,
+     "proj": 140.22,
      "act": 0.0,
      "opp": 8
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 132.81,
+     "proj": 132.8,
      "act": 5.0,
      "opp": 6
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 138.09,
+     "proj": 138.06,
      "act": 13.0,
      "opp": 9
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 142.59,
+     "proj": 142.52,
      "act": 48.0,
      "opp": 4
     },
@@ -795,7 +798,7 @@
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 137.64,
+     "proj": 137.7,
      "act": 7.0,
      "opp": 3
     },
@@ -809,14 +812,14 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 125.79,
+     "proj": 125.84,
      "act": 0.0,
      "opp": 7
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 140.37,
+     "proj": 140.36,
      "act": 6.0,
      "opp": 2
     },
