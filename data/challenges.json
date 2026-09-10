@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-09T21:14:39",
+ "built_at": "2026-09-09T21:57:45",
  "season": 2026,
  "current_week": 1,
  "teams": [
@@ -234,7 +234,7 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 1.45,
+     "value": 1.43,
      "parts": [
       {
        "name": "Joe Burrow",
@@ -257,9 +257,9 @@
        "v": 0.15
       },
       {
-       "name": "Alec Pierce",
+       "name": "Tre Tucker",
        "pos": "WR",
-       "v": 0.14
+       "v": 0.12
       },
       {
        "name": "David Montgomery",
@@ -641,7 +641,7 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 138.29,
+     "proj": 139.12,
      "act": null,
      "opp": 8
     },
