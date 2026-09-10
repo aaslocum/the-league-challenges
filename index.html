@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The League — Weekly Challenges</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="One side-challenge a week, scored in our league's own rules.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230B0B0C'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='%23DCF64A' font-family='Georgia,serif' font-style='italic'>W</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  The league's weekly side-bet, as a page anyone can open on a phone.
+
+  It reads ONE file, data/challenges.json. No server, no API, no build step:
+  the whole app is this document plus a snapshot, which is why it can sit on
+  Vercel unattended and still be right about what it says. The snapshot is
+  produced elsewhere and committed here; nothing in this repo computes it.
+
+  THREE RULES, inherited from the draft board and the week app:
+
+  1. AN ASSUMED NUMBER MUST LOOK ASSUMED. A week whose real lineups are on
+     record is scored against what people actually started and says so. A week
+     without them falls back to each team's optimal lineup, and every one of
+     those carries a visible ASSUMED mark. A confident-looking leaderboard
+     built on a guess is worse than no board. Which basis a week used is in
+     the snapshot (`lineups`), not decided here.
+
+  2. PROJECTED AND ACTUAL ARE NEVER THE SAME MARK. Two bars, two hues, one
+     scale, always both on screen once the games start. The interesting thing
+     about this app is the gap between them.
+
+  3. SHOW WHO MADE THE NUMBER. "4.4 expected touchdowns" invites an argument;
+     "Gibbs 1.16, Montgomery 0.70, Higgins 0.69" ends it.
+-->
+<style>
+:root{
+  /* surfaces */
+  --ground:#0B0B0C; --panel:#141416; --raised:#1B1B1E; --sunk:#0E0E10;
+  --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.13);
+  /* ink */
+  --ink:#EFEDE8; --dim:#9A968E; --dimmer:#8A857C;
+  /* one accent, UI only -- never a data mark */
+  --accent:#DCF64A;
+  /* two data hues, one job each: PROJECTED is the model, ACTUAL is the world */
+  --proj:#8878F0; --projtrack:rgba(136,120,240,.16);
+  --act:#2DAD7E;  --acttrack:rgba(45,173,126,.15);
+  --bad:#E56A58;
+  --gold:#E8C46A;
+
+  --serif:"Instrument Serif",ui-serif,Georgia,serif;
+  --sans:"Inter Tight",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --r:4px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+  font-size:14px;line-height:1.5;font-feature-settings:"ss01","cv05";
+  -webkit-font-smoothing:antialiased}
+/* A whisper of grain so a flat near-black does not read as cheap. */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
+  opacity:.035;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)'/></svg>")}
+::selection{background:var(--accent);color:#0B0B0C}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+/* --------------------------------------------------------------- masthead */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(11,11,12,.9);
+  backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--line)}
+.masthead{padding:13px 26px 12px;display:flex;align-items:center;gap:18px;
+  flex-wrap:wrap;max-width:1320px}
+.wordmark{font-family:var(--serif);font-size:25px;line-height:1;
+  letter-spacing:-.01em;white-space:nowrap}
+.wordmark em{font-style:italic;color:var(--dim)}
+.mh-spacer{flex:1 1 30px}
+.mh-right{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.status{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);
+  font-size:11px;letter-spacing:.02em;padding:5px 10px;border-radius:var(--r);
+  border:1px solid var(--line2);color:var(--dim);background:var(--panel)}
+.status .dot{width:6px;height:6px;border-radius:50%;background:var(--dim)}
+.status.live{color:var(--accent);border-color:rgba(220,246,74,.35);
+  background:rgba(220,246,74,.07)}
+.status.live .dot{background:var(--accent);animation:blip 1.8s infinite}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.status.live .dot{animation:none}}
+@media (max-width:720px){#built{display:none}}
+
+/* ----------------------------------------------------------- stale bar */
+/* STALE IS WORSE THAN BROKEN -- rule 2 of the draft board, and the same
+   reasoning applies here for a different reason. A broken page sends someone
+   to ask. A page quietly showing last week's leader to eleven people does not,
+   and the build timestamp in the corner is the furthest point on screen from
+   where anybody is looking. So past the point where games have certainly been
+   played since the snapshot, it stops being a timestamp and becomes a bar. */
+#stale{display:none;align-items:baseline;gap:12px;padding:9px 26px;
+  background:rgba(229,106,88,.12);border-top:1px solid rgba(229,106,88,.3);
+  color:#FFC3B9;font-size:12.5px;line-height:1.45;flex-wrap:wrap}
+#stale.on{display:flex}
+#stale b{font-family:var(--sans);font-size:9.5px;letter-spacing:.15em;
+  text-transform:uppercase;font-weight:700;white-space:nowrap;flex:none}
+#stale .what{color:#F3D9D4}
+#stale.bad{background:rgba(229,106,88,.2);border-top-color:rgba(229,106,88,.55)}
+
+/* ------------------------------------------------------------ week strip */
+/* The whole season on one line: what the challenge is, which one is live,
+   and who has already won. This is the navigation AND the season overview,
+   because a separate list of fourteen rows says the same thing twice. */
+.strip{display:flex;gap:0;padding:0 26px;overflow-x:auto;scrollbar-width:none;
+  border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch}
+.strip::-webkit-scrollbar{display:none}
+.wk{flex:0 0 auto;width:104px;text-align:left;padding:11px 12px 12px 0;
+  margin-right:10px;position:relative;border-top:2px solid transparent;
+  transition:opacity .16s}
+.wk .n{font-family:var(--serif);font-size:14px;font-style:italic;
+  color:var(--dimmer);display:block;line-height:1}
+.wk .t{display:block;margin-top:5px;font-size:11px;line-height:1.25;
+  color:var(--dim);font-weight:500;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden}
+.wk .m{display:block;margin-top:6px;height:3px;border-radius:2px;width:26px;
+  background:var(--line2)}
+.wk.settled .m{background:var(--gold)}
+.wk.live .m{background:var(--accent)}
+.wk:hover .t{color:var(--ink)}
+.wk.on{border-top-color:var(--accent)}
+.wk.on .n,.wk.on .t{color:var(--ink)}
+.wk.past:not(.settled){opacity:.55}
+.wk.future{opacity:.62}
+
+/* ------------------------------------------------------------------ main */
+main{padding:28px 26px 90px;max-width:1320px}
+.eyebrow{display:flex;align-items:baseline;gap:11px;margin:0 0 13px}
+.eyebrow .n{font-family:var(--serif);font-size:15px;color:var(--dimmer);
+  font-style:italic}
+.eyebrow h2{margin:0;font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--dim);font-weight:600}
+.eyebrow .rule{flex:1;height:1px;background:var(--line)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:20px 22px;margin-bottom:16px}
+
+/* ----------------------------------------------------------------- hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px;
+  align-items:start}
+@media (max-width:900px){.hero{grid-template-columns:minmax(0,1fr);gap:20px}}
+.hero .kicker{display:flex;align-items:center;gap:10px;margin-bottom:9px;
+  flex-wrap:wrap}
+.hero h1{margin:0;font-size:clamp(30px,4.6vw,46px);font-weight:600;
+  letter-spacing:-.03em;line-height:1.02}
+.hero .rulez{margin:11px 0 0;font-size:14.5px;color:var(--dim);max-width:44ch;
+  line-height:1.5}
+.tag{font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;padding:3px 8px;border-radius:2px;
+  border:1px solid var(--line2);color:var(--dimmer)}
+.tag.live{border-color:rgba(220,246,74,.4);color:var(--accent);
+  background:rgba(220,246,74,.08)}
+.tag.final{border-color:rgba(232,196,106,.4);color:var(--gold);
+  background:rgba(232,196,106,.08)}
+.tag.assumed{border-color:rgba(229,106,88,.4);color:#FFC3B9;
+  background:rgba(229,106,88,.09)}
+.tag.set{border-color:rgba(45,173,126,.42);color:#7FD9B5;
+  background:rgba(45,173,126,.09)}
+.tag.min{border-color:rgba(136,120,240,.4);color:#B9AFFA;
+  background:rgba(136,120,240,.09)}
+
+/* the two leaders, side by side, never the same colour */
+.leads{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;background:var(--sunk)}
+@media (max-width:520px){.leads{grid-template-columns:1fr}}
+.lead{padding:15px 16px 16px;min-width:0;border-right:1px solid var(--line)}
+.lead:last-child{border-right:0}
+@media (max-width:520px){.lead{border-right:0;border-bottom:1px solid var(--line)}}
+.lead .lab{font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:600;color:var(--dimmer);display:flex;align-items:center;gap:6px}
+.lead .lab i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.lead.p .lab i{background:var(--proj)} .lead.a .lab i{background:var(--act)}
+.lead .who{font-size:19px;font-weight:600;letter-spacing:-.02em;margin-top:9px;
+  line-height:1.15;overflow:hidden;text-overflow:ellipsis}
+.lead .fig{font-family:var(--mono);font-size:31px;font-weight:600;line-height:1;
+  margin-top:8px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.lead.p .fig{color:var(--proj)} .lead.a .fig{color:var(--act)}
+.lead .gap{font-size:12px;color:var(--dim);margin-top:7px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lead .sub{font-size:11.5px;color:var(--dimmer);margin-top:8px;line-height:1.4;
+  font-family:var(--mono)}
+.lead.empty .who{color:var(--dimmer);font-size:14px;font-weight:400;
+  font-family:var(--sans)}
+.lead.empty .fig{color:var(--dimmer);font-size:22px}
+
+.note{display:flex;gap:9px;margin-top:14px;padding:11px 13px;border-radius:var(--r);
+  background:var(--sunk);border:1px solid var(--line);font-size:12.5px;
+  color:var(--dim);line-height:1.5}
+.note b{color:var(--ink);font-weight:600;font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;flex:none;padding-top:2px}
+.note.warn{border-color:rgba(229,106,88,.28);background:rgba(229,106,88,.06)}
+.note.warn b{color:#FFC3B9}
+
+/* ------------------------------------------------------------- the race */
+/* One row per team, two bars on one shared scale. The projected bar is the
+   model's claim and the actual bar is the world's answer; putting them on
+   separate scales, or on separate screens, would hide the only thing worth
+   looking at. */
+.race{display:grid;grid-template-columns:26px minmax(120px,1.1fr) minmax(0,3fr) 84px;
+  gap:0 14px;align-items:center}
+@media (max-width:700px){.race{grid-template-columns:22px minmax(90px,1fr) minmax(0,2fr) 62px;
+  gap:0 9px}}
+/* A truncated "Dak Prescott …" is not a reason, it is noise. Below this the
+   contributors come off and the bars take the room. */
+@media (max-width:560px){
+  .race{grid-template-columns:20px minmax(74px,1fr) minmax(0,2.4fr) 54px;gap:0 8px}
+  .tm .parts{display:none}
+  .race .hd{font-size:8.5px;letter-spacing:.1em}
+}
+.race .hd{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dimmer);font-weight:600;padding-bottom:9px;
+  border-bottom:1px solid var(--line);margin-bottom:4px}
+.race .hd.r{text-align:right}
+.row{display:contents}
+.row > *{padding:8px 0;border-bottom:1px solid var(--line)}
+.row:last-child > *{border-bottom:0}
+.row.win > *{background:linear-gradient(90deg,rgba(220,246,74,.05),transparent 60%)}
+.rk{font-family:var(--mono);font-size:11px;color:var(--dimmer);text-align:right;
+  font-variant-numeric:tabular-nums}
+.row.win .rk{color:var(--accent)}
+.tm{min-width:0}
+.tm .nm{font-size:13.5px;font-weight:500;letter-spacing:-.005em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tm .parts{font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.bars{display:flex;flex-direction:column;gap:3px;min-width:0;position:relative}
+/* Twelve teams inside a 3.3-4.4 range make twelve nearly-identical bars, and
+   the honest fix is NOT to truncate the baseline -- it is to label the middle
+   of the field and let the eye read the sides of it. */
+.bars .med{position:absolute;top:-4px;bottom:-4px;width:0;
+  border-left:1px dashed rgba(255,255,255,.28);pointer-events:none}
+.bar{position:relative;height:9px;background:rgba(255,255,255,.045);
+  border-radius:0 2px 2px 0}
+.bar > i{position:absolute;left:0;top:0;bottom:0;border-radius:0 2px 2px 0;
+  transition:width .5s cubic-bezier(.2,.7,.3,1)}
+.bar.p > i{background:var(--proj)} .bar.a > i{background:var(--act)}
+.bar.zero > i{background:rgba(255,255,255,.1);min-width:1px}
+.vals{text-align:right;font-family:var(--mono);font-size:12.5px;
+  font-variant-numeric:tabular-nums;line-height:1.35}
+.vals .p{color:var(--proj)} .vals .a{color:var(--act);font-weight:600}
+.vals .none{color:var(--dimmer)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 0;font-size:11px;
+  color:var(--dim)}
+.legend i{display:inline-block;width:14px;height:8px;border-radius:2px;
+  margin-right:6px;vertical-align:middle}
+.legend i.p{background:var(--proj)} .legend i.a{background:var(--act)}
+.ineligible{font-size:12px;color:var(--dimmer);margin-top:12px;
+  font-family:var(--mono)}
+
+/* -------------------------------------------------------- trophy case */
+.trophy{display:grid;grid-template-columns:minmax(130px,1fr) minmax(0,2.4fr) 30px;
+  gap:0 14px;align-items:center}
+.trophy .row > *{padding:8px 0;border-bottom:1px solid var(--line)}
+.trophy .hd{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dimmer);font-weight:600;padding-bottom:9px;
+  border-bottom:1px solid var(--line);margin-bottom:4px}
+.winbar{height:7px;background:rgba(255,255,255,.045);border-radius:0 2px 2px 0;
+  margin-bottom:6px}
+.winbar > i{display:block;height:100%;background:var(--gold);
+  border-radius:0 2px 2px 0;min-width:0}
+.chips{display:flex;gap:4px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:10px;padding:2px 6px;border-radius:2px;
+  background:rgba(232,196,106,.12);color:var(--gold);
+  border:1px solid rgba(232,196,106,.28)}
+.chip.none{background:none;border-color:var(--line);color:var(--dimmer)}
+.wins{font-family:var(--mono);font-size:15px;font-weight:600;text-align:right;
+  font-variant-numeric:tabular-nums}
+.wins.z{color:var(--dimmer);font-weight:400;font-size:13px}
+
+/* ----------------------------------------------------------- the season */
+.slate{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));
+  gap:11px}
+.card{background:var(--sunk);border:1px solid var(--line);border-radius:var(--r);
+  padding:13px 14px 14px;text-align:left;width:100%;display:block;
+  transition:border-color .15s,background .15s}
+.card:hover{border-color:var(--line2);background:var(--raised)}
+.card.on{border-color:var(--accent)}
+.card .top{display:flex;align-items:baseline;gap:8px}
+.card .w{font-family:var(--serif);font-size:15px;font-style:italic;
+  color:var(--dimmer);flex:none}
+.card h3{margin:0;font-size:14.5px;font-weight:600;letter-spacing:-.01em;
+  flex:1;min-width:0}
+.card p{margin:7px 0 0;font-size:12px;color:var(--dim);line-height:1.45}
+.card .foot{margin-top:10px;display:flex;align-items:center;gap:7px;
+  flex-wrap:wrap;font-size:10.5px;font-family:var(--mono);color:var(--dimmer)}
+.card .foot .w-name{color:var(--gold)}
+
+/* ------------------------------------------------------------- caveats */
+.caveats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
+  gap:11px}
+.caveats li{display:flex;gap:11px;font-size:12.5px;color:var(--dim);
+  line-height:1.55}
+.caveats .lv{font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:600;flex:none;width:44px;padding-top:3px;color:var(--dimmer)}
+.caveats .lv.warn{color:#FFC3B9}
+footer{padding:0 26px 60px;max-width:1320px;font-size:11.5px;color:var(--dimmer);
+  font-family:var(--mono)}
+.err{margin:60px 26px;padding:20px 22px;border:1px solid rgba(229,106,88,.4);
+  background:rgba(229,106,88,.07);border-radius:var(--r);color:#FFC3B9;
+  max-width:640px;font-size:13.5px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="masthead">
+    <div class="wordmark">The League <em>— Weekly Challenges</em></div>
+    <div class="mh-spacer"></div>
+    <div class="mh-right">
+      <span class="status" id="season"><span class="dot"></span><span>—</span></span>
+      <span class="status" id="now"><span class="dot"></span><span>—</span></span>
+      <span class="status" id="built">built —</span>
+    </div>
+  </div>
+  <nav class="strip" id="strip" aria-label="Season weeks"></nav>
+  <div id="stale" role="status"></div>
+</div>
+
+<main id="main" hidden>
+  <section class="panel" id="heroPanel">
+    <div class="hero">
+      <div>
+        <div class="kicker" id="heroKick"></div>
+        <h1 id="heroName">—</h1>
+        <p class="rulez" id="heroRule"></p>
+        <div id="heroNotes"></div>
+      </div>
+      <div>
+        <div class="leads">
+          <div class="lead p" id="leadProj"></div>
+          <div class="lead a" id="leadAct"></div>
+        </div>
+        <div class="ineligible" id="heroMeta"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eyebrow"><span class="n">01</span><h2>The race</h2><span class="rule"></span></div>
+  <section class="panel">
+    <div class="race" id="race"></div>
+    <div class="legend" id="raceLegend"></div>
+    <div class="ineligible" id="raceNote"></div>
+  </section>
+
+  <div class="eyebrow"><span class="n">02</span><h2>Trophy case</h2><span class="rule"></span></div>
+  <section class="panel">
+    <div class="trophy" id="trophy"></div>
+  </section>
+
+  <div class="eyebrow"><span class="n">03</span><h2>The season</h2><span class="rule"></span></div>
+  <section class="panel">
+    <div class="slate" id="slate"></div>
+  </section>
+
+  <div class="eyebrow"><span class="n">04</span><h2>Read this beside the numbers</h2><span class="rule"></span></div>
+  <section class="panel">
+    <ul class="caveats" id="caveats"></ul>
+  </section>
+</main>
+
+<footer id="foot"></footer>
+
+<script>
+"use strict";
+
+const UNIT = {
+  pts:       {suf: "",       dec: 1, word: "points"},
+  yds:       {suf: " yd",    dec: 0, word: "yards",      count: true},
+  plays:     {suf: "",       dec: 2, word: "40+ plays",  count: true},
+  catches:   {suf: "",       dec: 1, word: "receptions", count: true},
+  takeaways: {suf: "",       dec: 2, word: "takeaways",  count: true},
+  players:   {suf: "",       dec: 0, word: "players",    count: true},
+  pct:       {suf: "%",      dec: 1, word: "share"},
+};
+
+let DB = null, WEEK = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
+  (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+// The Python side writes "--" rather than an em dash, because its own CLI
+// prints to a cp1252 console. This is a display concern, so it is fixed here.
+const prose = (s) => esc(s).replace(/ -- /g, " — ");
+
+function fmt(v, unit, forceDec) {
+  const u = UNIT[unit] || UNIT.pts;
+  const d = forceDec === undefined ? u.dec : forceDec;
+  return Number(v).toFixed(d).replace(/\.0+$/, d ? "" : "") + u.suf;
+}
+// A projected count is fractional by nature (1.4 expected 40+ plays); an
+// observed one never is. Showing "2.00" for two plays is noise.
+function fmtRow(v, unit, isActual) {
+  const u = UNIT[unit] || UNIT.pts;
+  if (u.count && isActual) return Number(v).toFixed(0) + u.suf;
+  return fmt(v, unit);
+}
+
+function byId(list) { const m = {}; for (const c of list) m[c.week] = c; return m; }
+function chal(w) { return byId(DB.challenges)[w]; }
+
+/* ------------------------------------------------------------------ strip */
+function renderStrip() {
+  const s = $("strip");
+  s.innerHTML = "";
+  for (const c of DB.challenges) {
+    const b = document.createElement("button");
+    const live = c.week === DB.current_week;
+    b.className = "wk"
+      + (c.week === WEEK ? " on" : "")
+      + (c.winner ? " settled" : "")
+      + (live ? " live" : c.week < DB.current_week ? " past" : " future");
+    b.innerHTML = `<span class="n">${c.week < 10 ? "0" : ""}${c.week}</span>`
+      + `<span class="t">${esc(c.name)}</span><span class="m"></span>`;
+    b.title = c.rule;
+    b.onclick = () => select(c.week);
+    s.appendChild(b);
+  }
+  const on = s.querySelector(".wk.on");
+  if (on) on.scrollIntoView({block: "nearest", inline: "center"});
+}
+
+/* ------------------------------------------------------------------- hero */
+function leadCard(el, rows, unit, isActual, c) {
+  if (!rows || !rows.length) {
+    el.classList.add("empty");
+    const why = isActual
+      ? (c.status === "upcoming"
+          ? "No games scored yet for this week."
+          : "Nobody is eligible on actual points yet.")
+      : "This one cannot be projected — it is only knowable afterwards.";
+    el.innerHTML = `<div class="lab"><i></i>${isActual ? "Actual" : "Projected"}</div>`
+      + `<div class="who">${esc(why)}</div><div class="fig">—</div>`;
+    return;
+  }
+  el.classList.remove("empty");
+  const w = rows[0], second = rows[1];
+  const gap = second ? Math.abs(w.value - second.value) : null;
+  const parts = (w.parts || []).slice(0, 3)
+    .map((p) => `${esc(p.name)} ${fmt(p.v, unit === "players" ? "pts" : unit)}`)
+    .join(" · ");
+  el.innerHTML =
+    `<div class="lab"><i></i>${!isActual ? "Projected"
+       : c.status === "final" ? "Actual — final" : "Actual — winning now"}</div>`
+    + `<div class="who">${esc(w.team)}</div>`
+    + `<div class="fig">${fmtRow(w.value, unit, isActual)}</div>`
+    + (gap !== null
+        ? `<div class="gap">${gap ? fmt(gap, unit) + " ahead of " : "tied with "}`
+          + `${esc(second.team)}</div>`
+        : "")
+    + (parts ? `<div class="sub">${parts}</div>` : "");
+}
+
+function renderHero(c) {
+  const kick = [];
+  if (c.status === "live") kick.push('<span class="tag live">Live now</span>');
+  else if (c.status === "final") kick.push('<span class="tag final">Settled</span>');
+  else kick.push('<span class="tag">Upcoming</span>');
+  if (c.direction === "min") kick.push('<span class="tag min">Lowest wins</span>');
+  const L = c.lineups || {manual: [], observed: [], assumed: c.assumed_lineups || []};
+  if (L.assumed.length)
+    kick.push(`<span class="tag assumed">${L.assumed.length === DB.teams.length
+      ? "Assumed lineups" : L.assumed.length + " assumed"}</span>`);
+  else
+    kick.push('<span class="tag set">Real lineups</span>');
+  kick.push(`<span class="tag">Week ${c.week}</span>`);
+  $("heroKick").innerHTML = kick.join("");
+  $("heroName").textContent = c.name;
+  $("heroRule").innerHTML = prose(c.rule);
+
+  const notes = [];
+  if (L.assumed.length) {
+    const n = L.assumed.length, all = n === DB.teams.length;
+    notes.push(`<div class="note ${c.needs_lineups ? "warn" : ""}"><b>Assumed</b><div>`
+      + `There is no record of who was actually started this week, so `
+      + (all ? "every team here is"
+             : n === 1 ? `one team (${esc(L.assumed[0])}) is`
+             : `${n} of the ${DB.teams.length} teams are`)
+      + ` scored against their <em>optimal</em> lineup instead.`
+      + (c.needs_lineups
+          ? " This challenge turns on the starter/bench split, so treat the"
+            + " order below as a placeholder until the real lineups land."
+          : " For this challenge the difference is usually small.")
+      + `</div></div>`);
+  }
+  if (c.roster_mismatch && c.roster_mismatch.length) {
+    notes.push(`<div class="note warn"><b>Check</b><div>`
+      + `The lineups and this league's own roster records disagree — almost `
+      + `always a trade or a pickup nobody wrote down. Scored as started, and `
+      + `flagged rather than patched over:<br>`
+      + c.roster_mismatch.slice(0, 4).map(esc).join("<br>")
+      + (c.roster_mismatch.length > 4
+          ? `<br>…and ${c.roster_mismatch.length - 4} more` : "")
+      + `</div></div>`);
+  }
+  if (c.lineup_error) {
+    notes.push(`<div class="note warn"><b>Fell back</b><div>`
+      + `This week's record of who was started was not used, so the numbers `
+      + `below are built on the optimal lineup instead — `
+      + `${prose(c.lineup_error)}.</div></div>`);
+  }
+  if (c.note)
+    notes.push(`<div class="note"><b>Note</b><div>${prose(c.note)}</div></div>`);
+  if (c.winner) {
+    notes.push(`<div class="note"><b>Winner</b><div><strong>${esc(c.winner.team)}</strong>`
+      + (c.winner.value != null ? ` — ${fmtRow(c.winner.value, c.unit, true)}` : "")
+      + (c.winner.source === "commissioner"
+          ? " · recorded by the commissioner, which beats anything computed here"
+          : " · computed from final stats")
+      + (c.winner.note ? ` · ${esc(c.winner.note)}` : "")
+      + `</div></div>`);
+  }
+  $("heroNotes").innerHTML = notes.join("");
+
+  leadCard($("leadProj"), c.projected, c.unit, false, c);
+  leadCard($("leadAct"), c.actual, c.unit, true, c);
+
+  const meta = [];
+  if (!L.assumed.length)
+    meta.push("Scored against the lineups people actually started");
+  else if (L.observed.length || L.manual.length)
+    meta.push(`${L.observed.length + L.manual.length} of ${DB.teams.length} `
+      + `teams on real lineups`);
+  const comp = c.completeness || {};
+  if (comp.scheduled)
+    meta.push(`${comp.have || 0} of ${comp.scheduled} NFL games in`);
+  if (comp.missing && comp.missing.length && comp.missing.length <= 4)
+    meta.push("still to play: " + comp.missing.join(", "));
+  $("heroMeta").textContent = meta.join(" · ");
+}
+
+/* ------------------------------------------------------------------- race */
+function renderRace(c) {
+  const el = $("race");
+  const unit = c.unit;
+  const proj = c.projected || [], act = c.actual || [];
+  const pById = {}, aById = {};
+  for (const r of proj) pById[r.slot] = r;
+  for (const r of act) aById[r.slot] = r;
+
+  // One shared scale across both series, so the two bars in a row are
+  // comparable and the two rows above and below are as well.
+  let max = 0;
+  for (const r of proj.concat(act)) max = Math.max(max, Math.abs(r.value));
+  if (!max) max = 1;
+
+  // Order by whichever series is authoritative: actual once it exists.
+  const primary = act.length ? act : proj;
+  const order = primary.map((r) => r.slot);
+  for (const r of proj) if (!order.includes(r.slot)) order.push(r.slot);
+
+  const med = (xs) => {
+    if (!xs.length) return null;
+    const s = xs.slice().sort((x, y) => x - y), h = s.length >> 1;
+    return s.length % 2 ? s[h] : (s[h - 1] + s[h]) / 2;
+  };
+  const median = med(primary.map((r) => r.value));
+
+  const barHead = act.length ? "Projected / actual"
+    : proj.length ? "Projected" : "Nothing to plot yet";
+  let html = `<div class="hd r">#</div><div class="hd">Team</div>`
+    + `<div class="hd">${barHead}</div>`
+    + `<div class="hd r">${unit === "pct" ? "Efficiency" : (UNIT[unit] || UNIT.pts).word}</div>`;
+
+  if (!order.length) {
+    el.innerHTML = html + `<div></div><div class="tm"><div class="nm">`
+      + `Nothing to rank yet.</div></div><div></div><div></div>`;
+    return;
+  }
+
+  order.forEach((slot, i) => {
+    const p = pById[slot], a = aById[slot];
+    const row = a || p;
+    const isWin = i === 0;
+    const partsOf = a || p;
+    const parts = (partsOf.parts || []).slice(0, 3).map((x) =>
+      `${x.name}${x.why ? " (" + x.why + ")" : ""} ${fmt(x.v, unit === "players" ? "pts" : unit)}`
+    ).join("  ·  ");
+    const w = (v) => Math.max(v > 0 ? 1.5 : 0, (Math.abs(v) / max) * 100).toFixed(1) + "%";
+    html += `<div class="row${isWin ? " win" : ""}">`
+      + `<div class="rk">${i + 1}</div>`
+      + `<div class="tm"><div class="nm">${esc(row.team)}</div>`
+      + (parts ? `<div class="parts">${esc(parts)}</div>` : "")
+      + `</div><div class="bars">`
+      + (median ? `<span class="med" style="left:${w(median)}"></span>` : "")
+      + (p ? `<div class="bar p${p.value ? "" : " zero"}"><i style="width:${w(p.value)}"></i></div>` : "")
+      + (a ? `<div class="bar a${a.value ? "" : " zero"}"><i style="width:${w(a.value)}"></i></div>` : "")
+      + `</div><div class="vals">`
+      + (p ? `<div class="p">${fmt(p.value, unit)}</div>`
+           : `<div class="none">—</div>`)
+      + (act.length
+          ? (a ? `<div class="a">${fmtRow(a.value, unit, true)}</div>`
+               : `<div class="none">—</div>`)
+          : "")
+      + `</div></div>`;
+  });
+  el.innerHTML = html;
+
+  $("raceLegend").innerHTML = (c.projected ? `<span><i class="p"></i>Projected</span>` : "")
+    + (act.length ? `<span><i class="a"></i>Actual</span>` : "")
+    + (median !== null
+        ? `<span><i style="background:none;border-left:1px dashed rgba(255,255,255,.45);`
+          + `width:1px;height:11px"></i>League median ${fmt(median, unit)}</span>`
+        : "")
+    + `<span style="color:var(--dimmer)">Bars start at zero, so a tight field `
+    + `looks tight. That is the field, not the chart.</span>`;
+
+  const notes = [];
+  const n = order.length;
+  if (n < DB.teams.length)
+    notes.push(`${n} of ${DB.teams.length} teams are eligible — `
+      + (c.losers_only ? "this one is only open to teams that lose."
+        : c.winners_only ? "this one is only open to teams that win."
+        : "the rest have nothing to score here."));
+  if (!act.length && c.status === "upcoming")
+    notes.push("Actual points appear here as the games are played.");
+  $("raceNote").textContent = notes.join(" ");
+}
+
+/* ------------------------------------------------------------ trophy case */
+function renderTrophy() {
+  const el = $("trophy");
+  const won = DB.standings.filter((t) => t.wins > 0);
+
+  // Twelve rows of "nothing yet, 0" in September is a table that says one
+  // sentence twelve times. Say the sentence.
+  if (!won.length) {
+    const next = DB.challenges.find((c) => !c.winner) || DB.challenges[0];
+    el.className = "";
+    el.innerHTML = `<div style="font-size:14px;color:var(--dim);line-height:1.6">`
+      + `<strong style="color:var(--ink)">Nothing settled yet.</strong> A week `
+      + `enters the case once every NFL game in it is final. First up is `
+      + `week ${next.week} — <em>${esc(next.name)}</em>.</div>`;
+    return;
+  }
+
+  el.className = "trophy";
+  // Scaled against the number of SETTLED weeks, not against the current
+  // leader. Three teams on one win each are not three teams at 100%.
+  const settled = Math.max(1, DB.challenges.filter((c) => c.winner).length);
+  let html = `<div class="hd">Team</div>`
+    + `<div class="hd">Weeks won · ${settled} settled so far</div>`
+    + `<div class="hd"></div>`;
+  for (const t of DB.standings) {
+    const chips = t.weeks.length
+      ? t.weeks.map((w) => {
+          const c = chal(w);
+          return `<span class="chip" title="${esc(c ? c.name : "")}">`
+            + `wk${w}${c ? " · " + esc(c.name) : ""}</span>`;
+        }).join("")
+      : `<span class="chip none">nothing yet</span>`;
+    html += `<div class="row"><div class="tm"><div class="nm">${esc(t.team)}</div></div>`
+      + `<div><div class="winbar"><i style="width:${(t.wins / settled * 100).toFixed(1)}%"></i></div>`
+      + `<div class="chips">${chips}</div></div>`
+      + `<div class="wins${t.wins ? "" : " z"}">${t.wins}</div></div>`;
+  }
+  el.innerHTML = html;
+}
+
+/* -------------------------------------------------------------- the slate */
+function renderSlate() {
+  const el = $("slate");
+  el.innerHTML = "";
+  for (const c of DB.challenges) {
+    const b = document.createElement("button");
+    b.className = "card" + (c.week === WEEK ? " on" : "");
+    const flags = [];
+    if (c.week === DB.current_week)
+      flags.push(`<span class="tag live">${c.status === "live" ? "Live" : "This week"}</span>`);
+    const assumed = (c.lineups ? c.lineups.assumed : c.assumed_lineups) || [];
+    if (c.needs_lineups && assumed.length)
+      flags.push('<span class="tag assumed">Needs real lineups</span>');
+    else if (!assumed.length)
+      flags.push('<span class="tag set">Real lineups</span>');
+    if (c.projectable === false) flags.push('<span class="tag">No projection</span>');
+    if (c.direction === "min") flags.push('<span class="tag min">Lowest wins</span>');
+    const w = c.winner
+      ? `<span class="w-name">🏆 ${esc(c.winner.team)}</span>`
+      : (c.projected && c.projected.length
+          ? `projected: ${esc(c.projected[0].team)}`
+          : c.actual && c.actual.length
+            ? `leading: ${esc(c.actual[0].team)}`
+            : "settles after the games");
+    b.innerHTML = `<div class="top"><span class="w">${c.week < 10 ? "0" : ""}${c.week}</span>`
+      + `<h3>${esc(c.name)}</h3></div><p>${prose(c.rule)}</p>`
+      + `<div class="foot">${flags.join("")}${w}</div>`;
+    b.onclick = () => { select(c.week); window.scrollTo({top: 0, behavior: "smooth"}); };
+    el.appendChild(b);
+  }
+}
+
+/* ------------------------------------------------------------------ stale */
+/* "The file is old" is the weak version of this question, and on its own it
+   is wrong twice: a settled season stays correct forever, and a snapshot built
+   on Tuesday is fine until Thursday night. The real question is whether NFL
+   games have been played since the build. The week dates ship in the snapshot
+   so the page can answer it rather than guess from an age. */
+function staleness(db) {
+  const built = new Date(String(db.built_at).replace(" ", "T"));
+  if (isNaN(built)) return null;
+  const days = (Date.now() - built.getTime()) / 86400000;
+  const today = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 10);
+  const builtDay = new Date(built.getTime() - built.getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 10);
+
+  // A finished season is not stale, it is finished.
+  if (db.challenges.length && db.challenges.every((c) => c.winner)) return null;
+
+  const dates = db.week_dates || {};
+  // Every week whose games have finished since this file was built. Those are
+  // exactly the results the page cannot be showing.
+  const missed = Object.keys(dates)
+    .map(Number).sort((a, b) => a - b)
+    .filter((w) => dates[w][1] < today && dates[w][1] >= builtDay);
+  if (missed.length) {
+    const w = missed[missed.length - 1];
+    return {bad: missed.length > 1,
+      text: `Week ${missed.length > 1 ? missed[0] + "–" + w : w} `
+        + `${missed.length > 1 ? "have" : "has"} finished since this page was `
+        + `built. Results below are out of date until it is rebuilt.`};
+  }
+  // Nothing has finished, but a week may be under way with the file predating
+  // its first kickoff -- live scores on screen would be from before the games.
+  const live = Object.keys(dates).map(Number)
+    .find((w) => dates[w][0] <= today && dates[w][1] >= today);
+  if (live && dates[live][0] > builtDay) {
+    return {bad: false,
+      text: `Week ${live} is under way and this page was built before it `
+        + `started, so nothing below reflects today's games.`};
+  }
+  if (days > 8) {
+    return {bad: true,
+      text: `This page has not been rebuilt in ${Math.floor(days)} days.`};
+  }
+  return null;
+}
+
+function renderStale(db) {
+  const el = $("stale"), s = staleness(db);
+  el.className = s ? (s.bad ? "on bad" : "on") : "";
+  el.innerHTML = s
+    ? `<b>Out of date</b><span class="what">${esc(s.text)} `
+      + `Snapshot ${esc(String(db.built_at).replace("T", " "))}.</span>`
+    : "";
+}
+
+/* ------------------------------------------------------------------ shell */
+function select(week) {
+  WEEK = week;
+  const c = chal(week);
+  if (!c) return;
+  renderStrip();
+  renderHero(c);
+  renderRace(c);
+  renderSlate();
+  history.replaceState(null, "", "#week-" + week);
+  document.title = `Week ${week}: ${c.name} — The League`;
+}
+
+function boot(db) {
+  DB = db;
+  const cur = db.current_week;
+  const hash = (location.hash.match(/week-(\d+)/) || [])[1];
+  WEEK = hash ? Number(hash) : cur;
+  if (!chal(WEEK)) WEEK = cur;
+
+  $("season").innerHTML = `<span class="dot"></span><span>${db.season} season</span>`;
+  const live = db.challenges.some((c) => c.status === "live");
+  const nowEl = $("now");
+  nowEl.className = "status" + (live ? " live" : "");
+  nowEl.innerHTML = `<span class="dot"></span><span>Week ${cur} `
+    + `${live ? "in play" : "up next"}</span>`;
+  $("built").textContent = "built " + String(db.built_at).replace("T", " ");
+
+  $("caveats").innerHTML = db.caveats.map((c) =>
+    `<li><span class="lv ${c.level}">${esc(c.level)}</span><span>${prose(c.text)}</span></li>`
+  ).join("");
+  $("foot").textContent =
+    `One file, no server: this page reads data/challenges.json, rebuilt after `
+    + `each week's games. Everything is scored in this league's own rules. `
+    + `Snapshot ${String(db.built_at).replace("T", " ")}.`;
+
+  renderStale(db);
+  renderTrophy();
+  select(WEEK);
+  $("main").hidden = false;
+
+  // A tab left open across a Sunday is the exact case this exists for.
+  setInterval(() => renderStale(db), 15 * 60 * 1000);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const weeks = db.challenges.map((c) => c.week);
+    const i = weeks.indexOf(WEEK);
+    if (e.key === "ArrowLeft" && i > 0) { select(weeks[i - 1]); e.preventDefault(); }
+    if (e.key === "ArrowRight" && i < weeks.length - 1) { select(weeks[i + 1]); e.preventDefault(); }
+  });
+}
+
+fetch("data/challenges.json", {cache: "no-store"})
+  .then((r) => { if (!r.ok) throw new Error(r.status + " " + r.statusText); return r.json(); })
+  .then(boot)
+  .catch((e) => {
+    document.body.insertAdjacentHTML("beforeend",
+      `<div class="err"><strong>No snapshot.</strong><br>`
+      + `data/challenges.json could not be loaded (${esc(e.message)}).<br><br>`
+      + `The snapshot is missing from this deployment. Rebuild and redeploy, `
+      + `then reload.</div>`);
+  });
+</script>
+</body>
+</html>
