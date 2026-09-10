@@ -191,14 +191,6 @@ main{padding:28px 26px 90px;max-width:1320px}
   font-family:var(--sans)}
 .lead.empty .fig{color:var(--dimmer);font-size:22px}
 
-.note{display:flex;gap:9px;margin-top:14px;padding:11px 13px;border-radius:var(--r);
-  background:var(--sunk);border:1px solid var(--line);font-size:12.5px;
-  color:var(--dim);line-height:1.5}
-.note b{color:var(--ink);font-weight:600;font-size:9.5px;letter-spacing:.14em;
-  text-transform:uppercase;flex:none;padding-top:2px}
-.note.warn{border-color:rgba(229,106,88,.28);background:rgba(229,106,88,.06)}
-.note.warn b{color:#FFC3B9}
-
 /* ------------------------------------------------------------- the race */
 /* One row per team, two bars on one shared scale. The projected bar is the
    model's claim and the actual bar is the world's answer; putting them on
@@ -293,14 +285,6 @@ main{padding:28px 26px 90px;max-width:1320px}
   flex-wrap:wrap;font-size:10.5px;font-family:var(--mono);color:var(--dimmer)}
 .card .foot .w-name{color:var(--gold)}
 
-/* ------------------------------------------------------------- caveats */
-.caveats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
-  gap:11px}
-.caveats li{display:flex;gap:11px;font-size:12.5px;color:var(--dim);
-  line-height:1.55}
-.caveats .lv{font-size:9px;letter-spacing:.14em;text-transform:uppercase;
-  font-weight:600;flex:none;width:44px;padding-top:3px;color:var(--dimmer)}
-.caveats .lv.warn{color:#FFC3B9}
 footer{padding:0 26px 60px;max-width:1320px;font-size:11.5px;color:var(--dimmer);
   font-family:var(--mono)}
 .err{margin:60px 26px;padding:20px 22px;border:1px solid rgba(229,106,88,.4);
@@ -331,7 +315,6 @@ footer{padding:0 26px 60px;max-width:1320px;font-size:11.5px;color:var(--dimmer)
         <div class="kicker" id="heroKick"></div>
         <h1 id="heroName">—</h1>
         <p class="rulez" id="heroRule"></p>
-        <div id="heroNotes"></div>
       </div>
       <div>
         <div class="leads">
@@ -360,10 +343,6 @@ footer{padding:0 26px 60px;max-width:1320px;font-size:11.5px;color:var(--dimmer)
     <div class="slate" id="slate"></div>
   </section>
 
-  <div class="eyebrow"><span class="n">04</span><h2>Read this beside the numbers</h2><span class="rule"></span></div>
-  <section class="panel">
-    <ul class="caveats" id="caveats"></ul>
-  </section>
 </main>
 
 <footer id="foot"></footer>
@@ -451,8 +430,11 @@ function leadCard(el, rows, unit, isActual, c) {
        : c.status === "final" ? "Actual — final" : "Actual — winning now"}</div>`
     + `<div class="who">${esc(w.team)}</div>`
     + `<div class="fig">${fmtRow(w.value, unit, isActual)}</div>`
+    // A gap of 0.004 formats as "0", and "0 ahead of" is not a sentence.
+    // Tied at the precision shown IS tied as far as the page is concerned.
     + (gap !== null
-        ? `<div class="gap">${gap ? fmt(gap, unit) + " ahead of " : "tied with "}`
+        ? `<div class="gap">${fmt(gap, unit) === fmt(0, unit)
+             ? "tied with " : fmt(gap, unit) + " ahead of "}`
           + `${esc(second.team)}</div>`
         : "")
     + (parts ? `<div class="sub">${parts}</div>` : "");
@@ -475,49 +457,7 @@ function renderHero(c) {
   $("heroName").textContent = c.name;
   $("heroRule").innerHTML = prose(c.rule);
 
-  const notes = [];
-  if (L.assumed.length) {
-    const n = L.assumed.length, all = n === DB.teams.length;
-    notes.push(`<div class="note ${c.needs_lineups ? "warn" : ""}"><b>Assumed</b><div>`
-      + `There is no record of who was actually started this week, so `
-      + (all ? "every team here is"
-             : n === 1 ? `one team (${esc(L.assumed[0])}) is`
-             : `${n} of the ${DB.teams.length} teams are`)
-      + ` scored against their <em>optimal</em> lineup instead.`
-      + (c.needs_lineups
-          ? " This challenge turns on the starter/bench split, so treat the"
-            + " order below as a placeholder until the real lineups land."
-          : " For this challenge the difference is usually small.")
-      + `</div></div>`);
-  }
-  if (c.roster_mismatch && c.roster_mismatch.length) {
-    notes.push(`<div class="note warn"><b>Check</b><div>`
-      + `The lineups and this league's own roster records disagree — almost `
-      + `always a trade or a pickup nobody wrote down. Scored as started, and `
-      + `flagged rather than patched over:<br>`
-      + c.roster_mismatch.slice(0, 4).map(esc).join("<br>")
-      + (c.roster_mismatch.length > 4
-          ? `<br>…and ${c.roster_mismatch.length - 4} more` : "")
-      + `</div></div>`);
-  }
-  if (c.lineup_error) {
-    notes.push(`<div class="note warn"><b>Fell back</b><div>`
-      + `This week's record of who was started was not used, so the numbers `
-      + `below are built on the optimal lineup instead — `
-      + `${prose(c.lineup_error)}.</div></div>`);
-  }
-  if (c.note)
-    notes.push(`<div class="note"><b>Note</b><div>${prose(c.note)}</div></div>`);
-  if (c.winner) {
-    notes.push(`<div class="note"><b>Winner</b><div><strong>${esc(c.winner.team)}</strong>`
-      + (c.winner.value != null ? ` — ${fmtRow(c.winner.value, c.unit, true)}` : "")
-      + (c.winner.source === "commissioner"
-          ? " · recorded by the commissioner, which beats anything computed here"
-          : " · computed from final stats")
-      + (c.winner.note ? ` · ${esc(c.winner.note)}` : "")
-      + `</div></div>`);
-  }
-  $("heroNotes").innerHTML = notes.join("");
+
 
   leadCard($("leadProj"), c.projected, c.unit, false, c);
   leadCard($("leadAct"), c.actual, c.unit, true, c);
@@ -609,8 +549,7 @@ function renderRace(c) {
         ? `<span><i style="background:none;border-left:1px dashed rgba(255,255,255,.45);`
           + `width:1px;height:11px"></i>League median ${fmt(median, unit)}</span>`
         : "")
-    + `<span style="color:var(--dimmer)">Bars start at zero, so a tight field `
-    + `looks tight. That is the field, not the chart.</span>`;
+    ;
 
   const notes = [];
   const n = order.length;
@@ -780,12 +719,9 @@ function boot(db) {
     + `${live ? "in play" : "up next"}</span>`;
   $("built").textContent = "built " + String(db.built_at).replace("T", " ");
 
-  $("caveats").innerHTML = db.caveats.map((c) =>
-    `<li><span class="lv ${c.level}">${esc(c.level)}</span><span>${prose(c.text)}</span></li>`
-  ).join("");
   $("foot").textContent =
-    `One file, no server: this page reads data/challenges.json, rebuilt after `
-    + `each week's games. Everything is scored in this league's own rules. `
+    `One file, no server: this page reads data/challenges.json, rebuilt as `
+    + `rosters and results change. Everything is scored in this league's own rules. `
     + `Snapshot ${String(db.built_at).replace("T", " ")}.`;
 
   renderStale(db);

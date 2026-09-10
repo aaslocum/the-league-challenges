@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-09T22:12:47",
+ "built_at": "2026-09-09T22:18:30",
  "season": 2026,
  "current_week": 1,
  "teams": [
@@ -120,7 +120,6 @@
    "rule": "Most 40+ yard plays by your starters -- completions, runs and catches all count.",
    "unit": "plays",
    "direction": "max",
-   "note": "Actual counts are read straight from the box score. The projection multiplies each player's volume by his own measured rate of going 40+, because the feed's 40+ reception number is a placeholder -- exactly a tenth of receptions, for every receiver alive.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -719,7 +718,6 @@
    "rule": "Most combined receptions by your starting lineup.",
    "unit": "catches",
    "direction": "max",
-   "note": "Full PPR, so this is close to a points race -- but it pays volume over efficiency, which is a different team.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -1331,7 +1329,6 @@
    "rule": "Fewest points handed back by your starters.",
    "unit": "pts",
    "direction": "min",
-   "note": "Interceptions cost 3 here rather than Yahoo's 1, a pick six costs 6, a lost fumble 2, and a missed field goal 1 or 2 by distance. Nothing under 50 yards is free. The projected column runs slightly light: Sleeper projects missed field goals only from 30-49 yards, so shorter misses appear in the actual column and in no forecast.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -1943,7 +1940,6 @@
    "rule": "Most combined kick and punt return yards by your starters, D/ST included.",
    "unit": "yds",
    "direction": "max",
-   "note": "This league pays 1 point per 20 return yards, for offensive players AND defenses. Almost no other league scores it at all, which is why this is a category worth a week.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -2335,7 +2331,6 @@
    "rule": "Best score from a starter you drafted in round 10 or later, or never drafted at all.",
    "unit": "pts",
    "direction": "max",
-   "note": "Keepers count at the round they cost. A waiver pickup has no round, so he counts as undrafted and is always eligible.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -2732,7 +2727,6 @@
    "rule": "Most combined interceptions and fumble recoveries by your starting D/ST.",
    "unit": "takeaways",
    "direction": "max",
-   "note": "Counted as events, not points, so a defense that takes the ball away three times beats one that got there on sacks.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -3032,7 +3026,6 @@
    "rule": "Score the most points and still lose your matchup.",
    "unit": "pts",
    "direction": "max",
-   "note": "Only teams that LOSE are eligible. Winners are excluded rather than ranked last.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -3260,7 +3253,6 @@
    "rule": "Most rushing yards from your starting quarterback.",
    "unit": "yds",
    "direction": "max",
-   "note": "A passing touchdown is worth 4 here and an interception -3, so the quarterbacks this league actually pays for are the ones who run. This is that, undiluted.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -3572,7 +3564,6 @@
    "rule": "Own the most starters who finish under five points.",
    "unit": "players",
    "direction": "max",
-   "note": "Lands in the thick of the byes on purpose.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -3812,7 +3803,6 @@
    "rule": "Most fantasy points from your starting kicker.",
    "unit": "pts",
    "direction": "max",
-   "note": "Makes over 50 are worth 5 and a miss from there is free, so the winner is usually whoever's kicker plays outdoors in a bad offense.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -4112,7 +4102,6 @@
    "rule": "Take the largest share of your total from a single starter.",
    "unit": "pct",
    "direction": "max",
-   "note": "A team can win this by having one enormous week or by having nine terrible ones. Both count.",
    "projectable": true,
    "needs_lineups": false,
    "status": "upcoming",
@@ -4486,7 +4475,6 @@
    "direction": "max",
    "projectable": false,
    "needs_lineups": true,
-   "note": "There is nothing to project: the projected beat of a projection is zero for everybody, so this one has no projected column at all.",
    "status": "upcoming",
    "completeness": {
     "season": 2026,
@@ -4629,7 +4617,6 @@
    "direction": "max",
    "projectable": false,
    "needs_lineups": true,
-   "note": "No luck in it at all: it scores only the decisions, against the roster you had.",
    "status": "upcoming",
    "completeness": {
     "season": 2026,
@@ -4772,7 +4759,6 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "note": null,
    "status": "upcoming",
    "completeness": {
     "season": 2026,
@@ -5604,24 +5590,6 @@
     }
    ],
    "winner": null
-  }
- ],
- "caveats": [
-  {
-   "level": "warn",
-   "text": "13 of the 14 weeks have no record of who anybody actually started, so they are scored against each team's OPTIMAL lineup and labelled ASSUMED. 2 of those measure the starter/bench split itself and are placeholders until the real lineups land."
-  },
-  {
-   "level": "warn",
-   "text": "A lineup record for week 3 was refused or would not load, so that week fell back to the assumed lineup. The reason is on the week's own card. A refused record is the system working: a capture that cannot prove which week it describes is worse than none."
-  },
-  {
-   "level": "warn",
-   "text": "A projected winner is an expected value, not a forecast of the winner. Expected 40+ plays of 1.4 does not mean one happens; read the projected column as who is best positioned, not who will win."
-  },
-  {
-   "level": "info",
-   "text": "Everything is scored in this league's own rules -- full PPR, return yards at 1 per 20, -3 interceptions, the 40+ bonus ladder, raised DST tiers -- not in Yahoo's defaults and not in any site's standard scoring. These numbers will not match other sites, and that is the point."
   }
  ],
  "standings": [

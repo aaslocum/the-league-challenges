@@ -4,7 +4,7 @@ One side-challenge a week, on top of the normal matchup. This is the page that
 tracks them: which one is live, who is projected to take it, who is actually
 taking it right now, and who has already won one.
 
-**[challenges-mauve.vercel.app](https://challenges-mauve.vercel.app)**
+**[the-league-challenges.vercel.app](https://the-league-challenges.vercel.app)**
 
 ## The slate
 
