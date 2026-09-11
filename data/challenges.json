@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-10T21:41:32",
+ "built_at": "2026-09-10T23:18:08",
  "season": 2026,
  "current_week": 1,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-09-10T21:41:24",
+ "changes_through": "2026-09-10T21:41:36",
  "challenges": [
   {
    "week": 1,
@@ -168,6 +168,7 @@
    "assumed_lineups": [],
    "roster_mismatch": [
     "Always the McBridesmaid: Davante Adams is on this roster in the ledger but not on Yahoo's",
+    "Sonic n' Knuckles: De'Zhaun Stribling is on this roster in the ledger but not on Yahoo's",
     "The Brockness Monster: Jaxson Dart was started but is not on this roster in the ledger",
     "The Brockness Monster: DEN DEF is on this roster in the ledger but not on Yahoo's"
    ],
