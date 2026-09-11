@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-10T11:58:37",
+ "built_at": "2026-09-10T21:41:32",
  "season": 2026,
  "current_week": 1,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-09-10T11:58:32",
+ "changes_through": "2026-09-10T21:41:24",
  "challenges": [
   {
    "week": 1,
@@ -167,6 +167,7 @@
    },
    "assumed_lineups": [],
    "roster_mismatch": [
+    "Always the McBridesmaid: Davante Adams is on this roster in the ledger but not on Yahoo's",
     "The Brockness Monster: Jaxson Dart was started but is not on this roster in the ledger",
     "The Brockness Monster: DEN DEF is on this roster in the ledger but not on Yahoo's"
    ],
@@ -224,7 +225,7 @@
       {
        "name": "De'Von Achane",
        "pos": "RB",
-       "v": 0.24
+       "v": 0.25
       },
       {
        "name": "Derrick Henry",
@@ -290,14 +291,53 @@
      "rank": 3
     },
     {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 1.34,
+     "parts": [
+      {
+       "name": "Caleb Williams",
+       "pos": "QB",
+       "v": 0.45
+      },
+      {
+       "name": "Jameson Williams",
+       "pos": "WR",
+       "v": 0.22
+      },
+      {
+       "name": "Justin Jefferson",
+       "pos": "WR",
+       "v": 0.2
+      },
+      {
+       "name": "James Cook",
+       "pos": "RB",
+       "v": 0.19
+      },
+      {
+       "name": "Drake London",
+       "pos": "WR",
+       "v": 0.13
+      },
+      {
+       "name": "D'Andre Swift",
+       "pos": "RB",
+       "v": 0.08
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
      "slot": 9,
      "team": "Bronny James",
-     "value": 1.37,
+     "value": 1.34,
      "parts": [
       {
        "name": "Josh Allen",
        "pos": "QB",
-       "v": 0.49
+       "v": 0.47
       },
       {
        "name": "Zay Flowers",
@@ -315,53 +355,14 @@
        "v": 0.12
       },
       {
-       "name": "DJ Moore",
-       "pos": "WR",
-       "v": 0.11
-      },
-      {
        "name": "J.K. Dobbins",
        "pos": "RB",
        "v": 0.11
-      }
-     ],
-     "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 1.34,
-     "parts": [
-      {
-       "name": "Caleb Williams",
-       "pos": "QB",
-       "v": 0.46
       },
       {
-       "name": "Jameson Williams",
+       "name": "DJ Moore",
        "pos": "WR",
-       "v": 0.22
-      },
-      {
-       "name": "Justin Jefferson",
-       "pos": "WR",
-       "v": 0.2
-      },
-      {
-       "name": "James Cook",
-       "pos": "RB",
-       "v": 0.18
-      },
-      {
-       "name": "Drake London",
-       "pos": "WR",
-       "v": 0.13
-      },
-      {
-       "name": "D'Andre Swift",
-       "pos": "RB",
-       "v": 0.08
+       "v": 0.1
       }
      ],
      "source": "observed",
@@ -485,45 +486,6 @@
      "rank": 8
     },
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 1.23,
-     "parts": [
-      {
-       "name": "Jalen Hurts",
-       "pos": "QB",
-       "v": 0.49
-      },
-      {
-       "name": "Jayden Reed",
-       "pos": "WR",
-       "v": 0.18
-      },
-      {
-       "name": "Breece Hall",
-       "pos": "RB",
-       "v": 0.15
-      },
-      {
-       "name": "Rashee Rice",
-       "pos": "WR",
-       "v": 0.15
-      },
-      {
-       "name": "Bijan Robinson",
-       "pos": "RB",
-       "v": 0.13
-      },
-      {
-       "name": "Davante Adams",
-       "pos": "WR",
-       "v": 0.11
-      }
-     ],
-     "source": "observed",
-     "rank": 9
-    },
-    {
      "slot": 10,
      "team": "Trade the team away",
      "value": 1.23,
@@ -560,12 +522,12 @@
       }
      ],
      "source": "observed",
-     "rank": 10
+     "rank": 9
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 1.17,
+     "value": 1.2,
      "parts": [
       {
        "name": "Dak Prescott",
@@ -575,7 +537,7 @@
       {
        "name": "Jordan Addison",
        "pos": "WR",
-       "v": 0.16
+       "v": 0.17
       },
       {
        "name": "Christian McCaffrey",
@@ -585,7 +547,7 @@
       {
        "name": "Ashton Jeanty",
        "pos": "RB",
-       "v": 0.13
+       "v": 0.15
       },
       {
        "name": "Emeka Egbuka",
@@ -596,6 +558,45 @@
        "name": "Parker Washington",
        "pos": "WR",
        "v": 0.11
+      }
+     ],
+     "source": "observed",
+     "rank": 10
+    },
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 1.13,
+     "parts": [
+      {
+       "name": "Jalen Hurts",
+       "pos": "QB",
+       "v": 0.5
+      },
+      {
+       "name": "Jayden Reed",
+       "pos": "WR",
+       "v": 0.17
+      },
+      {
+       "name": "Rashee Rice",
+       "pos": "WR",
+       "v": 0.16
+      },
+      {
+       "name": "Breece Hall",
+       "pos": "RB",
+       "v": 0.15
+      },
+      {
+       "name": "Bijan Robinson",
+       "pos": "RB",
+       "v": 0.13
+      },
+      {
+       "name": "Trey McBride",
+       "pos": "TE",
+       "v": 0.02
       }
      ],
      "source": "observed",
@@ -749,84 +750,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 142.39,
+     "proj": 126.9,
      "act": 0.0,
      "opp": 12
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 121.35,
+     "proj": 122.86,
      "act": 0.0,
      "opp": 11
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 140.22,
+     "proj": 140.06,
      "act": 0.0,
      "opp": 8
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 132.8,
+     "proj": 132.92,
      "act": 5.0,
      "opp": 6
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 138.06,
+     "proj": 136.95,
      "act": 13.0,
      "opp": 9
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 142.52,
+     "proj": 141.46,
      "act": 48.0,
      "opp": 4
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 129.68,
+     "proj": 129.84,
      "act": 0.0,
      "opp": 10
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 137.7,
+     "proj": 138.57,
      "act": 7.0,
      "opp": 3
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 120.9,
+     "proj": 120.49,
      "act": 0.0,
      "opp": 5
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 125.84,
+     "proj": 125.38,
      "act": 0.0,
      "opp": 7
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 140.36,
+     "proj": 140.68,
      "act": 6.0,
      "opp": 2
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 133.44,
+     "proj": 133.05,
      "act": 19.0,
      "opp": 1
     }
