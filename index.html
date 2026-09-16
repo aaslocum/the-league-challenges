@@ -222,7 +222,7 @@ main{padding:28px 26px 90px;max-width:1320px}
 .tm .nm{font-size:13.5px;font-weight:500;letter-spacing:-.005em;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tm .parts{font-family:var(--mono);font-size:10.5px;color:var(--dimmer);
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+  line-height:1.45;margin-top:2px}
 .bars{display:flex;flex-direction:column;gap:3px;min-width:0;position:relative}
 /* Twelve teams inside a 3.3-4.4 range make twelve nearly-identical bars, and
    the honest fix is NOT to truncate the baseline -- it is to label the middle
@@ -422,7 +422,9 @@ function leadCard(el, rows, unit, isActual, c) {
   el.classList.remove("empty");
   const w = rows[0], second = rows[1];
   const gap = second ? Math.abs(w.value - second.value) : null;
-  const parts = (w.parts || []).slice(0, 3)
+  // Every contributor, not the top three: the number above is their sum,
+  // and a "7" over three names adding to five reads as a mistake.
+  const parts = (w.parts || [])
     .map((p) => `${esc(p.name)} ${fmt(p.v, unit === "players" ? "pts" : unit)}`)
     .join(" · ");
   el.innerHTML =
@@ -520,7 +522,7 @@ function renderRace(c) {
     const row = a || p;
     const isWin = i === 0;
     const partsOf = a || p;
-    const parts = (partsOf.parts || []).slice(0, 3).map((x) =>
+    const parts = (partsOf.parts || []).map((x) =>
       `${x.name}${x.why ? " (" + x.why + ")" : ""} ${fmt(x.v, unit === "players" ? "pts" : unit)}`
     ).join("  ·  ");
     const w = (v) => Math.max(v > 0 ? 1.5 : 0, (Math.abs(v) / max) * 100).toFixed(1) + "%";
