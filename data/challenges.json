@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-15T20:39:50",
+ "built_at": "2026-09-15T23:20:19",
  "season": 2026,
  "current_week": 2,
  "teams": [
@@ -967,14 +967,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "One Mo Time For Igoe: Michael Mayer was started but is not on this roster in the ledger",
-    "One Mo Time For Igoe: Jonathon Brooks is on this roster in the ledger but not on Yahoo's",
-    "Sonic n' Knuckles: De'Zhaun Stribling is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Jonah Coleman is on this roster in the ledger but not on Yahoo's",
-    "The Brockness Monster: Jaxson Dart was started but is not on this roster in the ledger",
-    "The Brockness Monster: DEN DEF is on this roster in the ledger but not on Yahoo's"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -1451,14 +1444,14 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 132.89,
+     "proj": 132.79,
      "act": null,
      "opp": 10
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 122.29,
+     "proj": 122.09,
      "act": null,
      "opp": 8
     },
@@ -1472,7 +1465,7 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 124.67,
+     "proj": 124.55,
      "act": null,
      "opp": 12
     },
@@ -1486,42 +1479,42 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 135.05,
+     "proj": 135.1,
      "act": null,
      "opp": 11
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 129.36,
+     "proj": 129.2,
      "act": null,
      "opp": 9
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 134.57,
+     "proj": 134.69,
      "act": null,
      "opp": 2
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 124.66,
+     "proj": 124.67,
      "act": null,
      "opp": 7
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 127.83,
+     "proj": 127.95,
      "act": null,
      "opp": 1
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 128.17,
+     "proj": 127.92,
      "act": null,
      "opp": 6
     },
