@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-16T20:18:11",
+ "built_at": "2026-09-17T17:18:06",
  "season": 2026,
  "current_week": 2,
  "teams": [
@@ -971,6 +971,45 @@
    "lineup_error": null,
    "projected": [
     {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 29.71,
+     "parts": [
+      {
+       "name": "Trey McBride",
+       "pos": "TE",
+       "v": 6.71
+      },
+      {
+       "name": "Rashee Rice",
+       "pos": "WR",
+       "v": 5.35
+      },
+      {
+       "name": "Bijan Robinson",
+       "pos": "RB",
+       "v": 4.12
+      },
+      {
+       "name": "Jayden Reed",
+       "pos": "WR",
+       "v": 3.81
+      },
+      {
+       "name": "Davante Adams",
+       "pos": "WR",
+       "v": 3.79
+      },
+      {
+       "name": "Carnell Tate",
+       "pos": "WR",
+       "v": 3.11
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
      "slot": 6,
      "team": "Papa's playmakers",
      "value": 29.61,
@@ -1007,51 +1046,12 @@
       }
      ],
      "source": "observed",
-     "rank": 1
-    },
-    {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 29.48,
-     "parts": [
-      {
-       "name": "Trey McBride",
-       "pos": "TE",
-       "v": 6.71
-      },
-      {
-       "name": "Rashee Rice",
-       "pos": "WR",
-       "v": 5.12
-      },
-      {
-       "name": "Bijan Robinson",
-       "pos": "RB",
-       "v": 4.12
-      },
-      {
-       "name": "Jayden Reed",
-       "pos": "WR",
-       "v": 3.81
-      },
-      {
-       "name": "Davante Adams",
-       "pos": "WR",
-       "v": 3.79
-      },
-      {
-       "name": "Carnell Tate",
-       "pos": "WR",
-       "v": 3.11
-      }
-     ],
-     "source": "observed",
      "rank": 2
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 27.13,
+     "value": 27.29,
      "parts": [
       {
        "name": "Puka Nacua",
@@ -1061,7 +1061,7 @@
       {
        "name": "Ja'Marr Chase",
        "pos": "WR",
-       "v": 5.9
+       "v": 6.06
       },
       {
        "name": "Dallas Goedert",
@@ -1168,7 +1168,7 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 26.63,
+     "value": 26.82,
      "parts": [
       {
        "name": "George Pickens",
@@ -1178,7 +1178,7 @@
       {
        "name": "Stefon Diggs",
        "pos": "WR",
-       "v": 4.54
+       "v": 4.73
       },
       {
        "name": "Tee Higgins",
@@ -1444,7 +1444,7 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 132.83,
+     "proj": 133.11,
      "act": null,
      "opp": 10
     },
@@ -1458,14 +1458,14 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 140.98,
+     "proj": 141.23,
      "act": null,
      "opp": 5
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 123.41,
+     "proj": 123.63,
      "act": null,
      "opp": 12
     },
@@ -1479,7 +1479,7 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 134.5,
+     "proj": 134.44,
      "act": null,
      "opp": 11
     },
@@ -1493,7 +1493,7 @@
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 133.21,
+     "proj": 133.27,
      "act": null,
      "opp": 2
     },
@@ -1521,7 +1521,7 @@
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 118.01,
+     "proj": 119.25,
      "act": null,
      "opp": 4
     }
