@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-17T20:20:16",
+ "built_at": "2026-09-17T20:21:34",
  "season": 2026,
  "current_week": 2,
  "teams": [
@@ -966,29 +966,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "Sonic n' Knuckles: Dontayvion Wicks was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: DeMario Douglas was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Kayshon Boutte is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Jordan Love was started but is not on this roster in the ledger",
-    "Papa's playmakers: Jonathon Brooks was started but is not on this roster in the ledger",
-    "Papa's playmakers: Malik Washington was started but is not on this roster in the ledger",
-    "Papa's playmakers: Chris Rodriguez is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Keenan Allen is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Tank Bigsby is on this roster in the ledger but not on Yahoo's",
-    "The Brockness Monster: Buccaneers was started but is not on this roster in the ledger",
-    "The Brockness Monster: JAX DEF is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Kaelon Black was started but is not on this roster in the ledger",
-    "Likely Cooked: Rachaad White is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Tyler Bass was started but is not on this roster in the ledger",
-    "Bronny James: 49ers was started but is not on this roster in the ledger",
-    "Bronny James: Bo Nix is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Wil Lutz is on this roster in the ledger but not on Yahoo's",
-    "Trade the team away: Devaughn Vele was started but is not on this roster in the ledger",
-    "Trade the team away: Jordan Mason is on this roster in the ledger but not on Yahoo's",
-    "Mr. Flapjack: Deebo Samuel Sr. was started but is not on this roster in the ledger",
-    "Mr. Flapjack: Xavier Worthy is on this roster in the ledger but not on Yahoo's"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
