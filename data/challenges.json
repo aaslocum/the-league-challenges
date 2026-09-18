@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-17T20:20:13",
+ "built_at": "2026-09-17T20:20:16",
  "season": 2026,
  "current_week": 2,
  "teams": [
@@ -922,14 +922,13 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "upcoming",
+   "status": "live",
    "completeness": {
     "season": 2026,
     "week": 2,
-    "have": 0,
+    "have": 1,
     "scheduled": 16,
     "missing": [
-     "DET@BUF",
      "CAR@ATL",
      "NO@BAL",
      "MIN@CHI",
@@ -1461,90 +1460,187 @@
      "rank": 12
     }
    ],
-   "actual": null,
+   "actual": [
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 2
+    },
+    {
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 3
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 5
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 6
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 7
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 8
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 9
+    },
+    {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 10
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 11
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 12
+    }
+   ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 136.96,
-     "act": null,
+     "act": 0.0,
      "opp": 10
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "proj": 133.27,
-     "act": null,
+     "act": 0.0,
      "opp": 8
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "proj": 141.23,
-     "act": null,
+     "act": 0.0,
      "opp": 5
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
      "proj": 123.63,
-     "act": null,
+     "act": 0.0,
      "opp": 12
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
      "proj": 141.43,
-     "act": null,
+     "act": 0.0,
      "opp": 3
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
      "proj": 137.06,
-     "act": null,
+     "act": 0.0,
      "opp": 11
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 136.61,
-     "act": null,
+     "act": 0.0,
      "opp": 9
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
      "proj": 133.94,
-     "act": null,
+     "act": 1.0,
      "opp": 2
     },
     {
      "slot": 9,
      "team": "Bronny James",
      "proj": 133.24,
-     "act": null,
+     "act": 0.0,
      "opp": 7
     },
     {
      "slot": 10,
      "team": "Trade the team away",
      "proj": 123.83,
-     "act": null,
+     "act": 0.0,
      "opp": 1
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
      "proj": 129.11,
-     "act": null,
+     "act": 0.0,
      "opp": 6
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
      "proj": 122.97,
-     "act": null,
+     "act": 0.0,
      "opp": 4
     }
    ],
