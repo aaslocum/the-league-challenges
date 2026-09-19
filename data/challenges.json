@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-09-19T15:07:27",
+ "built_at": "2026-09-19T17:18:07",
  "season": 2026,
  "current_week": 2,
  "teams": [
@@ -966,9 +966,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "Papa's playmakers: Xavier Worthy was started but is not on this roster in the ledger"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -1128,6 +1126,45 @@
      "rank": 4
     },
     {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 27.14,
+     "parts": [
+      {
+       "name": "Chris Olave",
+       "pos": "WR",
+       "v": 5.87
+      },
+      {
+       "name": "Tetairoa McMillan",
+       "pos": "WR",
+       "v": 4.49
+      },
+      {
+       "name": "Tyler Warren",
+       "pos": "TE",
+       "v": 4.46
+      },
+      {
+       "name": "DK Metcalf",
+       "pos": "WR",
+       "v": 4.36
+      },
+      {
+       "name": "De'Von Achane",
+       "pos": "RB",
+       "v": 3.54
+      },
+      {
+       "name": "Rome Odunze",
+       "pos": "WR",
+       "v": 3.04
+      }
+     ],
+     "source": "observed",
+     "rank": 5
+    },
+    {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "value": 26.7,
@@ -1164,51 +1201,12 @@
       }
      ],
      "source": "observed",
-     "rank": 5
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 26.58,
-     "parts": [
-      {
-       "name": "Chris Olave",
-       "pos": "WR",
-       "v": 5.87
-      },
-      {
-       "name": "Tetairoa McMillan",
-       "pos": "WR",
-       "v": 4.49
-      },
-      {
-       "name": "Tyler Warren",
-       "pos": "TE",
-       "v": 4.46
-      },
-      {
-       "name": "DK Metcalf",
-       "pos": "WR",
-       "v": 3.8
-      },
-      {
-       "name": "De'Von Achane",
-       "pos": "RB",
-       "v": 3.54
-      },
-      {
-       "name": "Rome Odunze",
-       "pos": "WR",
-       "v": 3.04
-      }
-     ],
-     "source": "observed",
      "rank": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": 25.49,
+     "value": 24.76,
      "parts": [
       {
        "name": "Justin Jefferson",
@@ -1216,14 +1214,14 @@
        "v": 5.91
       },
       {
-       "name": "Drake London",
-       "pos": "WR",
-       "v": 4.88
-      },
-      {
        "name": "Isaiah Likely",
        "pos": "TE",
        "v": 4.58
+      },
+      {
+       "name": "Drake London",
+       "pos": "WR",
+       "v": 4.15
       },
       {
        "name": "Jameson Williams",
@@ -1563,7 +1561,7 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 123.63,
+     "proj": 123.59,
      "act": 0.0,
      "opp": 12
     },
@@ -1584,14 +1582,14 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 136.94,
+     "proj": 136.88,
      "act": 0.0,
      "opp": 9
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 139.55,
+     "proj": 137.37,
      "act": 1.0,
      "opp": 2
     },
@@ -1605,21 +1603,21 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 116.4,
+     "proj": 116.47,
      "act": 0.0,
      "opp": 1
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 132.04,
+     "proj": 134.0,
      "act": 0.0,
      "opp": 6
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 123.45,
+     "proj": 123.39,
      "act": 0.0,
      "opp": 4
     }
