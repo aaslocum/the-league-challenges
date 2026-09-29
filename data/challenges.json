@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-09-28T11:38:47",
+ "built_at": "2026-09-29T02:18:21",
  "season": 2026,
- "current_week": 3,
+ "current_week": 4,
  "teams": [
   {
    "slot": 1,
@@ -1988,16 +1988,14 @@
    "direction": "min",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 3,
-    "have": 15,
+    "have": 16,
     "scheduled": 16,
-    "missing": [
-     "PHI@CHI"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -2492,20 +2490,12 @@
    ],
    "actual": [
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 1
-    },
-    {
      "slot": 5,
      "team": "Immaculate Concepcion",
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
+     "rank": 1
     },
     {
      "slot": 12,
@@ -2513,7 +2503,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 3
+     "rank": 2
     },
     {
      "slot": 2,
@@ -2527,7 +2517,7 @@
       }
      ],
      "source": "observed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 3,
@@ -2538,6 +2528,20 @@
        "name": "Joe Burrow",
        "pos": "QB",
        "v": 2.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 3.0,
+     "parts": [
+      {
+       "name": "Jalen Hurts",
+       "pos": "QB",
+       "v": 3.0
       }
      ],
      "source": "observed",
@@ -2666,29 +2670,29 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 126.93,
-     "act": 145.0,
+     "proj": 127.41,
+     "act": 156.0,
      "opp": 9
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 133.05,
-     "act": 118.0,
+     "proj": 134.39,
+     "act": 137.0,
      "opp": 5
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 128.79,
-     "act": 168.0,
+     "proj": 128.75,
+     "act": 173.0,
      "opp": 7
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 115.21,
-     "act": 118.0,
+     "proj": 115.07,
+     "act": 122.0,
      "opp": 10
     },
     {
@@ -2708,29 +2712,29 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 139.16,
-     "act": 132.0,
+     "proj": 139.15,
+     "act": 144.0,
      "opp": 3
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 133.97,
-     "act": 105.0,
+     "proj": 134.0,
+     "act": 115.0,
      "opp": 11
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 127.16,
-     "act": 125.0,
+     "proj": 127.05,
+     "act": 134.0,
      "opp": 1
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 118.03,
-     "act": 112.0,
+     "proj": 118.23,
+     "act": 119.0,
      "opp": 4
     },
     {
@@ -2748,7 +2752,13 @@
      "opp": 6
     }
    ],
-   "winner": null
+   "winner": {
+    "slot": 5,
+    "team": "Immaculate Concepcion",
+    "value": 0.0,
+    "note": "",
+    "source": "computed"
+   }
   },
   {
    "week": 4,
@@ -6409,6 +6419,14 @@
    ]
   },
   {
+   "slot": 5,
+   "team": "Immaculate Concepcion",
+   "wins": 1,
+   "weeks": [
+    3
+   ]
+  },
+  {
    "slot": 6,
    "team": "Papa's playmakers",
    "wins": 1,
@@ -6425,12 +6443,6 @@
   {
    "slot": 4,
    "team": "Broad Street Bullies",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 5,
-   "team": "Immaculate Concepcion",
    "wins": 0,
    "weeks": []
   },
