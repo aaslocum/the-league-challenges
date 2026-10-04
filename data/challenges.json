@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-04T14:18:28",
+ "built_at": "2026-10-04T17:18:11",
  "season": 2026,
  "current_week": 4,
  "teams": [
@@ -2773,13 +2773,9 @@
    "completeness": {
     "season": 2026,
     "week": 4,
-    "have": 10,
+    "have": 14,
     "scheduled": 16,
     "missing": [
-     "MIA@MIN",
-     "KC@LV",
-     "LAC@SEA",
-     "DEN@SF",
      "DET@CAR",
      "ATL@NO"
     ],
@@ -2823,7 +2819,7 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 170.57,
+     "value": 170.61,
      "parts": [
       {
        "name": "PHI DEF",
@@ -2843,7 +2839,7 @@
       {
        "name": "RJ Harvey",
        "pos": "RB",
-       "v": 8.23
+       "v": 8.27
       }
      ],
      "source": "assumed",
@@ -2895,7 +2891,7 @@
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "value": 153.89,
+     "value": 153.99,
      "parts": [
       {
        "name": "BAL DEF",
@@ -2905,7 +2901,7 @@
       {
        "name": "Deebo Samuel Sr.",
        "pos": "WR",
-       "v": 23.55
+       "v": 23.65
       },
       {
        "name": "Josh Downs",
@@ -2924,12 +2920,12 @@
     {
      "slot": 9,
      "team": "Bronny James",
-     "value": 148.69,
+     "value": 149.24,
      "parts": [
       {
        "name": "MIN DEF",
        "pos": "DEF",
-       "v": 127.71
+       "v": 128.26
       },
       {
        "name": "Bhayshul Tuten",
@@ -2948,7 +2944,7 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 143.34,
+     "value": 143.21,
      "parts": [
       {
        "name": "DET DEF",
@@ -2963,7 +2959,7 @@
       {
        "name": "Mike Washington",
        "pos": "RB",
-       "v": 9.05
+       "v": 8.92
       },
       {
        "name": "Carnell Tate",
@@ -2977,7 +2973,7 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "value": 134.62,
+     "value": 134.4,
      "parts": [
       {
        "name": "SEA DEF",
@@ -2987,7 +2983,7 @@
       {
        "name": "Malik Washington",
        "pos": "WR",
-       "v": 41.47
+       "v": 41.25
       },
       {
        "name": "Jaylen Warren",
@@ -3015,12 +3011,12 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 116.53,
+     "value": 117.0,
      "parts": [
       {
        "name": "Chiefs",
        "pos": "DEF",
-       "v": 113.96
+       "v": 114.43
       },
       {
        "name": "Tony Pollard",
@@ -3091,70 +3087,80 @@
    ],
    "actual": [
     {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": 131.0,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 198.0,
      "parts": [
       {
-       "name": "Titans",
+       "name": "Bengals",
        "pos": "DEF",
-       "v": 131.0
+       "v": 170.0
+      },
+      {
+       "name": "Keaton Mitchell",
+       "pos": "RB",
+       "v": 28.0
       }
      ],
      "source": "assumed",
      "rank": 1
     },
     {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 101.0,
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 197.0,
      "parts": [
       {
-       "name": "PHI DEF",
+       "name": "DAL DEF",
        "pos": "DEF",
-       "v": 101.0
+       "v": 194.0
+      },
+      {
+       "name": "Parker Washington",
+       "pos": "WR",
+       "v": 3.0
       }
      ],
      "source": "assumed",
      "rank": 2
     },
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 73.0,
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 169.0,
      "parts": [
       {
-       "name": "DAL DEF",
+       "name": "HOU DEF",
        "pos": "DEF",
-       "v": 73.0
+       "v": 169.0
       }
      ],
      "source": "assumed",
      "rank": 3
     },
     {
-     "slot": 3,
-     "team": "Sonic n' Knuckles",
-     "value": 52.0,
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 141.0,
      "parts": [
       {
-       "name": "HOU DEF",
+       "name": "Titans",
        "pos": "DEF",
-       "v": 52.0
+       "v": 141.0
       }
      ],
      "source": "assumed",
      "rank": 4
     },
     {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 51.0,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 124.0,
      "parts": [
       {
-       "name": "Bengals",
+       "name": "PHI DEF",
        "pos": "DEF",
-       "v": 51.0
+       "v": 124.0
       }
      ],
      "source": "assumed",
@@ -3163,16 +3169,58 @@
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "value": 17.0,
+     "value": 121.0,
      "parts": [
       {
        "name": "NE DEF",
        "pos": "DEF",
-       "v": 17.0
+       "v": 121.0
       }
      ],
      "source": "assumed",
      "rank": 6
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 86.0,
+     "parts": [
+      {
+       "name": "MIN DEF",
+       "pos": "DEF",
+       "v": 86.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 7
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 49.0,
+     "parts": [
+      {
+       "name": "Chiefs",
+       "pos": "DEF",
+       "v": 49.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 8
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 39.0,
+     "parts": [
+      {
+       "name": "BAL DEF",
+       "pos": "DEF",
+       "v": 39.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 9
     },
     {
      "slot": 1,
@@ -3180,7 +3228,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 7
+     "rank": 10
     },
     {
      "slot": 6,
@@ -3188,35 +3236,11 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 8
-    },
-    {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
-     "rank": 9
+     "rank": 11
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
-     "rank": 10
-    },
-    {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
-     "rank": 11
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
      "value": 0.0,
      "parts": [],
      "source": "assumed",
@@ -3227,85 +3251,85 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 128.85,
-     "act": 32.0,
+     "proj": 128.77,
+     "act": 68.0,
      "opp": 3
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 139.29,
-     "act": 17.0,
+     "proj": 138.16,
+     "act": 38.0,
      "opp": 7
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 141.21,
-     "act": 46.0,
+     "proj": 141.16,
+     "act": 105.0,
      "opp": 1
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 125.95,
-     "act": 37.0,
+     "proj": 116.48,
+     "act": 83.0,
      "opp": 9
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
      "proj": 145.27,
-     "act": 73.0,
+     "act": 124.0,
      "opp": 8
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 149.96,
-     "act": 30.0,
+     "proj": 149.9,
+     "act": 85.0,
      "opp": 10
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 131.94,
-     "act": 25.0,
+     "proj": 132.52,
+     "act": 93.0,
      "opp": 2
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 117.97,
-     "act": 21.0,
+     "proj": 118.03,
+     "act": 38.0,
      "opp": 5
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 146.71,
-     "act": 65.0,
+     "proj": 140.84,
+     "act": 93.0,
      "opp": 4
     },
     {
      "slot": 10,
      "team": "Trade the team away",
      "proj": 125.12,
-     "act": 57.0,
+     "act": 135.0,
      "opp": 6
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 132.53,
-     "act": 56.0,
+     "proj": 132.62,
+     "act": 72.0,
      "opp": 12
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 126.77,
-     "act": 25.0,
+     "proj": 126.96,
+     "act": 63.0,
      "opp": 11
     }
    ],
