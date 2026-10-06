@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-10-04T20:18:11",
+ "built_at": "2026-10-05T20:18:13",
  "season": 2026,
- "current_week": 4,
+ "current_week": 5,
  "teams": [
   {
    "slot": 1,
@@ -2769,17 +2769,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 4,
-    "have": 14,
+    "have": 16,
     "scheduled": 16,
-    "missing": [
-     "DET@CAR",
-     "ATL@NO"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -2944,12 +2941,12 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 144.05,
+     "value": 144.91,
      "parts": [
       {
        "name": "DET DEF",
        "pos": "DEF",
-       "v": 105.78
+       "v": 106.64
       },
       {
        "name": "Matthew Golden",
@@ -3035,7 +3032,7 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "value": 116.06,
+     "value": 115.99,
      "parts": [
       {
        "name": "Titans",
@@ -3045,7 +3042,7 @@
       {
        "name": "Devaughn Vele",
        "pos": "WR",
-       "v": 8.28
+       "v": 8.21
       }
      ],
      "source": "assumed",
@@ -3163,6 +3160,20 @@
      "rank": 4
     },
     {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 153.0,
+     "parts": [
+      {
+       "name": "Panthers",
+       "pos": "DEF",
+       "v": 153.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 5
+    },
+    {
      "slot": 10,
      "team": "Trade the team away",
      "value": 141.0,
@@ -3174,7 +3185,7 @@
       }
      ],
      "source": "assumed",
-     "rank": 5
+     "rank": 6
     },
     {
      "slot": 5,
@@ -3193,7 +3204,7 @@
       }
      ],
      "source": "assumed",
-     "rank": 6
+     "rank": 7
     },
     {
      "slot": 9,
@@ -3207,7 +3218,7 @@
       }
      ],
      "source": "assumed",
-     "rank": 7
+     "rank": 8
     },
     {
      "slot": 7,
@@ -3221,7 +3232,21 @@
       }
      ],
      "source": "assumed",
-     "rank": 8
+     "rank": 9
+    },
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 107.0,
+     "parts": [
+      {
+       "name": "DET DEF",
+       "pos": "DEF",
+       "v": 107.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 10
     },
     {
      "slot": 6,
@@ -3235,7 +3260,7 @@
       }
      ],
      "source": "assumed",
-     "rank": 9
+     "rank": 11
     },
     {
      "slot": 12,
@@ -3254,22 +3279,6 @@
       }
      ],
      "source": "assumed",
-     "rank": 10
-    },
-    {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
-     "rank": 11
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
      "rank": 12
     }
    ],
@@ -3277,8 +3286,8 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 128.79,
-     "act": 69.0,
+     "proj": 130.14,
+     "act": 77.0,
      "opp": 3
     },
     {
@@ -3291,8 +3300,8 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 141.32,
-     "act": 105.0,
+     "proj": 141.47,
+     "act": 122.0,
      "opp": 1
     },
     {
@@ -3305,15 +3314,15 @@
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 143.43,
-     "act": 146.0,
+     "proj": 144.49,
+     "act": 168.0,
      "opp": 8
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 150.01,
-     "act": 107.0,
+     "proj": 150.14,
+     "act": 144.0,
      "opp": 10
     },
     {
@@ -3326,8 +3335,8 @@
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 117.94,
-     "act": 39.0,
+     "proj": 119.0,
+     "act": 84.0,
      "opp": 5
     },
     {
@@ -3340,26 +3349,32 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 125.12,
+     "proj": 126.29,
      "act": 135.0,
      "opp": 6
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 132.63,
-     "act": 95.0,
+     "proj": 132.62,
+     "act": 141.0,
      "opp": 12
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 128.1,
-     "act": 96.0,
+     "proj": 127.74,
+     "act": 145.0,
      "opp": 11
     }
    ],
-   "winner": null
+   "winner": {
+    "slot": 4,
+    "team": "Broad Street Bullies",
+    "value": 283.0,
+    "note": "",
+    "source": "computed"
+   }
   },
   {
    "week": 5,
@@ -6596,6 +6611,14 @@
  ],
  "standings": [
   {
+   "slot": 4,
+   "team": "Broad Street Bullies",
+   "wins": 1,
+   "weeks": [
+    4
+   ]
+  },
+  {
    "slot": 9,
    "team": "Bronny James",
    "wins": 1,
@@ -6622,12 +6645,6 @@
   {
    "slot": 1,
    "team": "Always the McBridesmaid",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 4,
-   "team": "Broad Street Bullies",
    "wins": 0,
    "weeks": []
   },
