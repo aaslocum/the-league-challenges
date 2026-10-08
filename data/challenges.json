@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-07T20:42:49",
+ "built_at": "2026-10-07T20:54:15",
  "season": 2026,
  "current_week": 5,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-10-07T20:31:05",
+ "changes_through": "2026-10-07T20:50:02",
  "challenges": [
   {
    "week": 1,
@@ -2779,9 +2779,7 @@
     "status": "final"
    },
    "lineups": {
-    "manual": [],
-    "observed": [],
-    "assumed": [
+    "manual": [
      "Always the McBridesmaid",
      "Broad Street Bullies",
      "Bronny James",
@@ -2794,54 +2792,14 @@
      "The Brockness Monster",
      "Trade the team away",
      "angryBIRDS"
-    ]
+    ],
+    "observed": [],
+    "assumed": []
    },
-   "assumed_lineups": [
-    "Always the McBridesmaid",
-    "Broad Street Bullies",
-    "Bronny James",
-    "Immaculate Concepcion",
-    "Likely Cooked",
-    "Mr. Flapjack",
-    "One Mo Time For Igoe",
-    "Papa's playmakers",
-    "Sonic n' Knuckles",
-    "The Brockness Monster",
-    "Trade the team away",
-    "angryBIRDS"
-   ],
+   "assumed_lineups": [],
    "roster_mismatch": [],
-   "lineup_error": null,
+   "lineup_error": "captured 2026-10-07, after week 4's last game (2026-10-05) -- so it describes a later week than the one it is labelled with",
    "projected": [
-    {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 170.61,
-     "parts": [
-      {
-       "name": "PHI DEF",
-       "pos": "DEF",
-       "v": 81.86
-      },
-      {
-       "name": "Rashid Shaheed",
-       "pos": "WR",
-       "v": 68.25
-      },
-      {
-       "name": "Jeremiyah Love",
-       "pos": "RB",
-       "v": 12.23
-      },
-      {
-       "name": "RJ Harvey",
-       "pos": "RB",
-       "v": 8.27
-      }
-     ],
-     "source": "assumed",
-     "rank": 1
-    },
     {
      "slot": 11,
      "team": "angryBIRDS",
@@ -2858,8 +2816,8 @@
        "v": 22.0
       }
      ],
-     "source": "assumed",
-     "rank": 2
+     "source": "manual",
+     "rank": 1
     },
     {
      "slot": 2,
@@ -2882,37 +2840,8 @@
        "v": 9.93
       }
      ],
-     "source": "assumed",
-     "rank": 3
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 153.99,
-     "parts": [
-      {
-       "name": "BAL DEF",
-       "pos": "DEF",
-       "v": 120.32
-      },
-      {
-       "name": "Deebo Samuel Sr.",
-       "pos": "WR",
-       "v": 23.65
-      },
-      {
-       "name": "Josh Downs",
-       "pos": "WR",
-       "v": 5.66
-      },
-      {
-       "name": "Chuba Hubbard",
-       "pos": "RB",
-       "v": 4.36
-      }
-     ],
-     "source": "assumed",
-     "rank": 4
+     "source": "manual",
+     "rank": 2
     },
     {
      "slot": 9,
@@ -2935,8 +2864,32 @@
        "v": 2.35
       }
      ],
-     "source": "assumed",
-     "rank": 5
+     "source": "manual",
+     "rank": 3
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 148.33,
+     "parts": [
+      {
+       "name": "BAL DEF",
+       "pos": "DEF",
+       "v": 120.32
+      },
+      {
+       "name": "Deebo Samuel Sr.",
+       "pos": "WR",
+       "v": 23.65
+      },
+      {
+       "name": "Chuba Hubbard",
+       "pos": "RB",
+       "v": 4.36
+      }
+     ],
+     "source": "manual",
+     "rank": 4
     },
     {
      "slot": 1,
@@ -2964,7 +2917,36 @@
        "v": 3.17
       }
      ],
-     "source": "assumed",
+     "source": "manual",
+     "rank": 5
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 135.28,
+     "parts": [
+      {
+       "name": "PHI DEF",
+       "pos": "DEF",
+       "v": 81.86
+      },
+      {
+       "name": "Kenny Gainwell",
+       "pos": "RB",
+       "v": 32.92
+      },
+      {
+       "name": "Jeremiyah Love",
+       "pos": "RB",
+       "v": 12.23
+      },
+      {
+       "name": "RJ Harvey",
+       "pos": "RB",
+       "v": 8.27
+      }
+     ],
+     "source": "manual",
      "rank": 6
     },
     {
@@ -2988,37 +2970,37 @@
        "v": 2.57
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 7
     },
     {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 119.93,
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 132.74,
      "parts": [
       {
-       "name": "Panthers",
+       "name": "Bears",
        "pos": "DEF",
-       "v": 119.93
+       "v": 132.74
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 8
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 117.0,
+     "value": 132.66,
      "parts": [
       {
-       "name": "Chiefs",
+       "name": "Steelers",
        "pos": "DEF",
-       "v": 114.43
+       "v": 129.97
       },
       {
-       "name": "Tony Pollard",
+       "name": "Braelon Allen",
        "pos": "RB",
-       "v": 1.31
+       "v": 1.43
       },
       {
        "name": "Kyren Williams",
@@ -3026,8 +3008,22 @@
        "v": 1.26
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 9
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 126.88,
+     "parts": [
+      {
+       "name": "Bills",
+       "pos": "DEF",
+       "v": 126.88
+      }
+     ],
+     "source": "manual",
+     "rank": 10
     },
     {
      "slot": 10,
@@ -3045,26 +3041,7 @@
        "v": 8.21
       }
      ],
-     "source": "assumed",
-     "rank": 10
-    },
-    {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 115.42,
-     "parts": [
-      {
-       "name": "NE DEF",
-       "pos": "DEF",
-       "v": 82.7
-      },
-      {
-       "name": "KC Concepcion",
-       "pos": "WR",
-       "v": 32.72
-      }
-     ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 11
     },
     {
@@ -3078,35 +3055,11 @@
        "v": 78.03
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 12
     }
    ],
    "actual": [
-    {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 283.0,
-     "parts": [
-      {
-       "name": "PHI DEF",
-       "pos": "DEF",
-       "v": 124.0
-      },
-      {
-       "name": "Rashid Shaheed",
-       "pos": "WR",
-       "v": 95.0
-      },
-      {
-       "name": "RJ Harvey",
-       "pos": "RB",
-       "v": 64.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 1
-    },
     {
      "slot": 11,
      "team": "angryBIRDS",
@@ -3123,8 +3076,8 @@
        "v": 28.0
       }
      ],
-     "source": "assumed",
-     "rank": 2
+     "source": "manual",
+     "rank": 1
     },
     {
      "slot": 2,
@@ -3142,7 +3095,26 @@
        "v": 3.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
+     "rank": 2
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 188.0,
+     "parts": [
+      {
+       "name": "PHI DEF",
+       "pos": "DEF",
+       "v": 124.0
+      },
+      {
+       "name": "RJ Harvey",
+       "pos": "RB",
+       "v": 64.0
+      }
+     ],
+     "source": "manual",
      "rank": 3
     },
     {
@@ -3156,22 +3128,8 @@
        "v": 169.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 4
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 153.0,
-     "parts": [
-      {
-       "name": "Panthers",
-       "pos": "DEF",
-       "v": 153.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 5
     },
     {
      "slot": 10,
@@ -3184,26 +3142,35 @@
        "v": 141.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
+     "rank": 5
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 136.0,
+     "parts": [
+      {
+       "name": "Bills",
+       "pos": "DEF",
+       "v": 136.0
+      }
+     ],
+     "source": "manual",
      "rank": 6
     },
     {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 131.0,
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 126.0,
      "parts": [
       {
-       "name": "NE DEF",
+       "name": "Steelers",
        "pos": "DEF",
-       "v": 121.0
-      },
-      {
-       "name": "KC Concepcion",
-       "pos": "WR",
-       "v": 10.0
+       "v": 126.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 7
     },
     {
@@ -3217,22 +3184,8 @@
        "v": 121.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
      "rank": 8
-    },
-    {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": 114.0,
-     "parts": [
-      {
-       "name": "Chiefs",
-       "pos": "DEF",
-       "v": 114.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 9
     },
     {
      "slot": 1,
@@ -3245,8 +3198,8 @@
        "v": 107.0
       }
      ],
-     "source": "assumed",
-     "rank": 10
+     "source": "manual",
+     "rank": 9
     },
     {
      "slot": 6,
@@ -3259,8 +3212,8 @@
        "v": 95.0
       }
      ],
-     "source": "assumed",
-     "rank": 11
+     "source": "manual",
+     "rank": 10
     },
     {
      "slot": 12,
@@ -3278,7 +3231,21 @@
        "v": 39.0
       }
      ],
-     "source": "assumed",
+     "source": "manual",
+     "rank": 11
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 86.0,
+     "parts": [
+      {
+       "name": "Bears",
+       "pos": "DEF",
+       "v": 86.0
+      }
+     ],
+     "source": "manual",
      "rank": 12
     }
    ],
@@ -3287,14 +3254,14 @@
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 130.14,
-     "act": 77.0,
+     "act": 108.0,
      "opp": 3
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 138.16,
-     "act": 120.0,
+     "proj": 136.42,
+     "act": 118.0,
      "opp": 7
     },
     {
@@ -3307,15 +3274,15 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 116.48,
-     "act": 114.0,
+     "proj": 105.34,
+     "act": 110.0,
      "opp": 9
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 144.49,
-     "act": 168.0,
+     "proj": 141.08,
+     "act": 158.0,
      "opp": 8
     },
     {
@@ -3328,21 +3295,21 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 132.52,
+     "proj": 138.22,
      "act": 172.0,
      "opp": 2
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 119.0,
-     "act": 84.0,
+     "proj": 126.58,
+     "act": 122.0,
      "opp": 5
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 140.84,
+     "proj": 131.0,
      "act": 107.0,
      "opp": 4
     },
@@ -3350,28 +3317,28 @@
      "slot": 10,
      "team": "Trade the team away",
      "proj": 126.29,
-     "act": 135.0,
+     "act": 163.0,
      "opp": 6
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 132.62,
-     "act": 141.0,
+     "proj": 131.15,
+     "act": 164.0,
      "opp": 12
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 127.74,
-     "act": 145.0,
+     "proj": 124.5,
+     "act": 148.0,
      "opp": 11
     }
    ],
    "winner": {
-    "slot": 4,
-    "team": "Broad Street Bullies",
-    "value": 283.0,
+    "slot": 11,
+    "team": "angryBIRDS",
+    "value": 198.0,
     "note": "",
     "source": "computed"
    }
@@ -3389,10 +3356,26 @@
    "completeness": {
     "season": 2026,
     "week": 5,
-    "have": null,
-    "scheduled": null,
-    "missing": [],
-    "status": "absent"
+    "have": 0,
+    "scheduled": 15,
+    "missing": [
+     "TB@DAL",
+     "PHI@JAX",
+     "CIN@MIA",
+     "LV@NE",
+     "MIN@NO",
+     "CLE@NYJ",
+     "IND@PIT",
+     "HOU@TEN",
+     "NYG@WAS",
+     "DEN@LAC",
+     "DET@ARI",
+     "CHI@GB",
+     "SF@SEA",
+     "BAL@ATL",
+     "BUF@LA"
+    ],
+    "status": "partial"
    },
    "lineups": {
     "manual": [],
@@ -3535,11 +3518,6 @@
        "name": "Ka'imi Fairbairn",
        "pos": "K",
        "v": 10.41
-      },
-      {
-       "name": "KC Concepcion",
-       "pos": "WR",
-       "v": 10.15
       }
      ],
      "source": "observed",
@@ -3711,7 +3689,7 @@
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 124.91,
+     "proj": 121.55,
      "act": null,
      "opp": 6
     },
@@ -6609,14 +6587,6 @@
  ],
  "standings": [
   {
-   "slot": 4,
-   "team": "Broad Street Bullies",
-   "wins": 1,
-   "weeks": [
-    4
-   ]
-  },
-  {
    "slot": 9,
    "team": "Bronny James",
    "wins": 1,
@@ -6641,8 +6611,22 @@
    ]
   },
   {
+   "slot": 11,
+   "team": "angryBIRDS",
+   "wins": 1,
+   "weeks": [
+    4
+   ]
+  },
+  {
    "slot": 1,
    "team": "Always the McBridesmaid",
+   "wins": 0,
+   "weeks": []
+  },
+  {
+   "slot": 4,
+   "team": "Broad Street Bullies",
    "wins": 0,
    "weeks": []
   },
@@ -6679,12 +6663,6 @@
   {
    "slot": 10,
    "team": "Trade the team away",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 11,
-   "team": "angryBIRDS",
    "wins": 0,
    "weeks": []
   }
