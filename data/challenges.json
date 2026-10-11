@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-11T14:18:15",
+ "built_at": "2026-10-11T17:18:14",
  "season": 2026,
  "current_week": 5,
  "teams": [
@@ -3360,12 +3360,9 @@
    "completeness": {
     "season": 2026,
     "week": 5,
-    "have": 10,
+    "have": 13,
     "scheduled": 15,
     "missing": [
-     "DEN@LAC",
-     "DET@ARI",
-     "SF@SEA",
      "BAL@ATL",
      "BUF@LA"
     ],
@@ -3396,12 +3393,12 @@
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "value": 20.11,
+     "value": 20.19,
      "parts": [
       {
        "name": "Jared Goff",
        "pos": "QB",
-       "v": 20.11
+       "v": 20.19
       },
       {
        "name": "Rhamondre Stevenson",
@@ -3411,7 +3408,7 @@
       {
        "name": "BAL DEF",
        "pos": "DEF",
-       "v": 10.94
+       "v": 11.03
       }
      ],
      "source": "observed",
@@ -3430,7 +3427,7 @@
       {
        "name": "Cameron Dicker",
        "pos": "K",
-       "v": 8.26
+       "v": 8.3
       }
      ],
      "source": "observed",
@@ -3449,7 +3446,7 @@
       {
        "name": "Tyler Loop",
        "pos": "K",
-       "v": 8.91
+       "v": 8.94
       }
      ],
      "source": "observed",
@@ -3506,7 +3503,7 @@
       {
        "name": "DET DEF",
        "pos": "DEF",
-       "v": 12.03
+       "v": 11.98
       },
       {
        "name": "Evan McPherson",
@@ -3534,12 +3531,12 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "value": 10.67,
+     "value": 10.6,
      "parts": [
       {
        "name": "SEA DEF",
        "pos": "DEF",
-       "v": 10.67
+       "v": 10.6
       }
      ],
      "source": "observed",
@@ -3548,22 +3545,22 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "value": 10.19,
+     "value": 10.2,
      "parts": [
       {
        "name": "Keaton Mitchell",
        "pos": "RB",
-       "v": 10.19
+       "v": 10.2
       },
       {
        "name": "Eddy Pineiro",
        "pos": "K",
-       "v": 8.89
+       "v": 8.93
       },
       {
        "name": "Mark Andrews",
        "pos": "TE",
-       "v": 8.84
+       "v": 8.91
       }
      ],
      "source": "observed",
@@ -3572,12 +3569,12 @@
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": 9.93,
+     "value": 10.0,
      "parts": [
       {
        "name": "Jake Bates",
        "pos": "K",
-       "v": 9.93
+       "v": 10.0
       }
      ],
      "source": "observed",
@@ -3624,14 +3621,38 @@
    ],
    "actual": [
     {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 23.0,
+     "parts": [
+      {
+       "name": "Matthew Golden",
+       "pos": "WR",
+       "v": 23.0
+      },
+      {
+       "name": "DET DEF",
+       "pos": "DEF",
+       "v": 13.0
+      },
+      {
+       "name": "Evan McPherson",
+       "pos": "K",
+       "v": 7.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 15.0,
+     "value": 21.0,
      "parts": [
       {
        "name": "HOU DEF",
        "pos": "DEF",
-       "v": 15.0
+       "v": 21.0
       },
       {
        "name": "Tyler Loop",
@@ -3640,26 +3661,69 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "value": 15.0,
+     "value": 19.0,
      "parts": [
-      {
-       "name": "Ka'imi Fairbairn",
-       "pos": "K",
-       "v": 15.0
-      },
       {
        "name": "Aaron Jones",
        "pos": "RB",
-       "v": 3.0
+       "v": 19.0
+      },
+      {
+       "name": "Ka'imi Fairbairn",
+       "pos": "K",
+       "v": 17.0
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 3
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 18.0,
+     "parts": [
+      {
+       "name": "MIN DEF",
+       "pos": "DEF",
+       "v": 18.0
+      },
+      {
+       "name": "Jacory Croskey-Merritt",
+       "pos": "RB",
+       "v": 14.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 17.0,
+     "parts": [
+      {
+       "name": "Rhamondre Stevenson",
+       "pos": "RB",
+       "v": 17.0
+      },
+      {
+       "name": "Will Reichard",
+       "pos": "K",
+       "v": 16.0
+      },
+      {
+       "name": "BAL DEF",
+       "pos": "DEF",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 5
     },
     {
      "slot": 4,
@@ -3672,61 +3736,18 @@
        "v": 14.0
       },
       {
+       "name": "Wan'Dale Robinson",
+       "pos": "WR",
+       "v": 11.0
+      },
+      {
        "name": "Dalton Schultz",
        "pos": "TE",
        "v": 6.0
-      },
-      {
-       "name": "Wan'Dale Robinson",
-       "pos": "WR",
-       "v": 2.0
       }
      ],
      "source": "observed",
-     "rank": 3
-    },
-    {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 11.0,
-     "parts": [
-      {
-       "name": "Jacory Croskey-Merritt",
-       "pos": "RB",
-       "v": 11.0
-      },
-      {
-       "name": "MIN DEF",
-       "pos": "DEF",
-       "v": 11.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 10.0,
-     "parts": [
-      {
-       "name": "Rhamondre Stevenson",
-       "pos": "RB",
-       "v": 10.0
-      },
-      {
-       "name": "Will Reichard",
-       "pos": "K",
-       "v": 4.0
-      },
-      {
-       "name": "BAL DEF",
-       "pos": "DEF",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 5
+     "rank": 6
     },
     {
      "slot": 2,
@@ -3741,11 +3762,25 @@
       {
        "name": "Cameron Dicker",
        "pos": "K",
-       "v": 0.0
+       "v": 4.0
       }
      ],
      "source": "observed",
-     "rank": 6
+     "rank": 7
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 7.0,
+     "parts": [
+      {
+       "name": "SEA DEF",
+       "pos": "DEF",
+       "v": 7.0
+      }
+     ],
+     "source": "observed",
+     "rank": 8
     },
     {
      "slot": 10,
@@ -3759,45 +3794,45 @@
       }
      ],
      "source": "observed",
-     "rank": 7
+     "rank": 9
     },
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 3.0,
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 1.0,
      "parts": [
       {
-       "name": "Matthew Golden",
-       "pos": "WR",
-       "v": 3.0
-      },
-      {
-       "name": "Evan McPherson",
+       "name": "Jake Bates",
        "pos": "K",
-       "v": 2.0
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 10
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Eddy Pineiro",
+       "pos": "K",
+       "v": 1.0
       },
       {
-       "name": "Mike Washington",
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "v": 0.0
+      },
+      {
+       "name": "Keaton Mitchell",
        "pos": "RB",
        "v": 0.0
       }
      ],
      "source": "observed",
-     "rank": 8
-    },
-    {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "SEA DEF",
-       "pos": "DEF",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 9
+     "rank": 10
     },
     {
      "slot": 7,
@@ -3811,45 +3846,7 @@
       }
      ],
      "source": "observed",
-     "rank": 9
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Jake Bates",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 9
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Mark Andrews",
-       "pos": "TE",
-       "v": 0.0
-      },
-      {
-       "name": "Keaton Mitchell",
-       "pos": "RB",
-       "v": 0.0
-      },
-      {
-       "name": "Eddy Pineiro",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 9
+     "rank": 12
     }
    ],
    "totals": [
@@ -3857,84 +3854,84 @@
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 132.38,
-     "act": 20.0,
+     "act": 62.0,
      "opp": 2
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 137.09,
-     "act": 94.0,
+     "proj": 137.14,
+     "act": 122.0,
      "opp": 1
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 134.88,
-     "act": 69.0,
+     "proj": 135.92,
+     "act": 114.0,
      "opp": 4
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 121.31,
-     "act": 33.0,
+     "proj": 121.38,
+     "act": 62.0,
      "opp": 3
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 140.48,
-     "act": 67.0,
+     "proj": 140.55,
+     "act": 158.0,
      "opp": 11
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 144.13,
-     "act": 55.0,
+     "proj": 144.2,
+     "act": 124.0,
      "opp": 9
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 103.51,
-     "act": 18.0,
+     "proj": 103.62,
+     "act": 53.0,
      "opp": 8
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 132.29,
-     "act": 36.0,
+     "proj": 133.34,
+     "act": 79.0,
      "opp": 7
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 116.09,
-     "act": 60.0,
+     "proj": 116.16,
+     "act": 104.0,
      "opp": 6
     },
     {
      "slot": 10,
      "team": "Trade the team away",
      "proj": 130.04,
-     "act": 62.0,
+     "act": 87.0,
      "opp": 12
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 127.84,
-     "act": 39.0,
+     "proj": 128.02,
+     "act": 95.0,
      "opp": 5
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 119.03,
-     "act": 23.0,
+     "proj": 119.34,
+     "act": 59.0,
      "opp": 10
     }
    ],
