@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-11T11:18:09",
+ "built_at": "2026-10-11T14:18:15",
  "season": 2026,
  "current_week": 5,
  "teams": [
@@ -3360,19 +3360,11 @@
    "completeness": {
     "season": 2026,
     "week": 5,
-    "have": 2,
+    "have": 10,
     "scheduled": 15,
     "missing": [
-     "CIN@MIA",
-     "LV@NE",
-     "MIN@NO",
-     "CLE@NYJ",
-     "IND@PIT",
-     "HOU@TEN",
-     "NYG@WAS",
      "DEN@LAC",
      "DET@ARI",
-     "CHI@GB",
      "SF@SEA",
      "BAL@ATL",
      "BUF@LA"
@@ -3438,7 +3430,7 @@
       {
        "name": "Cameron Dicker",
        "pos": "K",
-       "v": 8.25
+       "v": 8.26
       }
      ],
      "source": "observed",
@@ -3466,12 +3458,12 @@
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "value": 14.02,
+     "value": 14.26,
      "parts": [
       {
        "name": "Aaron Jones",
        "pos": "RB",
-       "v": 14.02
+       "v": 14.26
       },
       {
        "name": "Ka'imi Fairbairn",
@@ -3485,12 +3477,12 @@
     {
      "slot": 9,
      "team": "Bronny James",
-     "value": 13.83,
+     "value": 13.95,
      "parts": [
       {
        "name": "MIN DEF",
        "pos": "DEF",
-       "v": 13.83
+       "v": 13.95
       },
       {
        "name": "Jacory Croskey-Merritt",
@@ -3632,28 +3624,109 @@
    ],
    "actual": [
     {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 11.0,
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 15.0,
      "parts": [
       {
-       "name": "PHI DEF",
+       "name": "HOU DEF",
        "pos": "DEF",
-       "v": 11.0
+       "v": 15.0
       },
       {
-       "name": "Wan'Dale Robinson",
-       "pos": "WR",
-       "v": 0.0
-      },
-      {
-       "name": "Dalton Schultz",
-       "pos": "TE",
+       "name": "Tyler Loop",
+       "pos": "K",
        "v": 0.0
       }
      ],
      "source": "observed",
      "rank": 1
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 15.0,
+     "parts": [
+      {
+       "name": "Ka'imi Fairbairn",
+       "pos": "K",
+       "v": 15.0
+      },
+      {
+       "name": "Aaron Jones",
+       "pos": "RB",
+       "v": 3.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 14.0,
+     "parts": [
+      {
+       "name": "PHI DEF",
+       "pos": "DEF",
+       "v": 14.0
+      },
+      {
+       "name": "Dalton Schultz",
+       "pos": "TE",
+       "v": 6.0
+      },
+      {
+       "name": "Wan'Dale Robinson",
+       "pos": "WR",
+       "v": 2.0
+      }
+     ],
+     "source": "observed",
+     "rank": 3
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 11.0,
+     "parts": [
+      {
+       "name": "Jacory Croskey-Merritt",
+       "pos": "RB",
+       "v": 11.0
+      },
+      {
+       "name": "MIN DEF",
+       "pos": "DEF",
+       "v": 11.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 10.0,
+     "parts": [
+      {
+       "name": "Rhamondre Stevenson",
+       "pos": "RB",
+       "v": 10.0
+      },
+      {
+       "name": "Will Reichard",
+       "pos": "K",
+       "v": 4.0
+      },
+      {
+       "name": "BAL DEF",
+       "pos": "DEF",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 5
     },
     {
      "slot": 2,
@@ -3672,7 +3745,7 @@
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 6
     },
     {
      "slot": 10,
@@ -3686,69 +3759,31 @@
       }
      ],
      "source": "observed",
-     "rank": 3
+     "rank": 7
     },
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 0.0,
+     "value": 3.0,
      "parts": [
       {
        "name": "Matthew Golden",
        "pos": "WR",
-       "v": 0.0
+       "v": 3.0
+      },
+      {
+       "name": "Evan McPherson",
+       "pos": "K",
+       "v": 2.0
       },
       {
        "name": "Mike Washington",
        "pos": "RB",
        "v": 0.0
-      },
-      {
-       "name": "DET DEF",
-       "pos": "DEF",
-       "v": 0.0
       }
      ],
      "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 3,
-     "team": "Sonic n' Knuckles",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "HOU DEF",
-       "pos": "DEF",
-       "v": 0.0
-      },
-      {
-       "name": "Tyler Loop",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Aaron Jones",
-       "pos": "RB",
-       "v": 0.0
-      },
-      {
-       "name": "Ka'imi Fairbairn",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
+     "rank": 8
     },
     {
      "slot": 6,
@@ -3762,7 +3797,7 @@
       }
      ],
      "source": "observed",
-     "rank": 4
+     "rank": 9
     },
     {
      "slot": 7,
@@ -3776,7 +3811,7 @@
       }
      ],
      "source": "observed",
-     "rank": 4
+     "rank": 9
     },
     {
      "slot": 8,
@@ -3790,26 +3825,7 @@
       }
      ],
      "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Jacory Croskey-Merritt",
-       "pos": "RB",
-       "v": 0.0
-      },
-      {
-       "name": "MIN DEF",
-       "pos": "DEF",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
+     "rank": 9
     },
     {
      "slot": 11,
@@ -3833,116 +3849,92 @@
       }
      ],
      "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Rhamondre Stevenson",
-       "pos": "RB",
-       "v": 0.0
-      },
-      {
-       "name": "BAL DEF",
-       "pos": "DEF",
-       "v": 0.0
-      },
-      {
-       "name": "Jared Goff",
-       "pos": "QB",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
+     "rank": 9
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 132.37,
-     "act": 11.0,
+     "proj": 132.38,
+     "act": 20.0,
      "opp": 2
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 137.15,
-     "act": 54.0,
+     "proj": 137.09,
+     "act": 94.0,
      "opp": 1
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 134.67,
-     "act": 29.0,
+     "proj": 134.88,
+     "act": 69.0,
      "opp": 4
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 121.32,
-     "act": 16.0,
+     "proj": 121.31,
+     "act": 33.0,
      "opp": 3
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 140.46,
-     "act": 0.0,
+     "proj": 140.48,
+     "act": 67.0,
      "opp": 11
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 143.87,
-     "act": 14.0,
+     "proj": 144.13,
+     "act": 55.0,
      "opp": 9
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 103.37,
-     "act": 0.0,
+     "proj": 103.51,
+     "act": 18.0,
      "opp": 8
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 132.66,
-     "act": 0.0,
+     "proj": 132.29,
+     "act": 36.0,
      "opp": 7
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 115.64,
-     "act": 2.0,
+     "proj": 116.09,
+     "act": 60.0,
      "opp": 6
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 129.54,
-     "act": 20.0,
+     "proj": 130.04,
+     "act": 62.0,
      "opp": 12
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 127.99,
-     "act": 0.0,
+     "proj": 127.84,
+     "act": 39.0,
      "opp": 5
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 119.05,
-     "act": 0.0,
+     "proj": 119.03,
+     "act": 23.0,
      "opp": 10
     }
    ],
