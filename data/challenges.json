@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-11T17:18:14",
+ "built_at": "2026-10-11T20:18:14",
  "season": 2026,
  "current_week": 5,
  "teams": [
@@ -3408,7 +3408,7 @@
       {
        "name": "BAL DEF",
        "pos": "DEF",
-       "v": 11.03
+       "v": 11.0
       }
      ],
      "source": "observed",
@@ -3446,7 +3446,7 @@
       {
        "name": "Tyler Loop",
        "pos": "K",
-       "v": 8.94
+       "v": 9.0
       }
      ],
      "source": "observed",
@@ -3553,14 +3553,14 @@
        "v": 10.2
       },
       {
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "v": 10.05
+      },
+      {
        "name": "Eddy Pineiro",
        "pos": "K",
        "v": 8.93
-      },
-      {
-       "name": "Mark Andrews",
-       "pos": "TE",
-       "v": 8.91
       }
      ],
      "source": "observed",
@@ -3621,6 +3621,30 @@
    ],
    "actual": [
     {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 28.0,
+     "parts": [
+      {
+       "name": "Jared Goff",
+       "pos": "QB",
+       "v": 28.0
+      },
+      {
+       "name": "Rhamondre Stevenson",
+       "pos": "RB",
+       "v": 17.0
+      },
+      {
+       "name": "Will Reichard",
+       "pos": "K",
+       "v": 16.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "value": 23.0,
@@ -3633,7 +3657,7 @@
       {
        "name": "DET DEF",
        "pos": "DEF",
-       "v": 13.0
+       "v": 16.0
       },
       {
        "name": "Evan McPherson",
@@ -3642,7 +3666,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 3,
@@ -3661,7 +3685,7 @@
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 3
     },
     {
      "slot": 5,
@@ -3680,7 +3704,7 @@
       }
      ],
      "source": "observed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 9,
@@ -3696,30 +3720,6 @@
        "name": "Jacory Croskey-Merritt",
        "pos": "RB",
        "v": 14.0
-      }
-     ],
-     "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 17.0,
-     "parts": [
-      {
-       "name": "Rhamondre Stevenson",
-       "pos": "RB",
-       "v": 17.0
-      },
-      {
-       "name": "Will Reichard",
-       "pos": "K",
-       "v": 16.0
-      },
-      {
-       "name": "BAL DEF",
-       "pos": "DEF",
-       "v": 0.0
       }
      ],
      "source": "observed",
@@ -3750,6 +3750,34 @@
      "rank": 6
     },
     {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 14.0,
+     "parts": [
+      {
+       "name": "SEA DEF",
+       "pos": "DEF",
+       "v": 14.0
+      }
+     ],
+     "source": "observed",
+     "rank": 6
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 10.0,
+     "parts": [
+      {
+       "name": "Jake Bates",
+       "pos": "K",
+       "v": 10.0
+      }
+     ],
+     "source": "observed",
+     "rank": 8
+    },
+    {
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "value": 8.0,
@@ -3762,25 +3790,35 @@
       {
        "name": "Cameron Dicker",
        "pos": "K",
-       "v": 4.0
+       "v": 6.0
       }
      ],
      "source": "observed",
-     "rank": 7
+     "rank": 9
     },
     {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 7.0,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 8.0,
      "parts": [
       {
-       "name": "SEA DEF",
-       "pos": "DEF",
+       "name": "Keaton Mitchell",
+       "pos": "RB",
+       "v": 8.0
+      },
+      {
+       "name": "Eddy Pineiro",
+       "pos": "K",
        "v": 7.0
+      },
+      {
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "v": 0.0
       }
      ],
      "source": "observed",
-     "rank": 8
+     "rank": 9
     },
     {
      "slot": 10,
@@ -3794,45 +3832,7 @@
       }
      ],
      "source": "observed",
-     "rank": 9
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 1.0,
-     "parts": [
-      {
-       "name": "Jake Bates",
-       "pos": "K",
-       "v": 1.0
-      }
-     ],
-     "source": "observed",
-     "rank": 10
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 1.0,
-     "parts": [
-      {
-       "name": "Eddy Pineiro",
-       "pos": "K",
-       "v": 1.0
-      },
-      {
-       "name": "Mark Andrews",
-       "pos": "TE",
-       "v": 0.0
-      },
-      {
-       "name": "Keaton Mitchell",
-       "pos": "RB",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 10
+     "rank": 11
     },
     {
      "slot": 7,
@@ -3853,22 +3853,22 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 132.38,
-     "act": 62.0,
+     "proj": 132.47,
+     "act": 93.0,
      "opp": 2
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "proj": 137.14,
-     "act": 122.0,
+     "act": 137.0,
      "opp": 1
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 135.92,
-     "act": 114.0,
+     "proj": 135.98,
+     "act": 141.0,
      "opp": 4
     },
     {
@@ -3882,35 +3882,35 @@
      "slot": 5,
      "team": "Immaculate Concepcion",
      "proj": 140.55,
-     "act": 158.0,
+     "act": 175.0,
      "opp": 11
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
      "proj": 144.2,
-     "act": 124.0,
+     "act": 162.0,
      "opp": 9
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 103.62,
-     "act": 53.0,
+     "act": 80.0,
      "opp": 8
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 133.34,
-     "act": 79.0,
+     "proj": 133.39,
+     "act": 106.0,
      "opp": 7
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 116.16,
-     "act": 104.0,
+     "proj": 117.36,
+     "act": 109.0,
      "opp": 6
     },
     {
@@ -3923,15 +3923,15 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 128.02,
-     "act": 95.0,
+     "proj": 130.01,
+     "act": 109.0,
      "opp": 5
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 119.34,
-     "act": 59.0,
+     "proj": 119.31,
+     "act": 96.0,
      "opp": 10
     }
    ],
