@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-10-11T20:18:14",
+ "built_at": "2026-10-12T20:18:11",
  "season": 2026,
- "current_week": 5,
+ "current_week": 6,
  "teams": [
   {
    "slot": 1,
@@ -3356,17 +3356,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 5,
-    "have": 13,
+    "have": 15,
     "scheduled": 15,
-    "missing": [
-     "BAL@ATL",
-     "BUF@LA"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -3408,7 +3405,7 @@
       {
        "name": "BAL DEF",
        "pos": "DEF",
-       "v": 11.0
+       "v": 10.88
       }
      ],
      "source": "observed",
@@ -3446,7 +3443,7 @@
       {
        "name": "Tyler Loop",
        "pos": "K",
-       "v": 9.0
+       "v": 8.94
       }
      ],
      "source": "observed",
@@ -3555,7 +3552,7 @@
       {
        "name": "Mark Andrews",
        "pos": "TE",
-       "v": 10.05
+       "v": 10.04
       },
       {
        "name": "Eddy Pineiro",
@@ -3681,7 +3678,7 @@
       {
        "name": "Tyler Loop",
        "pos": "K",
-       "v": 0.0
+       "v": 14.0
       }
      ],
      "source": "observed",
@@ -3814,7 +3811,7 @@
       {
        "name": "Mark Andrews",
        "pos": "TE",
-       "v": 0.0
+       "v": 4.0
       }
      ],
      "source": "observed",
@@ -3853,8 +3850,8 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 132.47,
-     "act": 93.0,
+     "proj": 133.75,
+     "act": 108.0,
      "opp": 2
     },
     {
@@ -3867,14 +3864,14 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 135.98,
-     "act": 141.0,
+     "proj": 135.92,
+     "act": 155.0,
      "opp": 4
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 121.38,
+     "proj": 120.99,
      "act": 62.0,
      "opp": 3
     },
@@ -3888,29 +3885,29 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 144.2,
-     "act": 162.0,
+     "proj": 144.26,
+     "act": 166.0,
      "opp": 9
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 103.62,
+     "proj": 104.05,
      "act": 80.0,
      "opp": 8
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 133.39,
-     "act": 106.0,
+     "proj": 133.38,
+     "act": 128.0,
      "opp": 7
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 117.36,
-     "act": 109.0,
+     "proj": 117.92,
+     "act": 123.0,
      "opp": 6
     },
     {
@@ -3923,19 +3920,25 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 130.01,
-     "act": 109.0,
+     "proj": 129.88,
+     "act": 134.0,
      "opp": 5
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 119.31,
-     "act": 96.0,
+     "proj": 119.19,
+     "act": 111.0,
      "opp": 10
     }
    ],
-   "winner": null,
+   "winner": {
+    "slot": 12,
+    "team": "Mr. Flapjack",
+    "value": 28.0,
+    "note": "",
+    "source": "computed"
+   },
    "carry_from": []
   },
   {
@@ -6833,6 +6836,14 @@
    ]
   },
   {
+   "slot": 12,
+   "team": "Mr. Flapjack",
+   "wins": 1,
+   "weeks": [
+    5
+   ]
+  },
+  {
    "slot": 6,
    "team": "Papa's playmakers",
    "wins": 1,
@@ -6863,12 +6874,6 @@
   {
    "slot": 8,
    "team": "Likely Cooked",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 12,
-   "team": "Mr. Flapjack",
    "wins": 0,
    "weeks": []
   },
