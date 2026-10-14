@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-12T23:18:13",
+ "built_at": "2026-10-13T20:32:06",
  "season": 2026,
  "current_week": 6,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-10-07T20:50:02",
+ "changes_through": "2026-10-13T20:31:50",
  "challenges": [
   {
    "week": 1,
@@ -3851,7 +3851,7 @@
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 133.75,
-     "act": 127.0,
+     "act": 130.0,
      "opp": 2
     },
     {
@@ -3872,7 +3872,7 @@
      "slot": 4,
      "team": "Broad Street Bullies",
      "proj": 120.99,
-     "act": 114.0,
+     "act": 127.0,
      "opp": 3
     },
     {
@@ -3893,21 +3893,21 @@
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 104.05,
-     "act": 89.0,
+     "act": 98.0,
      "opp": 8
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
      "proj": 133.38,
-     "act": 160.0,
+     "act": 162.0,
      "opp": 7
     },
     {
      "slot": 9,
      "team": "Bronny James",
      "proj": 117.92,
-     "act": 150.0,
+     "act": 158.0,
      "opp": 6
     },
     {
@@ -3976,8 +3976,7 @@
    },
    "lineups": {
     "manual": [],
-    "observed": [],
-    "assumed": [
+    "observed": [
      "Always the McBridesmaid",
      "Broad Street Bullies",
      "Bronny James",
@@ -3990,23 +3989,28 @@
      "The Brockness Monster",
      "Trade the team away",
      "angryBIRDS"
-    ]
+    ],
+    "assumed": []
    },
-   "assumed_lineups": [
-    "Always the McBridesmaid",
-    "Broad Street Bullies",
-    "Bronny James",
-    "Immaculate Concepcion",
-    "Likely Cooked",
-    "Mr. Flapjack",
-    "One Mo Time For Igoe",
-    "Papa's playmakers",
-    "Sonic n' Knuckles",
-    "The Brockness Monster",
-    "Trade the team away",
-    "angryBIRDS"
+   "assumed_lineups": [],
+   "roster_mismatch": [
+    "Sonic n' Knuckles: Kirk Cousins was started but is not on this roster in the ledger",
+    "Sonic n' Knuckles: Kalif Raymond is on this roster in the ledger but not on Yahoo's",
+    "Immaculate Concepcion: C.J. Stroud was started but is not on this roster in the ledger",
+    "Immaculate Concepcion: Aaron Rodgers is on this roster in the ledger but not on Yahoo's",
+    "Papa's playmakers: Jets was started but is not on this roster in the ledger",
+    "Papa's playmakers: Myles Price is on this roster in the ledger but not on Yahoo's",
+    "The Brockness Monster: Jacoby Brissett was started but is not on this roster in the ledger",
+    "The Brockness Monster: Blake Corum is on this roster in the ledger but not on Yahoo's",
+    "Likely Cooked: Jaguars was started but is not on this roster in the ledger",
+    "Likely Cooked: Bills is on this roster in the ledger but not on Yahoo's",
+    "Bronny James: Roman Wilson was started but is not on this roster in the ledger",
+    "Bronny James: Tre' Harris was started but is not on this roster in the ledger",
+    "Bronny James: Jacory Croskey-Merritt is on this roster in the ledger but not on Yahoo's",
+    "Bronny James: Dohnte Meyers is on this roster in the ledger but not on Yahoo's",
+    "angryBIRDS: Darius Cooper was started but is not on this roster in the ledger",
+    "angryBIRDS: De'Von Achane is on this roster in the ledger but not on Yahoo's"
    ],
-   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -4020,64 +4024,50 @@
        "v": 1.49
       }
      ],
-     "source": "assumed",
+     "source": "observed",
      "rank": 1
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 1.41,
+     "value": 1.42,
      "parts": [
       {
        "name": "Steelers",
        "pos": "DEF",
-       "v": 1.41
+       "v": 1.42
       }
      ],
-     "source": "assumed",
+     "source": "observed",
      "rank": 2
-    },
-    {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 1.28,
-     "parts": [
-      {
-       "name": "Bears",
-       "pos": "DEF",
-       "v": 1.28
-      }
-     ],
-     "source": "assumed",
-     "rank": 3
-    },
-    {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 1.28,
-     "parts": [
-      {
-       "name": "SEA DEF",
-       "pos": "DEF",
-       "v": 1.28
-      }
-     ],
-     "source": "assumed",
-     "rank": 3
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": 1.28,
+     "value": 1.33,
      "parts": [
       {
-       "name": "Bills",
+       "name": "Jaguars",
        "pos": "DEF",
-       "v": 1.28
+       "v": 1.33
       }
      ],
-     "source": "assumed",
+     "source": "observed",
      "rank": 3
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 1.26,
+     "parts": [
+      {
+       "name": "Bears",
+       "pos": "DEF",
+       "v": 1.26
+      }
+     ],
+     "source": "observed",
+     "rank": 4
     },
     {
      "slot": 4,
@@ -4090,8 +4080,8 @@
        "v": 1.2
       }
      ],
-     "source": "assumed",
-     "rank": 6
+     "source": "observed",
+     "rank": 5
     },
     {
      "slot": 3,
@@ -4104,22 +4094,22 @@
        "v": 1.13
       }
      ],
-     "source": "assumed",
-     "rank": 7
+     "source": "observed",
+     "rank": 6
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 1.1,
+     "value": 1.05,
      "parts": [
       {
        "name": "DAL DEF",
        "pos": "DEF",
-       "v": 1.1
+       "v": 1.05
       }
      ],
-     "source": "assumed",
-     "rank": 8
+     "source": "observed",
+     "rank": 7
     },
     {
      "slot": 10,
@@ -4132,7 +4122,21 @@
        "v": 1.0
       }
      ],
-     "source": "assumed",
+     "source": "observed",
+     "rank": 8
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 0.84,
+     "parts": [
+      {
+       "name": "Jets",
+       "pos": "DEF",
+       "v": 0.84
+      }
+     ],
+     "source": "observed",
      "rank": 9
     },
     {
@@ -4140,7 +4144,7 @@
      "team": "Always the McBridesmaid",
      "value": 0.0,
      "parts": [],
-     "source": "assumed",
+     "source": "observed",
      "rank": 10
     },
     {
@@ -4148,7 +4152,7 @@
      "team": "Bronny James",
      "value": 0.0,
      "parts": [],
-     "source": "assumed",
+     "source": "observed",
      "rank": 10
     },
     {
@@ -4156,7 +4160,7 @@
      "team": "angryBIRDS",
      "value": 0.0,
      "parts": [],
-     "source": "assumed",
+     "source": "observed",
      "rank": 10
     }
    ],
@@ -4165,84 +4169,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 120.1,
+     "proj": 112.49,
      "act": null,
      "opp": 8
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 134.69,
+     "proj": 136.98,
      "act": null,
      "opp": 4
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 77.43,
+     "proj": 96.42,
      "act": null,
      "opp": 6
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 118.99,
+     "proj": 110.77,
      "act": null,
      "opp": 2
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 110.46,
+     "proj": 107.49,
      "act": null,
      "opp": 7
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 120.72,
+     "proj": 118.7,
      "act": null,
      "opp": 3
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 146.05,
+     "proj": 147.44,
      "act": null,
      "opp": 5
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 105.75,
+     "proj": 106.98,
      "act": null,
      "opp": 1
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 109.25,
+     "proj": 121.53,
      "act": null,
      "opp": 12
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 129.36,
+     "proj": 127.8,
      "act": null,
      "opp": 11
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 116.11,
+     "proj": 113.26,
      "act": null,
      "opp": 10
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 101.94,
+     "proj": 112.92,
      "act": null,
      "opp": 9
     }
