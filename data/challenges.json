@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-13T20:32:06",
+ "built_at": "2026-10-13T23:18:23",
  "season": 2026,
  "current_week": 6,
  "teams": [
@@ -3993,24 +3993,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "Sonic n' Knuckles: Kirk Cousins was started but is not on this roster in the ledger",
-    "Sonic n' Knuckles: Kalif Raymond is on this roster in the ledger but not on Yahoo's",
-    "Immaculate Concepcion: C.J. Stroud was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Aaron Rodgers is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Jets was started but is not on this roster in the ledger",
-    "Papa's playmakers: Myles Price is on this roster in the ledger but not on Yahoo's",
-    "The Brockness Monster: Jacoby Brissett was started but is not on this roster in the ledger",
-    "The Brockness Monster: Blake Corum is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Jaguars was started but is not on this roster in the ledger",
-    "Likely Cooked: Bills is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Roman Wilson was started but is not on this roster in the ledger",
-    "Bronny James: Tre' Harris was started but is not on this roster in the ledger",
-    "Bronny James: Jacory Croskey-Merritt is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Dohnte Meyers is on this roster in the ledger but not on Yahoo's",
-    "angryBIRDS: Darius Cooper was started but is not on this roster in the ledger",
-    "angryBIRDS: De'Von Achane is on this roster in the ledger but not on Yahoo's"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -4169,21 +4152,21 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 112.49,
+     "proj": 112.53,
      "act": null,
      "opp": 8
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 136.98,
+     "proj": 136.74,
      "act": null,
      "opp": 4
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 96.42,
+     "proj": 96.23,
      "act": null,
      "opp": 6
     },
@@ -4197,56 +4180,56 @@
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 107.49,
+     "proj": 107.23,
      "act": null,
      "opp": 7
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 118.7,
+     "proj": 118.74,
      "act": null,
      "opp": 3
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 147.44,
+     "proj": 147.49,
      "act": null,
      "opp": 5
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 106.98,
+     "proj": 106.09,
      "act": null,
      "opp": 1
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 121.53,
+     "proj": 121.79,
      "act": null,
      "opp": 12
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 127.8,
+     "proj": 127.6,
      "act": null,
      "opp": 11
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 113.26,
+     "proj": 113.07,
      "act": null,
      "opp": 10
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 112.92,
+     "proj": 112.99,
      "act": null,
      "opp": 9
     }
