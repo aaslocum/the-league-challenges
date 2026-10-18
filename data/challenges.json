@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-15T20:18:15",
+ "built_at": "2026-10-18T11:18:09",
  "season": 2026,
  "current_week": 6,
  "teams": [
@@ -3954,10 +3954,9 @@
    "completeness": {
     "season": 2026,
     "week": 6,
-    "have": 1,
+    "have": 2,
     "scheduled": 14,
     "missing": [
-     "HOU@JAX",
      "CHI@ATL",
      "BAL@CLE",
      "TEN@IND",
@@ -3998,12 +3997,12 @@
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "value": 1.47,
+     "value": 1.44,
      "parts": [
       {
        "name": "BAL DEF",
        "pos": "DEF",
-       "v": 1.47
+       "v": 1.44
       }
      ],
      "source": "observed",
@@ -4012,12 +4011,12 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 1.42,
+     "value": 1.4,
      "parts": [
       {
        "name": "Steelers",
        "pos": "DEF",
-       "v": 1.42
+       "v": 1.4
       }
      ],
      "source": "observed",
@@ -4082,12 +4081,12 @@
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 1.05,
+     "value": 1.07,
      "parts": [
       {
        "name": "DAL DEF",
        "pos": "DEF",
-       "v": 1.05
+       "v": 1.07
       }
      ],
      "source": "observed",
@@ -4096,12 +4095,12 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "value": 1.01,
+     "value": 1.0,
      "parts": [
       {
        "name": "Titans",
        "pos": "DEF",
-       "v": 1.01
+       "v": 1.0
       }
      ],
      "source": "observed",
@@ -4110,12 +4109,12 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "value": 0.84,
+     "value": 0.82,
      "parts": [
       {
        "name": "Jets",
        "pos": "DEF",
-       "v": 0.84
+       "v": 0.82
       }
      ],
      "source": "observed",
@@ -4148,12 +4147,26 @@
    ],
    "actual": [
     {
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "HOU DEF",
+       "pos": "DEF",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 2,
@@ -4161,15 +4174,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
-    },
-    {
-     "slot": 3,
-     "team": "Sonic n' Knuckles",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 4,
@@ -4177,7 +4182,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 5,
@@ -4185,7 +4190,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 6,
@@ -4193,7 +4198,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 7,
@@ -4201,7 +4206,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 8,
@@ -4209,7 +4214,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 9,
@@ -4217,7 +4222,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 10,
@@ -4225,7 +4230,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 11,
@@ -4233,7 +4238,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 12,
@@ -4241,91 +4246,91 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 97.84,
-     "act": 0.0,
+     "proj": 96.24,
+     "act": 3.0,
      "opp": 8
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 136.2,
-     "act": 0.0,
+     "proj": 139.08,
+     "act": 8.0,
      "opp": 4
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 99.59,
-     "act": 0.0,
+     "proj": 95.03,
+     "act": 9.0,
      "opp": 6
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 111.31,
-     "act": 0.0,
+     "proj": 99.66,
+     "act": 14.0,
      "opp": 2
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 107.99,
-     "act": 0.0,
+     "proj": 110.37,
+     "act": 21.0,
      "opp": 7
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 120.49,
-     "act": 1.0,
+     "proj": 121.22,
+     "act": 28.0,
      "opp": 3
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 135.42,
-     "act": 0.0,
+     "proj": 149.29,
+     "act": 6.0,
      "opp": 5
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 103.51,
-     "act": 0.0,
+     "proj": 105.21,
+     "act": 21.0,
      "opp": 1
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 121.4,
-     "act": 0.0,
+     "proj": 110.11,
+     "act": 23.0,
      "opp": 12
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 127.15,
-     "act": 0.0,
+     "proj": 124.15,
+     "act": 18.0,
      "opp": 11
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 112.57,
+     "proj": 110.36,
      "act": 0.0,
      "opp": 10
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 109.83,
+     "proj": 108.08,
      "act": 0.0,
      "opp": 9
     }
