@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-18T11:18:09",
+ "built_at": "2026-10-18T17:18:11",
  "season": 2026,
  "current_week": 6,
  "teams": [
@@ -3954,19 +3954,9 @@
    "completeness": {
     "season": 2026,
     "week": 6,
-    "have": 2,
+    "have": 12,
     "scheduled": 14,
     "missing": [
-     "CHI@ATL",
-     "BAL@CLE",
-     "TEN@IND",
-     "NYJ@NE",
-     "NO@NYG",
-     "CAR@PHI",
-     "PIT@TB",
-     "ARI@LA",
-     "LAC@KC",
-     "BUF@LV",
      "DAL@GB",
      "WAS@SF"
     ],
@@ -4011,12 +4001,12 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 1.4,
+     "value": 1.39,
      "parts": [
       {
        "name": "Steelers",
        "pos": "DEF",
-       "v": 1.4
+       "v": 1.39
       }
      ],
      "source": "observed",
@@ -4053,12 +4043,12 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 1.17,
+     "value": 1.18,
      "parts": [
       {
        "name": "PHI DEF",
        "pos": "DEF",
-       "v": 1.17
+       "v": 1.18
       }
      ],
      "source": "observed",
@@ -4147,6 +4137,48 @@
    ],
    "actual": [
     {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 3.0,
+     "parts": [
+      {
+       "name": "Titans",
+       "pos": "DEF",
+       "v": 3.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 2.0,
+     "parts": [
+      {
+       "name": "Jets",
+       "pos": "DEF",
+       "v": 2.0
+      }
+     ],
+     "source": "observed",
+     "rank": 2
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 2.0,
+     "parts": [
+      {
+       "name": "Steelers",
+       "pos": "DEF",
+       "v": 2.0
+      }
+     ],
+     "source": "observed",
+     "rank": 2
+    },
+    {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "value": 1.0,
@@ -4158,7 +4190,35 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 4
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Bears",
+       "pos": "DEF",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Jaguars",
+       "pos": "DEF",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
     },
     {
      "slot": 1,
@@ -4166,7 +4226,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
+     "rank": 7
     },
     {
      "slot": 2,
@@ -4174,7 +4234,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
+     "rank": 7
     },
     {
      "slot": 4,
@@ -4182,39 +4242,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 2
+     "rank": 7
     },
     {
      "slot": 9,
@@ -4222,15 +4250,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 2
+     "rank": 7
     },
     {
      "slot": 11,
@@ -4238,7 +4258,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
+     "rank": 7
     },
     {
      "slot": 12,
@@ -4246,92 +4266,92 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 2
+     "rank": 7
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 96.24,
-     "act": 3.0,
+     "proj": 96.1,
+     "act": 39.0,
      "opp": 8
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 139.08,
-     "act": 8.0,
+     "proj": 139.19,
+     "act": 72.0,
      "opp": 4
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 95.03,
-     "act": 9.0,
+     "proj": 95.65,
+     "act": 28.0,
      "opp": 6
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 99.66,
-     "act": 14.0,
+     "proj": 100.69,
+     "act": 51.0,
      "opp": 2
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 110.37,
-     "act": 21.0,
+     "proj": 100.94,
+     "act": 101.0,
      "opp": 7
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 121.22,
-     "act": 28.0,
+     "proj": 121.08,
+     "act": 60.0,
      "opp": 3
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 149.29,
-     "act": 6.0,
+     "proj": 150.43,
+     "act": 64.0,
      "opp": 5
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 105.21,
-     "act": 21.0,
+     "proj": 105.5,
+     "act": 105.0,
      "opp": 1
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 110.11,
-     "act": 23.0,
+     "proj": 98.97,
+     "act": 71.0,
      "opp": 12
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 124.15,
-     "act": 18.0,
+     "proj": 123.97,
+     "act": 101.0,
      "opp": 11
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 110.36,
-     "act": 0.0,
+     "proj": 102.61,
+     "act": 71.0,
      "opp": 10
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 108.08,
-     "act": 0.0,
+     "proj": 108.09,
+     "act": 49.0,
      "opp": 9
     }
    ],
