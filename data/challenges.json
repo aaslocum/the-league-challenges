@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-10-18T17:18:11",
+ "built_at": "2026-10-19T20:18:11",
  "season": 2026,
- "current_week": 6,
+ "current_week": 7,
  "teams": [
   {
    "slot": 1,
@@ -3950,17 +3950,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 6,
-    "have": 12,
+    "have": 14,
     "scheduled": 14,
-    "missing": [
-     "DAL@GB",
-     "WAS@SF"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -4071,12 +4068,12 @@
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 1.07,
+     "value": 1.08,
      "parts": [
       {
        "name": "DAL DEF",
        "pos": "DEF",
-       "v": 1.07
+       "v": 1.08
       }
      ],
      "source": "observed",
@@ -4179,6 +4176,20 @@
      "rank": 2
     },
     {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "DAL DEF",
+       "pos": "DEF",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "value": 1.0,
@@ -4226,15 +4237,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 7
-    },
-    {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 0.0,
-     "parts": [],
-     "source": "observed",
-     "rank": 7
+     "rank": 8
     },
     {
      "slot": 4,
@@ -4242,7 +4245,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 7
+     "rank": 8
     },
     {
      "slot": 9,
@@ -4250,7 +4253,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 7
+     "rank": 8
     },
     {
      "slot": 11,
@@ -4258,7 +4261,7 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 7
+     "rank": 8
     },
     {
      "slot": 12,
@@ -4266,96 +4269,102 @@
      "value": 0.0,
      "parts": [],
      "source": "observed",
-     "rank": 7
+     "rank": 8
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 96.1,
-     "act": 39.0,
+     "proj": 79.84,
+     "act": 76.0,
      "opp": 8
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 139.19,
-     "act": 72.0,
+     "proj": 138.21,
+     "act": 105.0,
      "opp": 4
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "proj": 95.65,
-     "act": 28.0,
+     "act": 60.0,
      "opp": 6
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 100.69,
-     "act": 51.0,
+     "proj": 100.59,
+     "act": 86.0,
      "opp": 2
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 100.94,
-     "act": 101.0,
+     "proj": 100.83,
+     "act": 110.0,
      "opp": 7
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 121.08,
-     "act": 60.0,
+     "proj": 121.25,
+     "act": 125.0,
      "opp": 3
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 150.43,
-     "act": 64.0,
+     "proj": 150.21,
+     "act": 110.0,
      "opp": 5
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 105.5,
-     "act": 105.0,
+     "proj": 105.62,
+     "act": 123.0,
      "opp": 1
     },
     {
      "slot": 9,
      "team": "Bronny James",
      "proj": 98.97,
-     "act": 71.0,
+     "act": 85.0,
      "opp": 12
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 123.97,
-     "act": 101.0,
+     "proj": 124.31,
+     "act": 119.0,
      "opp": 11
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 102.61,
-     "act": 71.0,
+     "proj": 102.5,
+     "act": 75.0,
      "opp": 10
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 108.09,
-     "act": 49.0,
+     "proj": 107.98,
+     "act": 60.0,
      "opp": 9
     }
    ],
-   "winner": null,
+   "winner": {
+    "slot": 10,
+    "team": "Trade the team away",
+    "value": 3.0,
+    "note": "",
+    "source": "computed"
+   },
    "carry_from": []
   },
   {
@@ -6975,6 +6984,14 @@
    ]
   },
   {
+   "slot": 10,
+   "team": "Trade the team away",
+   "wins": 1,
+   "weeks": [
+    6
+   ]
+  },
+  {
    "slot": 11,
    "team": "angryBIRDS",
    "wins": 1,
@@ -7015,12 +7032,6 @@
   {
    "slot": 7,
    "team": "The Brockness Monster",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 10,
-   "team": "Trade the team away",
    "wins": 0,
    "weeks": []
   }
