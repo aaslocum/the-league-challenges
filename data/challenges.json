@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-22T23:18:36",
+ "built_at": "2026-10-24T17:18:28",
  "season": 2026,
  "current_week": 7,
  "teams": [
@@ -4435,88 +4435,74 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 127.26,
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 127.19,
      "parts": [
       {
-       "name": "lost to Papa's playmakers by 18.0",
+       "name": "lost to angryBIRDS by 7.06",
        "pos": "",
-       "v": 127.26
+       "v": 127.19
       }
      ],
      "source": "assumed",
      "rank": 1
     },
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 122.1,
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 125.22,
      "parts": [
       {
-       "name": "lost to Immaculate Concepcion by 16.29",
+       "name": "lost to Papa's playmakers by 21.07",
        "pos": "",
-       "v": 122.1
+       "v": 125.22
       }
      ],
      "source": "assumed",
      "rank": 2
     },
     {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 120.22,
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 119.93,
      "parts": [
       {
-       "name": "lost to Broad Street Bullies by 0.64",
+       "name": "lost to Immaculate Concepcion by 17.61",
        "pos": "",
-       "v": 120.22
+       "v": 119.93
       }
      ],
      "source": "assumed",
      "rank": 3
     },
     {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 119.12,
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 104.56,
      "parts": [
       {
-       "name": "lost to The Brockness Monster by 21.56",
+       "name": "lost to Sonic n' Knuckles by 32.86",
        "pos": "",
-       "v": 119.12
+       "v": 104.56
       }
      ],
      "source": "assumed",
      "rank": 4
     },
     {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 106.31,
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 98.63,
      "parts": [
       {
-       "name": "lost to Sonic n' Knuckles by 30.06",
+       "name": "lost to Trade the team away by 12.75",
        "pos": "",
-       "v": 106.31
+       "v": 98.63
       }
      ],
      "source": "assumed",
      "rank": 5
-    },
-    {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 85.57,
-     "parts": [
-      {
-       "name": "lost to Trade the team away by 28.26",
-       "pos": "",
-       "v": 85.57
-      }
-     ],
-     "source": "assumed",
-     "rank": 6
     }
    ],
    "actual": [
@@ -4609,84 +4595,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 122.1,
+     "proj": 119.93,
      "act": 0.0,
      "opp": 5
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 127.26,
+     "proj": 125.22,
      "act": 25.0,
      "opp": 6
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 136.37,
+     "proj": 137.42,
      "act": 0.0,
      "opp": 12
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 120.86,
+     "proj": 120.75,
      "act": 0.0,
      "opp": 8
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 138.39,
+     "proj": 137.54,
      "act": 9.0,
      "opp": 1
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 145.26,
+     "proj": 146.29,
      "act": 0.0,
      "opp": 2
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 140.68,
+     "proj": 127.19,
      "act": 0.0,
      "opp": 11
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 120.22,
+     "proj": 120.75,
      "act": 41.0,
      "opp": 4
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 85.57,
+     "proj": 98.63,
      "act": 0.0,
      "opp": 10
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 113.83,
+     "proj": 111.38,
      "act": 19.0,
      "opp": 9
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 119.12,
+     "proj": 134.25,
      "act": 39.0,
      "opp": 7
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 106.31,
+     "proj": 104.56,
      "act": 31.0,
      "opp": 3
     }
