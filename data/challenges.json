@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-24T17:18:28",
+ "built_at": "2026-10-24T20:19:18",
  "season": 2026,
  "current_week": 7,
  "teams": [
@@ -4435,28 +4435,28 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": 127.19,
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 125.28,
      "parts": [
       {
-       "name": "lost to angryBIRDS by 7.06",
+       "name": "lost to Papa's playmakers by 21.2",
        "pos": "",
-       "v": 127.19
+       "v": 125.28
       }
      ],
      "source": "assumed",
      "rank": 1
     },
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 125.22,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 120.62,
      "parts": [
       {
-       "name": "lost to Papa's playmakers by 21.07",
+       "name": "lost to Likely Cooked by 0.27",
        "pos": "",
-       "v": 125.22
+       "v": 120.62
       }
      ],
      "source": "assumed",
@@ -4465,44 +4465,58 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 119.93,
+     "value": 119.99,
      "parts": [
       {
-       "name": "lost to Immaculate Concepcion by 17.61",
+       "name": "lost to Immaculate Concepcion by 17.75",
        "pos": "",
-       "v": 119.93
+       "v": 119.99
       }
      ],
      "source": "assumed",
      "rank": 3
     },
     {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 104.56,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 117.54,
      "parts": [
       {
-       "name": "lost to Sonic n' Knuckles by 32.86",
+       "name": "lost to The Brockness Monster by 9.72",
        "pos": "",
-       "v": 104.56
+       "v": 117.54
       }
      ],
      "source": "assumed",
      "rank": 4
     },
     {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 98.63,
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 104.74,
      "parts": [
       {
-       "name": "lost to Trade the team away by 12.75",
+       "name": "lost to Sonic n' Knuckles by 32.79",
        "pos": "",
-       "v": 98.63
+       "v": 104.74
       }
      ],
      "source": "assumed",
      "rank": 5
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 88.82,
+     "parts": [
+      {
+       "name": "lost to Trade the team away by 22.56",
+       "pos": "",
+       "v": 88.82
+      }
+     ],
+     "source": "assumed",
+     "rank": 6
     }
    ],
    "actual": [
@@ -4595,63 +4609,63 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 119.93,
+     "proj": 119.99,
      "act": 0.0,
      "opp": 5
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 125.22,
+     "proj": 125.28,
      "act": 25.0,
      "opp": 6
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 137.42,
+     "proj": 137.53,
      "act": 0.0,
      "opp": 12
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 120.75,
+     "proj": 120.62,
      "act": 0.0,
      "opp": 8
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 137.54,
+     "proj": 137.74,
      "act": 9.0,
      "opp": 1
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 146.29,
+     "proj": 146.48,
      "act": 0.0,
      "opp": 2
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 127.19,
+     "proj": 127.26,
      "act": 0.0,
      "opp": 11
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 120.75,
+     "proj": 120.89,
      "act": 41.0,
      "opp": 4
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 98.63,
+     "proj": 88.82,
      "act": 0.0,
      "opp": 10
     },
@@ -4665,14 +4679,14 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 134.25,
+     "proj": 117.54,
      "act": 39.0,
      "opp": 7
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 104.56,
+     "proj": 104.74,
      "act": 31.0,
      "opp": 3
     }
