@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-10-26T20:18:15",
+ "built_at": "2026-10-26T23:18:12",
  "season": 2026,
  "current_week": 8,
  "teams": [
@@ -4740,112 +4740,112 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 41.91,
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 49.34,
      "parts": [
       {
-       "name": "Lamar Jackson",
+       "name": "Jayden Daniels",
        "pos": "QB",
-       "v": 41.91
+       "v": 49.34
       }
      ],
      "source": "assumed",
      "rank": 1
     },
     {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 34.58,
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 37.58,
      "parts": [
       {
-       "name": "Jayden Daniels",
+       "name": "Josh Allen",
        "pos": "QB",
-       "v": 34.58
+       "v": 37.58
       }
      ],
      "source": "assumed",
      "rank": 2
     },
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 27.47,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 36.65,
      "parts": [
       {
-       "name": "Jalen Hurts",
+       "name": "Drake Maye",
        "pos": "QB",
-       "v": 27.47
+       "v": 36.65
       }
      ],
      "source": "assumed",
      "rank": 3
     },
     {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 27.44,
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 24.48,
      "parts": [
       {
-       "name": "Josh Allen",
+       "name": "Caleb Williams",
        "pos": "QB",
-       "v": 27.44
+       "v": 24.48
       }
      ],
      "source": "assumed",
      "rank": 4
     },
     {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 22.25,
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 23.48,
      "parts": [
       {
-       "name": "Drake Maye",
+       "name": "Trevor Lawrence",
        "pos": "QB",
-       "v": 22.25
+       "v": 23.48
       }
      ],
      "source": "assumed",
      "rank": 5
     },
     {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 20.68,
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 21.88,
      "parts": [
       {
-       "name": "Caleb Williams",
+       "name": "Bryce Young",
        "pos": "QB",
-       "v": 20.68
+       "v": 21.88
       }
      ],
      "source": "assumed",
      "rank": 6
     },
     {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": 17.24,
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 16.34,
      "parts": [
       {
-       "name": "Trevor Lawrence",
+       "name": "Dak Prescott",
        "pos": "QB",
-       "v": 17.24
+       "v": 16.34
       }
      ],
      "source": "assumed",
      "rank": 7
     },
     {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 11.93,
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 13.99,
      "parts": [
       {
-       "name": "Jordan Love",
+       "name": "Joe Burrow",
        "pos": "QB",
-       "v": 11.93
+       "v": 13.99
       }
      ],
      "source": "assumed",
@@ -4854,58 +4854,46 @@
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 10.78,
+     "value": 13.5,
      "parts": [
       {
-       "name": "Patrick Mahomes",
+       "name": "Jacoby Brissett",
        "pos": "QB",
-       "v": 10.78
+       "v": 13.5
       }
      ],
      "source": "assumed",
      "rank": 9
     },
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 8.25,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 4.37,
      "parts": [
       {
-       "name": "Dak Prescott",
+       "name": "Matthew Stafford",
        "pos": "QB",
-       "v": 8.25
+       "v": 4.37
       }
      ],
      "source": "assumed",
      "rank": 10
     },
     {
-     "slot": 3,
-     "team": "Sonic n' Knuckles",
-     "value": 7.74,
-     "parts": [
-      {
-       "name": "Joe Burrow",
-       "pos": "QB",
-       "v": 7.74
-      }
-     ],
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 0.0,
+     "parts": [],
      "source": "assumed",
      "rank": 11
     },
     {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 2.27,
-     "parts": [
-      {
-       "name": "Matthew Stafford",
-       "pos": "QB",
-       "v": 2.27
-      }
-     ],
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 0.0,
+     "parts": [],
      "source": "assumed",
-     "rank": 12
+     "rank": 11
     }
    ],
    "actual": null,
@@ -4913,84 +4901,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 139.14,
+     "proj": 120.1,
      "act": null,
      "opp": 7
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 116.62,
+     "proj": 134.32,
      "act": null,
      "opp": 12
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 109.74,
+     "proj": 112.19,
      "act": null,
      "opp": 10
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 130.36,
+     "proj": 110.75,
      "act": null,
      "opp": 5
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 126.5,
+     "proj": 94.74,
      "act": null,
      "opp": 4
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 140.73,
+     "proj": 150.53,
      "act": null,
      "opp": 8
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 120.19,
+     "proj": 113.15,
      "act": null,
      "opp": 1
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 132.8,
+     "proj": 131.87,
      "act": null,
      "opp": 6
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 112.86,
+     "proj": 120.85,
      "act": null,
      "opp": 11
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 90.98,
+     "proj": 85.4,
      "act": null,
      "opp": 3
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 120.06,
+     "proj": 114.39,
      "act": null,
      "opp": 9
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 127.77,
+     "proj": 120.5,
      "act": null,
      "opp": 2
     }
