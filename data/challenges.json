@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-10-25T20:18:22",
+ "built_at": "2026-10-26T20:18:15",
  "season": 2026,
- "current_week": 7,
+ "current_week": 8,
  "teams": [
   {
    "slot": 1,
@@ -4376,17 +4376,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 7,
-    "have": 12,
+    "have": 14,
     "scheduled": 14,
-    "missing": [
-     "KC@SEA",
-     "DAL@PHI"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -4426,12 +4423,12 @@
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 125.45,
+     "value": 125.38,
      "parts": [
       {
-       "name": "lost to Papa's playmakers by 22.29",
+       "name": "lost to Papa's playmakers by 22.16",
        "pos": "",
-       "v": 125.45
+       "v": 125.38
       }
      ],
      "source": "assumed",
@@ -4440,12 +4437,12 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 120.8,
+     "value": 120.55,
      "parts": [
       {
-       "name": "lost to Likely Cooked by 0.56",
+       "name": "lost to Likely Cooked by 0.81",
        "pos": "",
-       "v": 120.8
+       "v": 120.55
       }
      ],
      "source": "assumed",
@@ -4485,7 +4482,7 @@
      "value": 107.17,
      "parts": [
       {
-       "name": "lost to Sonic n' Knuckles by 31.22",
+       "name": "lost to Sonic n' Knuckles by 31.16",
        "pos": "",
        "v": 107.17
       }
@@ -4499,7 +4496,7 @@
      "value": 90.0,
      "parts": [
       {
-       "name": "lost to Trade the team away by 25.51",
+       "name": "lost to Trade the team away by 25.34",
        "pos": "",
        "v": 90.0
       }
@@ -4524,6 +4521,48 @@
      "rank": 1
     },
     {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 101.0,
+     "parts": [
+      {
+       "name": "lost to Papa's playmakers by 18.0",
+       "pos": "",
+       "v": 101.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 2
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 96.0,
+     "parts": [
+      {
+       "name": "lost to The Brockness Monster by 13.0",
+       "pos": "",
+       "v": 96.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 3
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 93.0,
+     "parts": [
+      {
+       "name": "lost to Likely Cooked by 39.0",
+       "pos": "",
+       "v": 93.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 4
+    },
+    {
      "slot": 12,
      "team": "Mr. Flapjack",
      "value": 89.0,
@@ -4535,49 +4574,21 @@
       }
      ],
      "source": "assumed",
-     "rank": 2
-    },
-    {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 84.0,
-     "parts": [
-      {
-       "name": "lost to Likely Cooked by 48.0",
-       "pos": "",
-       "v": 84.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 3
-    },
-    {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 79.0,
-     "parts": [
-      {
-       "name": "lost to One Mo Time For Igoe by 21.0",
-       "pos": "",
-       "v": 79.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 4
+     "rank": 5
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "value": 64.0,
+     "value": 83.0,
      "parts": [
       {
-       "name": "lost to Trade the team away by 38.0",
+       "name": "lost to Trade the team away by 19.0",
        "pos": "",
-       "v": 64.0
+       "v": 83.0
       }
      ],
      "source": "assumed",
-     "rank": 5
+     "rank": 6
     }
    ],
    "totals": [
@@ -4591,22 +4602,22 @@
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 125.45,
-     "act": 100.0,
+     "proj": 125.38,
+     "act": 101.0,
      "opp": 6
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 138.39,
+     "proj": 138.33,
      "act": 126.0,
      "opp": 12
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 120.8,
-     "act": 84.0,
+     "proj": 120.55,
+     "act": 93.0,
      "opp": 8
     },
     {
@@ -4619,15 +4630,15 @@
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 147.74,
-     "act": 79.0,
+     "proj": 147.54,
+     "act": 119.0,
      "opp": 2
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 132.66,
-     "act": 96.0,
+     "act": 109.0,
      "opp": 11
     },
     {
@@ -4641,13 +4652,13 @@
      "slot": 9,
      "team": "Bronny James",
      "proj": 90.0,
-     "act": 64.0,
+     "act": 83.0,
      "opp": 10
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 115.51,
+     "proj": 115.34,
      "act": 102.0,
      "opp": 9
     },
@@ -4666,7 +4677,13 @@
      "opp": 3
     }
    ],
-   "winner": null,
+   "winner": {
+    "slot": 1,
+    "team": "Always the McBridesmaid",
+    "value": 108.0,
+    "note": "",
+    "source": "computed"
+   },
    "carry_from": []
   },
   {
@@ -7026,6 +7043,14 @@
  ],
  "standings": [
   {
+   "slot": 1,
+   "team": "Always the McBridesmaid",
+   "wins": 1,
+   "weeks": [
+    7
+   ]
+  },
+  {
    "slot": 9,
    "team": "Bronny James",
    "wins": 1,
@@ -7072,12 +7097,6 @@
    "weeks": [
     4
    ]
-  },
-  {
-   "slot": 1,
-   "team": "Always the McBridesmaid",
-   "wins": 0,
-   "weeks": []
   },
   {
    "slot": 4,
