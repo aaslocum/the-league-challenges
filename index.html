@@ -384,6 +384,18 @@ function fmtRow(v, unit, isActual) {
 
 function byId(list) { const m = {}; for (const c of list) m[c.week] = c; return m; }
 function chal(w) { return byId(DB.challenges)[w]; }
+/* A tie at the top wins nothing: the week's pot pushes to the next one. */
+function isPush(c) { return !!(c.winner && c.winner.push); }
+function pushLine(c) {
+  return DB.challenges.some((x) => x.week === c.week + 1)
+    ? `The pot pushes to week ${c.week + 1}.`
+    : "Last week of the slate — nowhere to push; the commissioner's call.";
+}
+function carryTag(c) {
+  const f = c.carry_from || [];
+  return f.length
+    ? `<span class="tag final">+ wk ${f.join(" & ")} pot</span>` : "";
+}
 
 /* ------------------------------------------------------------------ strip */
 function renderStrip() {
@@ -421,6 +433,7 @@ function leadCard(el, rows, unit, isActual, c) {
   }
   el.classList.remove("empty");
   const w = rows[0], second = rows[1];
+  const push = isActual && isPush(c);
   const gap = second ? Math.abs(w.value - second.value) : null;
   // Every contributor, not the top three: the number above is their sum,
   // and a "7" over three names adding to five reads as a mistake.
@@ -430,11 +443,13 @@ function leadCard(el, rows, unit, isActual, c) {
   el.innerHTML =
     `<div class="lab"><i></i>${!isActual ? "Projected"
        : c.status === "final" ? "Actual — final" : "Actual — winning now"}</div>`
-    + `<div class="who">${esc(w.team)}</div>`
+    + `<div class="who">${esc(push ? c.winner.tied.join(" & ") : w.team)}</div>`
     + `<div class="fig">${fmtRow(w.value, unit, isActual)}</div>`
     // A gap of 0.004 formats as "0", and "0 ahead of" is not a sentence.
     // Tied at the precision shown IS tied as far as the page is concerned.
-    + (gap !== null
+    + (push
+        ? `<div class="gap">Tied — nobody wins it. ${esc(pushLine(c))}</div>`
+        : gap !== null
         ? `<div class="gap">${fmt(gap, unit) === fmt(0, unit)
              ? "tied with " : fmt(gap, unit) + " ahead of "}`
           + `${esc(second.team)}</div>`
@@ -445,8 +460,10 @@ function leadCard(el, rows, unit, isActual, c) {
 function renderHero(c) {
   const kick = [];
   if (c.status === "live") kick.push('<span class="tag live">Live now</span>');
-  else if (c.status === "final") kick.push('<span class="tag final">Settled</span>');
+  else if (c.status === "final")
+    kick.push(isPush(c) ? '<span class="tag min">Push</span>' : '<span class="tag final">Settled</span>');
   else kick.push('<span class="tag">Upcoming</span>');
+  if (carryTag(c)) kick.push(carryTag(c));
   if (c.direction === "min") kick.push('<span class="tag min">Lowest wins</span>');
   const L = c.lineups || {manual: [], observed: [], assumed: c.assumed_lineups || []};
   if (L.assumed.length)
@@ -520,14 +537,17 @@ function renderRace(c) {
   order.forEach((slot, i) => {
     const p = pById[slot], a = aById[slot];
     const row = a || p;
-    const isWin = i === 0;
+    // The rank of the series being ordered by. A team with only a projection
+    // under an actual ranking keeps its position, not its projected rank.
+    const rk = act.length ? (a ? a.rank : i + 1) : (p.rank || i + 1);
+    const isWin = rk === 1 && !(act.length && isPush(c));
     const partsOf = a || p;
     const parts = (partsOf.parts || []).map((x) =>
       `${x.name}${x.why ? " (" + x.why + ")" : ""} ${fmt(x.v, unit === "players" ? "pts" : unit)}`
     ).join("  ·  ");
     const w = (v) => Math.max(v > 0 ? 1.5 : 0, (Math.abs(v) / max) * 100).toFixed(1) + "%";
     html += `<div class="row${isWin ? " win" : ""}">`
-      + `<div class="rk">${i + 1}</div>`
+      + `<div class="rk">${rk}</div>`
       + `<div class="tm"><div class="nm">${esc(row.team)}</div>`
       + (parts ? `<div class="parts">${esc(parts)}</div>` : "")
       + `</div><div class="bars">`
@@ -622,7 +642,10 @@ function renderSlate() {
       flags.push('<span class="tag set">Real lineups</span>');
     if (c.projectable === false) flags.push('<span class="tag">No projection</span>');
     if (c.direction === "min") flags.push('<span class="tag min">Lowest wins</span>');
-    const w = c.winner
+    if (carryTag(c)) flags.push(carryTag(c));
+    const w = isPush(c)
+      ? `<span class="w-name">Tied · pushed to wk ${c.week + 1}</span>`
+      : c.winner
       ? `<span class="w-name">🏆 ${esc(c.winner.team)}</span>`
       : (c.projected && c.projected.length
           ? `projected: ${esc(c.projected[0].team)}`
