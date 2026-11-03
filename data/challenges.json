@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-03T02:18:14",
+ "built_at": "2026-11-03T11:18:13",
  "season": 2026,
  "current_week": 9,
  "teams": [
@@ -5243,10 +5243,26 @@
    "completeness": {
     "season": 2026,
     "week": 9,
-    "have": null,
-    "scheduled": null,
-    "missing": [],
-    "status": "absent"
+    "have": 0,
+    "scheduled": 15,
+    "missing": [
+     "JAX@BAL",
+     "CIN@ATL",
+     "DEN@CAR",
+     "DAL@IND",
+     "NYJ@KC",
+     "DET@MIA",
+     "CLE@NO",
+     "NYG@PHI",
+     "LA@WAS",
+     "HOU@LAC",
+     "LV@SF",
+     "GB@NE",
+     "ARI@SEA",
+     "TB@CHI",
+     "BUF@MIN"
+    ],
+    "status": "partial"
    },
    "lineups": {
     "manual": [],
@@ -5284,21 +5300,6 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 1.0,
-     "parts": [
-      {
-       "name": "Tre' Harris",
-       "pos": "WR",
-       "v": 4.13,
-       "why": null
-      }
-     ],
-     "source": "assumed",
-     "rank": 1
-    },
-    {
      "slot": 10,
      "team": "Trade the team away",
      "value": 1.0,
@@ -5306,7 +5307,7 @@
       {
        "name": "MarShawn Lloyd",
        "pos": "RB",
-       "v": 4.77,
+       "v": 3.27,
        "why": null
       }
      ],
@@ -5321,7 +5322,7 @@
       {
        "name": "Kenyon Sadiq",
        "pos": "TE",
-       "v": 3.09,
+       "v": 3.18,
        "why": null
       }
      ],
@@ -5334,7 +5335,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 2,
@@ -5342,7 +5343,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 3,
@@ -5350,7 +5351,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 4,
@@ -5358,7 +5359,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 5,
@@ -5366,7 +5367,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 6,
@@ -5374,7 +5375,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 7,
@@ -5382,7 +5383,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     },
     {
      "slot": 8,
@@ -5390,7 +5391,15 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 0.0,
+     "parts": [],
+     "source": "assumed",
+     "rank": 3
     },
     {
      "slot": 11,
@@ -5398,7 +5407,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 4
+     "rank": 3
     }
    ],
    "actual": null,
@@ -5406,84 +5415,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 120.29,
+     "proj": 124.03,
      "act": null,
      "opp": 11
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 142.24,
+     "proj": 141.59,
      "act": null,
      "opp": 10
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 133.53,
+     "proj": 136.78,
      "act": null,
      "opp": 9
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 112.03,
+     "proj": 102.45,
      "act": null,
      "opp": 7
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 138.2,
+     "proj": 138.6,
      "act": null,
      "opp": 6
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 136.35,
+     "proj": 138.19,
      "act": null,
      "opp": 5
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 109.72,
+     "proj": 112.74,
      "act": null,
      "opp": 4
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 139.18,
+     "proj": 141.77,
      "act": null,
      "opp": 12
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 124.25,
+     "proj": 123.42,
      "act": null,
      "opp": 3
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 112.7,
+     "proj": 108.18,
      "act": null,
      "opp": 2
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 127.75,
+     "proj": 121.44,
      "act": null,
      "opp": 1
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 99.45,
+     "proj": 98.32,
      "act": null,
      "opp": 8
     }
