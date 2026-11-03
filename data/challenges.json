@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-11-01T17:18:07",
+ "built_at": "2026-11-03T02:18:14",
  "season": 2026,
- "current_week": 8,
+ "current_week": 9,
  "teams": [
   {
    "slot": 1,
@@ -4702,14 +4702,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "upcoming",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 8,
-    "have": null,
-    "scheduled": null,
+    "have": 14,
+    "scheduled": 14,
     "missing": [],
-    "status": "absent"
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -4989,94 +4989,245 @@
      "rank": 12
     }
    ],
-   "actual": null,
+   "actual": [
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 30.0,
+     "parts": [
+      {
+       "name": "Josh Allen",
+       "pos": "QB",
+       "v": 30.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 20.0,
+     "parts": [
+      {
+       "name": "Dak Prescott",
+       "pos": "QB",
+       "v": 20.0
+      }
+     ],
+     "source": "observed",
+     "rank": 2
+    },
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 11.0,
+     "parts": [
+      {
+       "name": "Michael Penix Jr.",
+       "pos": "QB",
+       "v": 11.0
+      }
+     ],
+     "source": "observed",
+     "rank": 3
+    },
+    {
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 10.0,
+     "parts": [
+      {
+       "name": "Joe Burrow",
+       "pos": "QB",
+       "v": 10.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 10.0,
+     "parts": [
+      {
+       "name": "Trevor Lawrence",
+       "pos": "QB",
+       "v": 10.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 6.0,
+     "parts": [
+      {
+       "name": "Patrick Mahomes",
+       "pos": "QB",
+       "v": 6.0
+      }
+     ],
+     "source": "observed",
+     "rank": 6
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 5.0,
+     "parts": [
+      {
+       "name": "Drake Maye",
+       "pos": "QB",
+       "v": 5.0
+      }
+     ],
+     "source": "observed",
+     "rank": 7
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Caleb Williams",
+       "pos": "QB",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 8
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 9
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 9
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 9
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 0.0,
+     "parts": [],
+     "source": "observed",
+     "rank": 9
+    }
+   ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 125.22,
-     "act": null,
+     "act": 104.0,
      "opp": 7
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "proj": 119.08,
-     "act": null,
+     "act": 115.0,
      "opp": 12
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 139.41,
-     "act": null,
+     "proj": 139.36,
+     "act": 179.0,
      "opp": 10
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 107.42,
-     "act": null,
+     "proj": 107.56,
+     "act": 146.0,
      "opp": 5
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
      "proj": 128.65,
-     "act": null,
+     "act": 102.0,
      "opp": 4
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
      "proj": 144.49,
-     "act": null,
+     "act": 134.0,
      "opp": 8
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 136.5,
-     "act": null,
+     "act": 156.0,
      "opp": 1
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 138.87,
-     "act": null,
+     "proj": 138.77,
+     "act": 133.0,
      "opp": 6
     },
     {
      "slot": 9,
      "team": "Bronny James",
      "proj": 142.95,
-     "act": null,
+     "act": 161.0,
      "opp": 11
     },
     {
      "slot": 10,
      "team": "Trade the team away",
      "proj": 98.62,
-     "act": null,
+     "act": 98.0,
      "opp": 3
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
      "proj": 127.81,
-     "act": null,
+     "act": 107.0,
      "opp": 9
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
      "proj": 107.76,
-     "act": null,
+     "act": 116.0,
      "opp": 2
     }
    ],
-   "winner": null,
+   "winner": {
+    "slot": 9,
+    "team": "Bronny James",
+    "value": 30.0,
+    "note": "",
+    "source": "computed"
+   },
    "carry_from": []
   },
   {
@@ -7144,19 +7295,20 @@
  ],
  "standings": [
   {
+   "slot": 9,
+   "team": "Bronny James",
+   "wins": 2,
+   "weeks": [
+    1,
+    8
+   ]
+  },
+  {
    "slot": 1,
    "team": "Always the McBridesmaid",
    "wins": 1,
    "weeks": [
     7
-   ]
-  },
-  {
-   "slot": 9,
-   "team": "Bronny James",
-   "wins": 1,
-   "weeks": [
-    1
    ]
   },
   {
