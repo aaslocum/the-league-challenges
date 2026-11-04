@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-03T11:18:13",
+ "built_at": "2026-11-04T05:18:13",
  "season": 2026,
  "current_week": 9,
  "teams": [
@@ -5300,6 +5300,21 @@
    "lineup_error": null,
    "projected": [
     {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Brian Robinson",
+       "pos": "RB",
+       "v": 4.97,
+       "why": null
+      }
+     ],
+     "source": "assumed",
+     "rank": 1
+    },
+    {
      "slot": 10,
      "team": "Trade the team away",
      "value": 1.0,
@@ -5307,7 +5322,7 @@
       {
        "name": "MarShawn Lloyd",
        "pos": "RB",
-       "v": 3.27,
+       "v": 3.29,
        "why": null
       }
      ],
@@ -5322,7 +5337,7 @@
       {
        "name": "Kenyon Sadiq",
        "pos": "TE",
-       "v": 3.18,
+       "v": 3.3,
        "why": null
       }
      ],
@@ -5335,7 +5350,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 2,
@@ -5343,7 +5358,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 3,
@@ -5351,7 +5366,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 4,
@@ -5359,7 +5374,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 5,
@@ -5367,15 +5382,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
-    },
-    {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 0.0,
-     "parts": [],
-     "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 7,
@@ -5383,7 +5390,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 8,
@@ -5391,7 +5398,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 9,
@@ -5399,7 +5406,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     },
     {
      "slot": 11,
@@ -5407,7 +5414,7 @@
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 3
+     "rank": 4
     }
    ],
    "actual": null,
@@ -5415,84 +5422,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 124.03,
+     "proj": 123.68,
      "act": null,
      "opp": 11
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 141.59,
+     "proj": 147.83,
      "act": null,
      "opp": 10
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 136.78,
+     "proj": 129.82,
      "act": null,
      "opp": 9
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 102.45,
+     "proj": 110.21,
      "act": null,
      "opp": 7
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 138.6,
+     "proj": 140.37,
      "act": null,
      "opp": 6
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 138.19,
+     "proj": 144.44,
      "act": null,
      "opp": 5
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 112.74,
+     "proj": 134.4,
      "act": null,
      "opp": 4
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 141.77,
+     "proj": 142.5,
      "act": null,
      "opp": 12
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 123.42,
+     "proj": 125.28,
      "act": null,
      "opp": 3
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 108.18,
+     "proj": 110.59,
      "act": null,
      "opp": 2
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 121.44,
+     "proj": 122.69,
      "act": null,
      "opp": 1
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 98.32,
+     "proj": 114.25,
      "act": null,
      "opp": 8
     }
