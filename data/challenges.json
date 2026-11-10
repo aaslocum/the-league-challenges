@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-09T20:18:34",
+ "built_at": "2026-11-10T14:18:52",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -5682,166 +5682,160 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": 10.19,
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 11.34,
      "parts": [
       {
-       "name": "Brandon Aubrey",
+       "name": "Cam Little",
        "pos": "K",
-       "v": 10.19
+       "v": 11.34
       }
      ],
      "source": "assumed",
      "rank": 1
     },
     {
-     "slot": 5,
-     "team": "Immaculate Concepcion",
-     "value": 9.93,
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 11.31,
      "parts": [
       {
-       "name": "Ka'imi Fairbairn",
+       "name": "Brandon Aubrey",
        "pos": "K",
-       "v": 9.93
+       "v": 11.31
       }
      ],
      "source": "assumed",
      "rank": 2
     },
     {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 9.77,
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 10.9,
      "parts": [
       {
-       "name": "Cam Little",
+       "name": "Evan McPherson",
        "pos": "K",
-       "v": 9.77
+       "v": 10.9
       }
      ],
      "source": "assumed",
      "rank": 3
     },
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 9.75,
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 10.57,
      "parts": [
       {
-       "name": "Cameron Dicker",
+       "name": "Spencer Shrader",
        "pos": "K",
-       "v": 9.75
+       "v": 10.57
       }
      ],
      "source": "assumed",
      "rank": 4
     },
     {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 9.52,
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 10.54,
      "parts": [
       {
-       "name": "Will Reichard",
+       "name": "Jake Bates",
        "pos": "K",
-       "v": 9.52
+       "v": 10.54
       }
      ],
      "source": "assumed",
      "rank": 5
     },
     {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 9.3,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 10.4,
      "parts": [
       {
-       "name": "Jake Bates",
+       "name": "Tyler Bass",
        "pos": "K",
-       "v": 9.3
+       "v": 10.4
       }
      ],
      "source": "assumed",
      "rank": 6
     },
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 9.06,
-     "parts": [
-      {
-       "name": "Evan McPherson",
-       "pos": "K",
-       "v": 9.06
-      }
-     ],
-     "source": "assumed",
-     "rank": 7
-    },
-    {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 9.06,
+     "value": 9.97,
      "parts": [
       {
-       "name": "Tyler Loop",
+       "name": "Will Reichard",
        "pos": "K",
-       "v": 9.06
+       "v": 9.97
       }
      ],
      "source": "assumed",
      "rank": 7
     },
     {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 9.05,
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 9.95,
      "parts": [
       {
-       "name": "Eddy Pineiro",
+       "name": "Ka'imi Fairbairn",
        "pos": "K",
-       "v": 9.05
+       "v": 9.95
+      }
+     ],
+     "source": "assumed",
+     "rank": 8
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 8.4,
+     "parts": [
+      {
+       "name": "Matt Gay",
+       "pos": "K",
+       "v": 8.4
       }
      ],
      "source": "assumed",
      "rank": 9
     },
     {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": 8.38,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 7.77,
      "parts": [
       {
-       "name": "Matt Gay",
+       "name": "Trey Smack",
        "pos": "K",
-       "v": 8.38
+       "v": 7.77
       }
      ],
      "source": "assumed",
      "rank": 10
     },
     {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 8.0,
-     "parts": [
-      {
-       "name": "Trey Smack",
-       "pos": "K",
-       "v": 8.0
-      }
-     ],
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 0.0,
+     "parts": [],
      "source": "assumed",
      "rank": 11
     },
     {
-     "slot": 9,
-     "team": "Bronny James",
+     "slot": 8,
+     "team": "Likely Cooked",
      "value": 0.0,
      "parts": [],
      "source": "assumed",
-     "rank": 12
+     "rank": 11
     }
    ],
    "actual": null,
@@ -5849,84 +5843,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 121.29,
+     "proj": 125.65,
      "act": null,
      "opp": 4
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 128.5,
+     "proj": 125.35,
      "act": null,
      "opp": 9
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 133.36,
+     "proj": 141.11,
      "act": null,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 115.39,
+     "proj": 68.38,
      "act": null,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 125.01,
+     "proj": 115.72,
      "act": null,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 135.2,
+     "proj": 151.25,
      "act": null,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 114.32,
+     "proj": 126.74,
      "act": null,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 119.57,
+     "proj": 107.51,
      "act": null,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 97.78,
+     "proj": 108.3,
      "act": null,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 116.9,
+     "proj": 101.58,
      "act": null,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 125.11,
+     "proj": 134.72,
      "act": null,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 120.63,
+     "proj": 108.36,
      "act": null,
      "opp": 5
     }
