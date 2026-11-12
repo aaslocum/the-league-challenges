@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-11T21:08:36",
+ "built_at": "2026-11-11T23:28:37",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-11-11T21:07:50",
+ "changes_through": "2026-11-11T23:28:17",
  "challenges": [
   {
    "week": 1,
@@ -5666,8 +5666,10 @@
    },
    "assumed_lineups": [],
    "roster_mismatch": [
+    "angryBIRDS: Bo Nix was started but is not on this roster in the ledger",
     "angryBIRDS: Commanders was started but is not on this roster in the ledger",
-    "angryBIRDS: Bengals is on this roster in the ledger but not on Yahoo's"
+    "angryBIRDS: Bengals is on this roster in the ledger but not on Yahoo's",
+    "angryBIRDS: Kyle Pitts Sr. is on this roster in the ledger but not on Yahoo's"
    ],
    "lineup_error": null,
    "projected": [
