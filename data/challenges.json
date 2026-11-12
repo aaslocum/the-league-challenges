@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-11T20:00:27",
+ "built_at": "2026-11-11T21:08:36",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-11-11T20:00:12",
+ "changes_through": "2026-11-11T21:07:50",
  "challenges": [
   {
    "week": 1,
@@ -5666,44 +5666,8 @@
    },
    "assumed_lineups": [],
    "roster_mismatch": [
-    "One Mo Time For Igoe: Jason Myers was started but is not on this roster in the ledger",
-    "One Mo Time For Igoe: Cairo Santos is on this roster in the ledger but not on Yahoo's",
-    "Broad Street Bullies: Jason Sanders was started but is not on this roster in the ledger",
-    "Broad Street Bullies: Trey Smack is on this roster in the ledger but not on Yahoo's",
-    "Immaculate Concepcion: C.J. Stroud was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Adonai Mitchell was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Tank Dell was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Bills was started but is not on this roster in the ledger",
-    "Immaculate Concepcion: Lamar Jackson is on this roster in the ledger but not on Yahoo's",
-    "Immaculate Concepcion: Chad Ryland is on this roster in the ledger but not on Yahoo's",
-    "Immaculate Concepcion: Makai Lemon is on this roster in the ledger but not on Yahoo's",
-    "Immaculate Concepcion: Browns is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Jadarian Price was started but is not on this roster in the ledger",
-    "Papa's playmakers: Chris Rodriguez Jr. was started but is not on this roster in the ledger",
-    "Papa's playmakers: Steelers was started but is not on this roster in the ledger",
-    "Papa's playmakers: Malik Washington is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Caleb Douglas is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Chig Okonkwo is on this roster in the ledger but not on Yahoo's",
-    "The Brockness Monster: Devin Singletary was started but is not on this roster in the ledger",
-    "The Brockness Monster: Packers was started but is not on this roster in the ledger",
-    "The Brockness Monster: Steelers is on this roster in the ledger but not on Yahoo's",
-    "The Brockness Monster: Ja'Kobi Lane is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Tyler Shough was started but is not on this roster in the ledger",
-    "Likely Cooked: Dominic Zvada was started but is not on this roster in the ledger",
-    "Likely Cooked: Texans was started but is not on this roster in the ledger",
-    "Likely Cooked: Hunter Henry is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Chase McLaughlin is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Commanders is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Corey Kiner was started but is not on this roster in the ledger",
-    "Bronny James: Konata Mumpfield was started but is not on this roster in the ledger",
-    "Bronny James: Chris Godwin Jr. is on this roster in the ledger but not on Yahoo's",
-    "Bronny James: Kendrick Bourne is on this roster in the ledger but not on Yahoo's",
-    "Trade the team away: Alvin Kamara was started but is not on this roster in the ledger",
-    "Trade the team away: Dylan Sampson was started but is not on this roster in the ledger",
-    "Trade the team away: Chiefs was started but is not on this roster in the ledger",
-    "Trade the team away: MarShawn Lloyd is on this roster in the ledger but not on Yahoo's",
-    "Trade the team away: Titans is on this roster in the ledger but not on Yahoo's",
-    "Trade the team away: Bam Knight is on this roster in the ledger but not on Yahoo's"
+    "angryBIRDS: Commanders was started but is not on this roster in the ledger",
+    "angryBIRDS: Bengals is on this roster in the ledger but not on Yahoo's"
    ],
    "lineup_error": null,
    "projected": [
@@ -5881,7 +5845,7 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 118.68,
+     "proj": 130.28,
      "act": null,
      "opp": 4
     },
@@ -5944,14 +5908,14 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 93.67,
+     "proj": 117.76,
      "act": null,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 133.17,
+     "proj": 134.66,
      "act": null,
      "opp": 3
     },
