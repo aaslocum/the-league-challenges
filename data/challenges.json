@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-13T05:18:14",
+ "built_at": "2026-11-14T01:19:10",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-11-11T23:28:17",
+ "changes_through": "2026-11-14T01:18:53",
  "challenges": [
   {
    "week": 1,
@@ -5665,7 +5665,20 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [],
+   "roster_mismatch": [
+    "Sonic n' Knuckles: Travis Etienne Jr. was started but is not on this roster in the ledger",
+    "Sonic n' Knuckles: Woody Marks is on this roster in the ledger but not on Yahoo's",
+    "Broad Street Bullies: Audric Estime was started but is not on this roster in the ledger",
+    "Broad Street Bullies: Caleb Douglas was started but is not on this roster in the ledger",
+    "Broad Street Bullies: Rams was started but is not on this roster in the ledger",
+    "Broad Street Bullies: Jeremiyah Love is on this roster in the ledger but not on Yahoo's",
+    "Broad Street Bullies: Michael Pittman is on this roster in the ledger but not on Yahoo's",
+    "Broad Street Bullies: J.K. Dobbins is on this roster in the ledger but not on Yahoo's",
+    "Papa's playmakers: Chimere Dike was started but is not on this roster in the ledger",
+    "Papa's playmakers: Chris Rodriguez Jr. is on this roster in the ledger but not on Yahoo's",
+    "Likely Cooked: Chris Boswell was started but is not on this roster in the ledger",
+    "Likely Cooked: Dominic Zvada is on this roster in the ledger but not on Yahoo's"
+   ],
    "lineup_error": null,
    "projected": [
     {
@@ -5699,30 +5712,16 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 10.62,
+     "value": 10.66,
      "parts": [
       {
        "name": "Will Reichard",
        "pos": "K",
-       "v": 10.62
+       "v": 10.66
       }
      ],
      "source": "observed",
      "rank": 3
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 10.57,
-     "parts": [
-      {
-       "name": "Evan McPherson",
-       "pos": "K",
-       "v": 10.57
-      }
-     ],
-     "source": "observed",
-     "rank": 4
     },
     {
      "slot": 2,
@@ -5736,7 +5735,21 @@
       }
      ],
      "source": "observed",
-     "rank": 5
+     "rank": 4
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 10.54,
+     "parts": [
+      {
+       "name": "Evan McPherson",
+       "pos": "K",
+       "v": 10.54
+      }
+     ],
+     "source": "observed",
+     "rank": 4
     },
     {
      "slot": 9,
@@ -5781,6 +5794,20 @@
      "rank": 8
     },
     {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 10.25,
+     "parts": [
+      {
+       "name": "Chris Boswell",
+       "pos": "K",
+       "v": 10.25
+      }
+     ],
+     "source": "observed",
+     "rank": 9
+    },
+    {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "value": 9.82,
@@ -5792,7 +5819,7 @@
       }
      ],
      "source": "observed",
-     "rank": 9
+     "rank": 10
     },
     {
      "slot": 4,
@@ -5803,20 +5830,6 @@
        "name": "Jason Sanders",
        "pos": "K",
        "v": 8.51
-      }
-     ],
-     "source": "observed",
-     "rank": 10
-    },
-    {
-     "slot": 8,
-     "team": "Likely Cooked",
-     "value": 8.45,
-     "parts": [
-      {
-       "name": "Dominic Zvada",
-       "pos": "K",
-       "v": 8.45
       }
      ],
      "source": "observed",
@@ -5842,84 +5855,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 130.76,
+     "proj": 118.99,
      "act": null,
      "opp": 4
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 132.58,
+     "proj": 132.77,
      "act": null,
      "opp": 9
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 141.48,
+     "proj": 139.26,
      "act": null,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 58.23,
+     "proj": 108.13,
      "act": null,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 122.66,
+     "proj": 121.68,
      "act": null,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 146.19,
+     "proj": 144.68,
      "act": null,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 123.16,
+     "proj": 119.6,
      "act": null,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 134.88,
+     "proj": 139.41,
      "act": null,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 130.08,
+     "proj": 119.02,
      "act": null,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 113.96,
+     "proj": 114.11,
      "act": null,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 134.65,
+     "proj": 134.8,
      "act": null,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 93.37,
+     "proj": 118.33,
      "act": null,
      "opp": 5
     }
