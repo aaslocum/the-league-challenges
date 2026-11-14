@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-14T01:19:10",
+ "built_at": "2026-11-14T05:18:16",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -5665,20 +5665,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "Sonic n' Knuckles: Travis Etienne Jr. was started but is not on this roster in the ledger",
-    "Sonic n' Knuckles: Woody Marks is on this roster in the ledger but not on Yahoo's",
-    "Broad Street Bullies: Audric Estime was started but is not on this roster in the ledger",
-    "Broad Street Bullies: Caleb Douglas was started but is not on this roster in the ledger",
-    "Broad Street Bullies: Rams was started but is not on this roster in the ledger",
-    "Broad Street Bullies: Jeremiyah Love is on this roster in the ledger but not on Yahoo's",
-    "Broad Street Bullies: Michael Pittman is on this roster in the ledger but not on Yahoo's",
-    "Broad Street Bullies: J.K. Dobbins is on this roster in the ledger but not on Yahoo's",
-    "Papa's playmakers: Chimere Dike was started but is not on this roster in the ledger",
-    "Papa's playmakers: Chris Rodriguez Jr. is on this roster in the ledger but not on Yahoo's",
-    "Likely Cooked: Chris Boswell was started but is not on this roster in the ledger",
-    "Likely Cooked: Dominic Zvada is on this roster in the ledger but not on Yahoo's"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -5712,16 +5699,30 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "value": 10.66,
+     "value": 10.62,
      "parts": [
       {
        "name": "Will Reichard",
        "pos": "K",
-       "v": 10.66
+       "v": 10.62
       }
      ],
      "source": "observed",
      "rank": 3
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 10.57,
+     "parts": [
+      {
+       "name": "Evan McPherson",
+       "pos": "K",
+       "v": 10.57
+      }
+     ],
+     "source": "observed",
+     "rank": 4
     },
     {
      "slot": 2,
@@ -5735,21 +5736,7 @@
       }
      ],
      "source": "observed",
-     "rank": 4
-    },
-    {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 10.54,
-     "parts": [
-      {
-       "name": "Evan McPherson",
-       "pos": "K",
-       "v": 10.54
-      }
-     ],
-     "source": "observed",
-     "rank": 4
+     "rank": 5
     },
     {
      "slot": 9,
@@ -5796,12 +5783,12 @@
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": 10.25,
+     "value": 10.26,
      "parts": [
       {
        "name": "Chris Boswell",
        "pos": "K",
-       "v": 10.25
+       "v": 10.26
       }
      ],
      "source": "observed",
@@ -5869,70 +5856,70 @@
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
-     "proj": 139.26,
+     "proj": 139.36,
      "act": null,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 108.13,
+     "proj": 108.21,
      "act": null,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
-     "proj": 121.68,
+     "proj": 121.75,
      "act": null,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 144.68,
+     "proj": 144.89,
      "act": null,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 119.6,
+     "proj": 119.7,
      "act": null,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 139.41,
+     "proj": 139.43,
      "act": null,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 119.02,
+     "proj": 118.93,
      "act": null,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 114.11,
+     "proj": 114.09,
      "act": null,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 134.8,
+     "proj": 134.81,
      "act": null,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 118.33,
+     "proj": 118.35,
      "act": null,
      "opp": 5
     }
