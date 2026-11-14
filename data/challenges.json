@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-14T08:42:27",
+ "built_at": "2026-11-14T11:18:23",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -5637,14 +5637,28 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "upcoming",
+   "status": "live",
    "completeness": {
     "season": 2026,
     "week": 10,
-    "have": null,
-    "scheduled": null,
-    "missing": [],
-    "status": "absent"
+    "have": 1,
+    "scheduled": 14,
+    "missing": [
+     "NE@DET",
+     "KC@ATL",
+     "HOU@CLE",
+     "MIN@GB",
+     "MIA@IND",
+     "CAR@NO",
+     "BUF@NYJ",
+     "JAX@TEN",
+     "LA@ARI",
+     "SEA@LV",
+     "SF@DAL",
+     "PIT@CIN",
+     "LAC@BAL"
+    ],
+    "status": "partial"
    },
    "lineups": {
     "manual": [],
@@ -5665,10 +5679,7 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [
-    "angryBIRDS: Malik Washington was started but is not on this roster in the ledger",
-    "angryBIRDS: Darius Cooper is on this roster in the ledger but not on Yahoo's"
-   ],
+   "roster_mismatch": [],
    "lineup_error": null,
    "projected": [
     {
@@ -5840,90 +5851,259 @@
      "rank": 12
     }
    ],
-   "actual": null,
+   "actual": [
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Jake Bates",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Jason Myers",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 3,
+     "team": "Sonic n' Knuckles",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Will Reichard",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Jason Sanders",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 5,
+     "team": "Immaculate Concepcion",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Ka'imi Fairbairn",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Cam Little",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Matt Gay",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 8,
+     "team": "Likely Cooked",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Chris Boswell",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Spencer Shrader",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Brandon Aubrey",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Tyler Bass",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 0.0,
+     "parts": [
+      {
+       "name": "Evan McPherson",
+       "pos": "K",
+       "v": 0.0
+      }
+     ],
+     "source": "observed",
+     "rank": 1
+    }
+   ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
      "proj": 127.79,
-     "act": null,
+     "act": 0.0,
      "opp": 4
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "proj": 132.77,
-     "act": null,
+     "act": 0.0,
      "opp": 9
     },
     {
      "slot": 3,
      "team": "Sonic n' Knuckles",
      "proj": 139.36,
-     "act": null,
+     "act": 0.0,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
      "proj": 108.21,
-     "act": null,
+     "act": 0.0,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Immaculate Concepcion",
      "proj": 121.75,
-     "act": null,
+     "act": 7.0,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
      "proj": 144.89,
-     "act": null,
+     "act": 0.0,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
      "proj": 119.7,
-     "act": null,
+     "act": 0.0,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
      "proj": 139.43,
-     "act": null,
+     "act": 30.0,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
      "proj": 118.93,
-     "act": null,
+     "act": 0.0,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
      "proj": 114.09,
-     "act": null,
+     "act": 26.0,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
      "proj": 134.81,
-     "act": null,
+     "act": 14.0,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
      "proj": 118.35,
-     "act": null,
+     "act": 0.0,
      "opp": 5
     }
    ],
