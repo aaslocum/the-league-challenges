@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-14T05:18:16",
+ "built_at": "2026-11-14T08:42:27",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -111,7 +111,7 @@
    "2026-12-14"
   ]
  },
- "changes_through": "2026-11-14T01:18:53",
+ "changes_through": "2026-11-14T08:42:17",
  "challenges": [
   {
    "week": 1,
@@ -5665,7 +5665,10 @@
     "assumed": []
    },
    "assumed_lineups": [],
-   "roster_mismatch": [],
+   "roster_mismatch": [
+    "angryBIRDS: Malik Washington was started but is not on this roster in the ledger",
+    "angryBIRDS: Darius Cooper is on this roster in the ledger but not on Yahoo's"
+   ],
    "lineup_error": null,
    "projected": [
     {
@@ -5842,7 +5845,7 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 118.99,
+     "proj": 127.79,
      "act": null,
      "opp": 4
     },
