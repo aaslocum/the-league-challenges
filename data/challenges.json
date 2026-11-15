@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-15T05:18:13",
+ "built_at": "2026-11-15T11:18:11",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -5641,10 +5641,9 @@
    "completeness": {
     "season": 2026,
     "week": 10,
-    "have": 1,
+    "have": 2,
     "scheduled": 14,
     "missing": [
-     "NE@DET",
      "KC@ATL",
      "HOU@CLE",
      "MIN@GB",
@@ -5683,20 +5682,6 @@
    "lineup_error": null,
    "projected": [
     {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 11.01,
-     "parts": [
-      {
-       "name": "Cam Little",
-       "pos": "K",
-       "v": 11.01
-      }
-     ],
-     "source": "observed",
-     "rank": 1
-    },
-    {
      "slot": 10,
      "team": "Trade the team away",
      "value": 11.01,
@@ -5709,6 +5694,20 @@
      ],
      "source": "observed",
      "rank": 1
+    },
+    {
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 10.91,
+     "parts": [
+      {
+       "name": "Cam Little",
+       "pos": "K",
+       "v": 10.91
+      }
+     ],
+     "source": "observed",
+     "rank": 2
     },
     {
      "slot": 3,
@@ -5767,20 +5766,6 @@
      "rank": 6
     },
     {
-     "slot": 5,
-     "team": "Enstrouded",
-     "value": 10.28,
-     "parts": [
-      {
-       "name": "Ka'imi Fairbairn",
-       "pos": "K",
-       "v": 10.28
-      }
-     ],
-     "source": "observed",
-     "rank": 7
-    },
-    {
      "slot": 8,
      "team": "Likely Cooked",
      "value": 10.26,
@@ -5789,6 +5774,20 @@
        "name": "Chris Boswell",
        "pos": "K",
        "v": 10.26
+      }
+     ],
+     "source": "observed",
+     "rank": 7
+    },
+    {
+     "slot": 5,
+     "team": "Enstrouded",
+     "value": 10.24,
+     "parts": [
+      {
+       "name": "Ka'imi Fairbairn",
+       "pos": "K",
+       "v": 10.24
       }
      ],
      "source": "observed",
@@ -5811,12 +5810,12 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 9.82,
+     "value": 9.94,
      "parts": [
       {
        "name": "Jake Bates",
        "pos": "K",
-       "v": 9.82
+       "v": 9.94
       }
      ],
      "source": "observed",
@@ -5855,12 +5854,12 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": 0.0,
+     "value": 3.0,
      "parts": [
       {
        "name": "Jake Bates",
        "pos": "K",
-       "v": 0.0
+       "v": 3.0
       }
      ],
      "source": "observed",
@@ -5878,7 +5877,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 3,
@@ -5892,7 +5891,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 4,
@@ -5906,7 +5905,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 5,
@@ -5920,7 +5919,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 6,
@@ -5934,7 +5933,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 7,
@@ -5948,7 +5947,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 8,
@@ -5962,7 +5961,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 9,
@@ -5976,7 +5975,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 10,
@@ -5990,7 +5989,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 11,
@@ -6004,7 +6003,7 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     },
     {
      "slot": 12,
@@ -6018,92 +6017,92 @@
       }
      ],
      "source": "observed",
-     "rank": 1
+     "rank": 2
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 129.06,
-     "act": 0.0,
+     "proj": 129.07,
+     "act": 3.0,
      "opp": 4
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 133.96,
+     "proj": 133.88,
      "act": 0.0,
      "opp": 9
     },
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "proj": 138.36,
-     "act": 0.0,
+     "proj": 139.03,
+     "act": 27.0,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 108.37,
+     "proj": 108.4,
      "act": 0.0,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Enstrouded",
-     "proj": 122.43,
+     "proj": 122.44,
      "act": 7.0,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 145.1,
-     "act": 0.0,
+     "proj": 145.19,
+     "act": 19.0,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 119.14,
+     "proj": 118.87,
      "act": 0.0,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 137.06,
-     "act": 30.0,
+     "proj": 137.03,
+     "act": 34.0,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 118.93,
-     "act": 0.0,
+     "proj": 112.57,
+     "act": 4.0,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 114.42,
+     "proj": 116.43,
      "act": 26.0,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 134.94,
-     "act": 14.0,
+     "proj": 135.43,
+     "act": 16.0,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 120.42,
-     "act": 0.0,
+     "proj": 120.93,
+     "act": 14.0,
      "opp": 5
     }
    ],
