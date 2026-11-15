@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-15T11:18:11",
+ "built_at": "2026-11-15T17:18:16",
  "season": 2026,
  "current_week": 10,
  "teams": [
@@ -5641,19 +5641,9 @@
    "completeness": {
     "season": 2026,
     "week": 10,
-    "have": 2,
+    "have": 12,
     "scheduled": 14,
     "missing": [
-     "KC@ATL",
-     "HOU@CLE",
-     "MIN@GB",
-     "MIA@IND",
-     "CAR@NO",
-     "BUF@NYJ",
-     "JAX@TEN",
-     "LA@ARI",
-     "SEA@LV",
-     "SF@DAL",
      "PIT@CIN",
      "LAC@BAL"
     ],
@@ -5684,12 +5674,12 @@
     {
      "slot": 10,
      "team": "Trade the team away",
-     "value": 11.01,
+     "value": 11.05,
      "parts": [
       {
        "name": "Brandon Aubrey",
        "pos": "K",
-       "v": 11.01
+       "v": 11.05
       }
      ],
      "source": "observed",
@@ -5712,12 +5702,12 @@
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "value": 10.66,
+     "value": 10.7,
      "parts": [
       {
        "name": "Will Reichard",
        "pos": "K",
-       "v": 10.66
+       "v": 10.7
       }
      ],
      "source": "observed",
@@ -5782,12 +5772,12 @@
     {
      "slot": 5,
      "team": "Enstrouded",
-     "value": 10.24,
+     "value": 10.21,
      "parts": [
       {
        "name": "Ka'imi Fairbairn",
        "pos": "K",
-       "v": 10.24
+       "v": 10.21
       }
      ],
      "source": "observed",
@@ -5796,12 +5786,12 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "value": 10.22,
+     "value": 10.19,
      "parts": [
       {
        "name": "Tyler Bass",
        "pos": "K",
-       "v": 10.22
+       "v": 10.19
       }
      ],
      "source": "observed",
@@ -5824,12 +5814,12 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 8.57,
+     "value": 8.51,
      "parts": [
       {
        "name": "Jason Sanders",
        "pos": "K",
-       "v": 8.57
+       "v": 8.51
       }
      ],
      "source": "observed",
@@ -5852,28 +5842,28 @@
    ],
    "actual": [
     {
-     "slot": 1,
-     "team": "Always the McBridesmaid",
-     "value": 3.0,
+     "slot": 6,
+     "team": "Papa's playmakers",
+     "value": 19.0,
      "parts": [
       {
-       "name": "Jake Bates",
+       "name": "Cam Little",
        "pos": "K",
-       "v": 3.0
+       "v": 19.0
       }
      ],
      "source": "observed",
      "rank": 1
     },
     {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": 0.0,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 14.0,
      "parts": [
       {
-       "name": "Jason Myers",
+       "name": "Jason Sanders",
        "pos": "K",
-       "v": 0.0
+       "v": 14.0
       }
      ],
      "source": "observed",
@@ -5882,72 +5872,114 @@
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "value": 0.0,
+     "value": 12.0,
      "parts": [
       {
        "name": "Will Reichard",
        "pos": "K",
-       "v": 0.0
+       "v": 12.0
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 3
     },
     {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 0.0,
+     "slot": 9,
+     "team": "Bronny James",
+     "value": 8.0,
      "parts": [
       {
-       "name": "Jason Sanders",
+       "name": "Spencer Shrader",
        "pos": "K",
-       "v": 0.0
+       "v": 8.0
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 4
     },
     {
      "slot": 5,
      "team": "Enstrouded",
-     "value": 0.0,
+     "value": 7.0,
      "parts": [
       {
        "name": "Ka'imi Fairbairn",
        "pos": "K",
-       "v": 0.0
+       "v": 7.0
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 5
     },
     {
-     "slot": 6,
-     "team": "Papa's playmakers",
-     "value": 0.0,
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 7.0,
      "parts": [
       {
-       "name": "Cam Little",
+       "name": "Tyler Bass",
        "pos": "K",
-       "v": 0.0
+       "v": 7.0
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 5
+    },
+    {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": 6.0,
+     "parts": [
+      {
+       "name": "Brandon Aubrey",
+       "pos": "K",
+       "v": 6.0
+      }
+     ],
+     "source": "observed",
+     "rank": 7
+    },
+    {
+     "slot": 1,
+     "team": "Always the McBridesmaid",
+     "value": 5.0,
+     "parts": [
+      {
+       "name": "Jake Bates",
+       "pos": "K",
+       "v": 5.0
+      }
+     ],
+     "source": "observed",
+     "rank": 8
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "value": 0.0,
+     "value": 4.0,
      "parts": [
       {
        "name": "Matt Gay",
        "pos": "K",
-       "v": 0.0
+       "v": 4.0
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 9
+    },
+    {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": 1.0,
+     "parts": [
+      {
+       "name": "Jason Myers",
+       "pos": "K",
+       "v": 1.0
+      }
+     ],
+     "source": "observed",
+     "rank": 10
     },
     {
      "slot": 8,
@@ -5961,49 +5993,7 @@
       }
      ],
      "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 9,
-     "team": "Bronny James",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Spencer Shrader",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Brandon Aubrey",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 0.0,
-     "parts": [
-      {
-       "name": "Tyler Bass",
-       "pos": "K",
-       "v": 0.0
-      }
-     ],
-     "source": "observed",
-     "rank": 2
+     "rank": 11
     },
     {
      "slot": 12,
@@ -6017,92 +6007,92 @@
       }
      ],
      "source": "observed",
-     "rank": 2
+     "rank": 11
     }
    ],
    "totals": [
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 129.07,
-     "act": 3.0,
+     "proj": 129.09,
+     "act": 90.0,
      "opp": 4
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 133.88,
-     "act": 0.0,
+     "proj": 124.47,
+     "act": 58.0,
      "opp": 9
     },
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "proj": 139.03,
-     "act": 27.0,
+     "proj": 141.18,
+     "act": 109.0,
      "opp": 11
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 108.4,
-     "act": 0.0,
+     "proj": 108.28,
+     "act": 55.0,
      "opp": 1
     },
     {
      "slot": 5,
      "team": "Enstrouded",
-     "proj": 122.44,
-     "act": 7.0,
+     "proj": 122.3,
+     "act": 92.0,
      "opp": 12
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 145.19,
-     "act": 19.0,
+     "proj": 146.59,
+     "act": 80.0,
      "opp": 7
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 118.87,
-     "act": 0.0,
+     "proj": 109.21,
+     "act": 122.0,
      "opp": 6
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 137.03,
-     "act": 34.0,
+     "proj": 136.72,
+     "act": 135.0,
      "opp": 10
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 112.57,
-     "act": 4.0,
+     "proj": 112.95,
+     "act": 136.0,
      "opp": 2
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 116.43,
-     "act": 26.0,
+     "proj": 117.5,
+     "act": 122.0,
      "opp": 8
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 135.43,
-     "act": 16.0,
+     "proj": 135.41,
+     "act": 48.0,
      "opp": 3
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 120.93,
-     "act": 14.0,
+     "proj": 121.42,
+     "act": 103.0,
      "opp": 5
     }
    ],
