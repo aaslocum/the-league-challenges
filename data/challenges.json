@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-23T23:18:28",
+ "built_at": "2026-11-24T02:18:22",
  "season": 2026,
  "current_week": 12,
  "teams": [
@@ -6722,10 +6722,27 @@
    "completeness": {
     "season": 2026,
     "week": 12,
-    "have": null,
-    "scheduled": null,
-    "missing": [],
-    "status": "absent"
+    "have": 0,
+    "scheduled": 16,
+    "missing": [
+     "GB@LA",
+     "CHI@DET",
+     "PHI@DAL",
+     "KC@BUF",
+     "DEN@PIT",
+     "NO@CIN",
+     "LV@CLE",
+     "BAL@HOU",
+     "NYG@IND",
+     "NYJ@MIA",
+     "ATL@MIN",
+     "TEN@JAX",
+     "WAS@ARI",
+     "SEA@SF",
+     "NE@LAC",
+     "CAR@TB"
+    ],
+    "status": "partial"
    },
    "lineups": {
     "manual": [],
@@ -6734,12 +6751,12 @@
      "Always the McBridesmaid",
      "Broad Street Bullies",
      "Bronny James",
-     "Immaculate Concepcion",
+     "Enstrouded",
+     "Gotta Go Fast",
      "Likely Cooked",
      "Mr. Flapjack",
      "One Mo Time For Igoe",
      "Papa's playmakers",
-     "Sonic n' Knuckles",
      "The Brockness Monster",
      "Trade the team away",
      "angryBIRDS"
@@ -6749,12 +6766,12 @@
     "Always the McBridesmaid",
     "Broad Street Bullies",
     "Bronny James",
-    "Immaculate Concepcion",
+    "Enstrouded",
+    "Gotta Go Fast",
     "Likely Cooked",
     "Mr. Flapjack",
     "One Mo Time For Igoe",
     "Papa's playmakers",
-    "Sonic n' Knuckles",
     "The Brockness Monster",
     "Trade the team away",
     "angryBIRDS"
@@ -6767,84 +6784,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 137.57,
+     "proj": 127.53,
      "act": null,
      "opp": 12
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 138.7,
+     "proj": 134.2,
      "act": null,
      "opp": 11
     },
     {
      "slot": 3,
-     "team": "Sonic n' Knuckles",
-     "proj": 133.37,
+     "team": "Gotta Go Fast",
+     "proj": 152.18,
      "act": null,
      "opp": 8
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 131.17,
+     "proj": 102.96,
      "act": null,
      "opp": 6
     },
     {
      "slot": 5,
-     "team": "Immaculate Concepcion",
-     "proj": 139.0,
+     "team": "Enstrouded",
+     "proj": 137.33,
      "act": null,
      "opp": 9
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 135.09,
+     "proj": 146.08,
      "act": null,
      "opp": 4
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 132.2,
+     "proj": 121.19,
      "act": null,
      "opp": 10
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 132.4,
+     "proj": 145.31,
      "act": null,
      "opp": 3
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 108.42,
+     "proj": 148.97,
      "act": null,
      "opp": 5
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 121.21,
+     "proj": 134.02,
      "act": null,
      "opp": 7
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 126.13,
+     "proj": 125.67,
      "act": null,
      "opp": 2
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 120.61,
+     "proj": 116.2,
      "act": null,
      "opp": 1
     }
