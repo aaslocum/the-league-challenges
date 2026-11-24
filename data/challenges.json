@@ -1,8 +1,8 @@
 {
  "schema": 2,
- "built_at": "2026-11-22T23:18:21",
+ "built_at": "2026-11-23T23:18:28",
  "season": 2026,
- "current_week": 11,
+ "current_week": 12,
  "teams": [
   {
    "slot": 1,
@@ -6116,16 +6116,14 @@
    "direction": "max",
    "projectable": true,
    "needs_lineups": false,
-   "status": "live",
+   "status": "final",
    "completeness": {
     "season": 2026,
     "week": 11,
-    "have": 12,
+    "have": 13,
     "scheduled": 13,
-    "missing": [
-     "CIN@WAS"
-    ],
-    "status": "partial"
+    "missing": [],
+    "status": "final"
    },
    "lineups": {
     "manual": [],
@@ -6160,12 +6158,12 @@
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "value": 28.7,
+     "value": 30.5,
      "parts": [
       {
        "name": "Ja'Marr Chase",
        "pos": "WR",
-       "v": 20.95
+       "v": 22.88
       },
       {
        "name": "everyone else",
@@ -6198,17 +6196,17 @@
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "value": 19.2,
+     "value": 19.3,
      "parts": [
       {
        "name": "Joe Burrow",
        "pos": "QB",
-       "v": 25.99
+       "v": 26.27
       },
       {
        "name": "everyone else",
        "pos": "",
-       "v": 109.72
+       "v": 109.87
       }
      ],
      "source": "observed",
@@ -6265,7 +6263,7 @@
       {
        "name": "everyone else",
        "pos": "",
-       "v": 70.87
+       "v": 70.93
       }
      ],
      "source": "observed",
@@ -6369,7 +6367,7 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "value": 14.3,
+     "value": 14.4,
      "parts": [
       {
        "name": "Bo Nix",
@@ -6379,7 +6377,7 @@
       {
        "name": "everyone else",
        "pos": "",
-       "v": 98.32
+       "v": 97.14
       }
      ],
      "source": "observed",
@@ -6388,66 +6386,9 @@
    ],
    "actual": [
     {
-     "slot": 3,
-     "team": "Gotta Go Fast",
-     "value": 34.6,
-     "parts": [
-      {
-       "name": "Jahmyr Gibbs",
-       "pos": "RB",
-       "v": 27.0
-      },
-      {
-       "name": "everyone else",
-       "pos": "",
-       "v": 51.0
-      }
-     ],
-     "source": "observed",
-     "rank": 1
-    },
-    {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": 32.6,
-     "parts": [
-      {
-       "name": "PHI DEF",
-       "pos": "DEF",
-       "v": 15.0
-      },
-      {
-       "name": "everyone else",
-       "pos": "",
-       "v": 31.0
-      }
-     ],
-     "source": "observed",
-     "rank": 2
-    },
-    {
-     "slot": 5,
-     "team": "Enstrouded",
-     "value": 29.6,
-     "parts": [
-      {
-       "name": "C.J. Stroud",
-       "pos": "QB",
-       "v": 21.0
-      },
-      {
-       "name": "everyone else",
-       "pos": "",
-       "v": 50.0
-      }
-     ],
-     "source": "observed",
-     "rank": 3
-    },
-    {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "value": 29.2,
+     "value": 29.0,
      "parts": [
       {
        "name": "Ashton Jeanty",
@@ -6457,30 +6398,30 @@
       {
        "name": "everyone else",
        "pos": "",
-       "v": 75.0
+       "v": 76.0
       }
      ],
      "source": "observed",
-     "rank": 4
+     "rank": 1
     },
     {
-     "slot": 12,
-     "team": "Mr. Flapjack",
-     "value": 28.1,
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": 27.8,
      "parts": [
       {
-       "name": "Chuba Hubbard",
-       "pos": "RB",
-       "v": 27.0
+       "name": "PHI DEF",
+       "pos": "DEF",
+       "v": 15.0
       },
       {
        "name": "everyone else",
        "pos": "",
-       "v": 69.0
+       "v": 39.0
       }
      ],
      "source": "observed",
-     "rank": 5
+     "rank": 2
     },
     {
      "slot": 10,
@@ -6499,7 +6440,26 @@
       }
      ],
      "source": "observed",
-     "rank": 6
+     "rank": 3
+    },
+    {
+     "slot": 12,
+     "team": "Mr. Flapjack",
+     "value": 25.5,
+     "parts": [
+      {
+       "name": "Chuba Hubbard",
+       "pos": "RB",
+       "v": 27.0
+      },
+      {
+       "name": "everyone else",
+       "pos": "",
+       "v": 79.0
+      }
+     ],
+     "source": "observed",
+     "rank": 4
     },
     {
      "slot": 9,
@@ -6518,7 +6478,7 @@
       }
      ],
      "source": "observed",
-     "rank": 7
+     "rank": 5
     },
     {
      "slot": 1,
@@ -6534,6 +6494,44 @@
        "name": "everyone else",
        "pos": "",
        "v": 62.0
+      }
+     ],
+     "source": "observed",
+     "rank": 6
+    },
+    {
+     "slot": 5,
+     "team": "Enstrouded",
+     "value": 22.5,
+     "parts": [
+      {
+       "name": "Antonio Williams",
+       "pos": "WR",
+       "v": 23.0
+      },
+      {
+       "name": "everyone else",
+       "pos": "",
+       "v": 79.0
+      }
+     ],
+     "source": "observed",
+     "rank": 6
+    },
+    {
+     "slot": 3,
+     "team": "Gotta Go Fast",
+     "value": 20.5,
+     "parts": [
+      {
+       "name": "Jahmyr Gibbs",
+       "pos": "RB",
+       "v": 27.0
+      },
+      {
+       "name": "everyone else",
+       "pos": "",
+       "v": 105.0
       }
      ],
      "source": "observed",
@@ -6556,26 +6554,7 @@
       }
      ],
      "source": "observed",
-     "rank": 9
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": 20.0,
-     "parts": [
-      {
-       "name": "Chris Olave",
-       "pos": "WR",
-       "v": 20.0
-      },
-      {
-       "name": "everyone else",
-       "pos": "",
-       "v": 80.0
-      }
-     ],
-     "source": "observed",
-     "rank": 10
+     "rank": 8
     },
     {
      "slot": 6,
@@ -6594,7 +6573,7 @@
       }
      ],
      "source": "observed",
-     "rank": 11
+     "rank": 10
     },
     {
      "slot": 8,
@@ -6613,6 +6592,25 @@
       }
      ],
      "source": "observed",
+     "rank": 11
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": 18.0,
+     "parts": [
+      {
+       "name": "Chris Olave",
+       "pos": "WR",
+       "v": 20.0
+      },
+      {
+       "name": "everyone else",
+       "pos": "",
+       "v": 91.0
+      }
+     ],
+     "source": "observed",
      "rank": 12
     }
    ],
@@ -6628,28 +6626,28 @@
      "slot": 2,
      "team": "One Mo Time For Igoe",
      "proj": 97.5,
-     "act": 106.0,
+     "act": 107.0,
      "opp": 3
     },
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "proj": 135.71,
-     "act": 78.0,
+     "proj": 136.14,
+     "act": 132.0,
      "opp": 2
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 73.12,
-     "act": 46.0,
+     "proj": 75.05,
+     "act": 54.0,
      "opp": 11
     },
     {
      "slot": 5,
      "team": "Enstrouded",
      "proj": 111.47,
-     "act": 71.0,
+     "act": 102.0,
      "opp": 10
     },
     {
@@ -6690,19 +6688,25 @@
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 114.68,
-     "act": 100.0,
+     "proj": 113.5,
+     "act": 111.0,
      "opp": 4
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 86.85,
-     "act": 96.0,
+     "proj": 86.91,
+     "act": 106.0,
      "opp": 7
     }
    ],
-   "winner": null,
+   "winner": {
+    "slot": 2,
+    "team": "One Mo Time For Igoe",
+    "value": 29.0,
+    "note": "",
+    "source": "computed"
+   },
    "carry_from": []
   },
   {
@@ -7866,6 +7870,14 @@
    ]
   },
   {
+   "slot": 2,
+   "team": "One Mo Time For Igoe",
+   "wins": 1,
+   "weeks": [
+    11
+   ]
+  },
+  {
    "slot": 10,
    "team": "Trade the team away",
    "wins": 1,
@@ -7896,12 +7908,6 @@
   {
    "slot": 8,
    "team": "Likely Cooked",
-   "wins": 0,
-   "weeks": []
-  },
-  {
-   "slot": 2,
-   "team": "One Mo Time For Igoe",
    "wins": 0,
    "weeks": []
   },
