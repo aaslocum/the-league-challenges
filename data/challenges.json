@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "built_at": "2026-11-26T17:18:14",
+ "built_at": "2026-11-26T20:18:15",
  "season": 2026,
  "current_week": 12,
  "teams": [
@@ -6778,9 +6778,39 @@
    "projected": null,
    "actual": [
     {
+     "slot": 7,
+     "team": "The Brockness Monster",
+     "value": -59.37,
+     "parts": [
+      {
+       "name": "DeVonta Smith",
+       "pos": "WR",
+       "v": 30.85,
+       "proj": 13.15,
+       "act": 44.0
+      },
+      {
+       "name": "Kyren Williams",
+       "pos": "RB",
+       "v": 1.56,
+       "proj": 13.44,
+       "act": 15.0
+      },
+      {
+       "name": "Packers",
+       "pos": "DEF",
+       "v": -2.73,
+       "proj": 10.73,
+       "act": 8.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 1
+    },
+    {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "value": -71.54,
+     "value": -60.56,
      "parts": [
       {
        "name": "Jahmyr Gibbs",
@@ -6795,15 +6825,45 @@
        "v": 18.1,
        "proj": 10.9,
        "act": 29.0
+      },
+      {
+       "name": "George Pickens",
+       "pos": "WR",
+       "v": -2.71,
+       "proj": 13.71,
+       "act": 11.0
       }
      ],
      "source": "assumed",
-     "rank": 1
+     "rank": 2
+    },
+    {
+     "slot": 4,
+     "team": "Broad Street Bullies",
+     "value": -71.56,
+     "parts": [
+      {
+       "name": "Rams",
+       "pos": "DEF",
+       "v": 6.78,
+       "proj": 11.22,
+       "act": 18.0
+      },
+      {
+       "name": "Matthew Stafford",
+       "pos": "QB",
+       "v": -10.33,
+       "proj": 12.33,
+       "act": 2.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 3
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "value": -75.12,
+     "value": -75.01,
      "parts": [
       {
        "name": "D'Andre Swift",
@@ -6828,102 +6888,26 @@
       }
      ],
      "source": "assumed",
-     "rank": 2
-    },
-    {
-     "slot": 4,
-     "team": "Broad Street Bullies",
-     "value": -80.77,
-     "parts": [
-      {
-       "name": "Rams",
-       "pos": "DEF",
-       "v": 6.78,
-       "proj": 11.22,
-       "act": 18.0
-      },
-      {
-       "name": "Dallas Goedert",
-       "pos": "TE",
-       "v": -9.22,
-       "proj": 10.22,
-       "act": 1.0
-      },
-      {
-       "name": "Matthew Stafford",
-       "pos": "QB",
-       "v": -10.33,
-       "proj": 12.33,
-       "act": 2.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 3
-    },
-    {
-     "slot": 11,
-     "team": "angryBIRDS",
-     "value": -97.33,
-     "parts": [
-      {
-       "name": "Rome Odunze",
-       "pos": "WR",
-       "v": 16.08,
-       "proj": 11.92,
-       "act": 28.0
-      }
-     ],
-     "source": "assumed",
      "rank": 4
-    },
-    {
-     "slot": 7,
-     "team": "The Brockness Monster",
-     "value": -99.27,
-     "parts": [
-      {
-       "name": "Kyren Williams",
-       "pos": "RB",
-       "v": 1.56,
-       "proj": 13.44,
-       "act": 15.0
-      },
-      {
-       "name": "Packers",
-       "pos": "DEF",
-       "v": -2.73,
-       "proj": 10.73,
-       "act": 8.0
-      },
-      {
-       "name": "DeVonta Smith",
-       "pos": "WR",
-       "v": -9.15,
-       "proj": 13.15,
-       "act": 4.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 5
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "value": -105.47,
+     "value": -83.35,
      "parts": [
+      {
+       "name": "Javonte Williams",
+       "pos": "RB",
+       "v": 12.71,
+       "proj": 19.29,
+       "act": 32.0
+      },
       {
        "name": "Amon-Ra St. Brown",
        "pos": "WR",
        "v": 1.79,
        "proj": 20.21,
        "act": 22.0
-      },
-      {
-       "name": "Javonte Williams",
-       "pos": "RB",
-       "v": -9.29,
-       "proj": 19.29,
-       "act": 10.0
       },
       {
        "name": "Jordan Love",
@@ -6934,12 +6918,81 @@
       }
      ],
      "source": "assumed",
+     "rank": 5
+    },
+    {
+     "slot": 11,
+     "team": "angryBIRDS",
+     "value": -97.41,
+     "parts": [
+      {
+       "name": "Rome Odunze",
+       "pos": "WR",
+       "v": 16.08,
+       "proj": 11.92,
+       "act": 28.0
+      }
+     ],
+     "source": "assumed",
      "rank": 6
+    },
+    {
+     "slot": 10,
+     "team": "Trade the team away",
+     "value": -98.91,
+     "parts": [
+      {
+       "name": "CeeDee Lamb",
+       "pos": "WR",
+       "v": 1.93,
+       "proj": 19.07,
+       "act": 21.0
+      },
+      {
+       "name": "Brandon Aubrey",
+       "pos": "K",
+       "v": -2.32,
+       "proj": 11.32,
+       "act": 9.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 7
+    },
+    {
+     "slot": 2,
+     "team": "One Mo Time For Igoe",
+     "value": -100.19,
+     "parts": [
+      {
+       "name": "Dak Prescott",
+       "pos": "QB",
+       "v": 5.87,
+       "proj": 20.13,
+       "act": 26.0
+      },
+      {
+       "name": "DAL DEF",
+       "pos": "DEF",
+       "v": -7.89,
+       "proj": 15.89,
+       "act": 8.0
+      },
+      {
+       "name": "Luther Burden",
+       "pos": "WR",
+       "v": -8.33,
+       "proj": 15.33,
+       "act": 7.0
+      }
+     ],
+     "source": "assumed",
+     "rank": 8
     },
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "value": -108.07,
+     "value": -108.13,
      "parts": [
       {
        "name": "Jake Bates",
@@ -6957,20 +7010,20 @@
       }
      ],
      "source": "assumed",
-     "rank": 7
+     "rank": 9
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "value": -112.62,
+     "value": -112.59,
      "parts": [],
      "source": "assumed",
-     "rank": 8
+     "rank": 10
     },
     {
      "slot": 5,
      "team": "Enstrouded",
-     "value": -118.02,
+     "value": -118.01,
      "parts": [
       {
        "name": "Sam LaPorta",
@@ -6981,65 +7034,12 @@
       }
      ],
      "source": "assumed",
-     "rank": 9
-    },
-    {
-     "slot": 10,
-     "team": "Trade the team away",
-     "value": -124.92,
-     "parts": [
-      {
-       "name": "Brandon Aubrey",
-       "pos": "K",
-       "v": -10.32,
-       "proj": 11.32,
-       "act": 1.0
-      },
-      {
-       "name": "CeeDee Lamb",
-       "pos": "WR",
-       "v": -16.07,
-       "proj": 19.07,
-       "act": 3.0
-      }
-     ],
-     "source": "assumed",
-     "rank": 10
-    },
-    {
-     "slot": 2,
-     "team": "One Mo Time For Igoe",
-     "value": -133.11,
-     "parts": [
-      {
-       "name": "Luther Burden",
-       "pos": "WR",
-       "v": -8.33,
-       "proj": 15.33,
-       "act": 7.0
-      },
-      {
-       "name": "DAL DEF",
-       "pos": "DEF",
-       "v": -15.89,
-       "proj": 15.89,
-       "act": 0.0
-      },
-      {
-       "name": "Dak Prescott",
-       "pos": "QB",
-       "v": -19.13,
-       "proj": 20.13,
-       "act": 1.0
-      }
-     ],
-     "source": "assumed",
      "rank": 11
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "value": -149.32,
+     "value": -149.38,
      "parts": [],
      "source": "assumed",
      "rank": 12
@@ -7049,84 +7049,84 @@
     {
      "slot": 1,
      "team": "Always the McBridesmaid",
-     "proj": 122.07,
+     "proj": 122.13,
      "act": 14.0,
      "opp": 12
     },
     {
      "slot": 2,
      "team": "One Mo Time For Igoe",
-     "proj": 141.11,
-     "act": 8.0,
+     "proj": 141.19,
+     "act": 41.0,
      "opp": 11
     },
     {
      "slot": 3,
      "team": "Gotta Go Fast",
-     "proj": 151.54,
-     "act": 80.0,
+     "proj": 151.56,
+     "act": 91.0,
      "opp": 8
     },
     {
      "slot": 4,
      "team": "Broad Street Bullies",
-     "proj": 101.77,
-     "act": 21.0,
+     "proj": 91.56,
+     "act": 20.0,
      "opp": 6
     },
     {
      "slot": 5,
      "team": "Enstrouded",
-     "proj": 132.02,
+     "proj": 132.01,
      "act": 14.0,
      "opp": 9
     },
     {
      "slot": 6,
      "team": "Papa's playmakers",
-     "proj": 142.47,
-     "act": 37.0,
+     "proj": 142.35,
+     "act": 59.0,
      "opp": 4
     },
     {
      "slot": 7,
      "team": "The Brockness Monster",
-     "proj": 126.27,
-     "act": 27.0,
+     "proj": 126.37,
+     "act": 67.0,
      "opp": 10
     },
     {
      "slot": 8,
      "team": "Likely Cooked",
-     "proj": 144.12,
+     "proj": 144.01,
      "act": 69.0,
      "opp": 3
     },
     {
      "slot": 9,
      "team": "Bronny James",
-     "proj": 149.32,
+     "proj": 149.38,
      "act": 0.0,
      "opp": 5
     },
     {
      "slot": 10,
      "team": "Trade the team away",
-     "proj": 128.92,
-     "act": 4.0,
+     "proj": 128.91,
+     "act": 30.0,
      "opp": 7
     },
     {
      "slot": 11,
      "team": "angryBIRDS",
-     "proj": 125.33,
+     "proj": 125.41,
      "act": 28.0,
      "opp": 2
     },
     {
      "slot": 12,
      "team": "Mr. Flapjack",
-     "proj": 112.62,
+     "proj": 112.59,
      "act": 0.0,
      "opp": 1
     }
